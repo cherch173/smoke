@@ -37,6 +37,9 @@ The BACKEND of the site will be built with several components.  We'll use **NODE
 The FRONTEND will be constructed primarily using **REACT**, utilitizing hooks such as useState, useEffect and more to transform an existing App.jsx file to import the PROPS of several different PAGES and COMPONENTS.
 
 For **User Authorization** we'll be using React and Mongo's Built-In Authentication and JWT (JSON Web Tokens) to ensure privacy and user safety.
+
+REGISTRATION (Sign Up), LOGGING IN and OUT will be handled using React FORMS using hooks such as useEffect and useState.
+***
 ***
 ### _**Technologies**_
 - MongoDB
@@ -45,4 +48,45 @@ For **User Authorization** we'll be using React and Mongo's Built-In Authenticat
 - Node.js
 - JWT
 - s3 / AWS
+***
+***
+### _**Getting Started**_
+As per **Cherch Games**' ethos, simplicity is key to a smooth user experience.
+
+We'll have FOUR MODELS, all which interact with eachother.
+
+**ENDEAVORS**
+- **name:** TextField
+- **featuredImage:** ImageField
+- **genre:** linked by ID
+- **website:** URLField (max 1 to prevent clutter)
+- **likeButton:** BooleanValue (branded as **FIRE**)
+- **comments:** linked by ID
+- **detailsButton:**
+
+This model will have full CRUD capabilities.
+
+**GENRES (One to Many)**
+- **type:** TextField [_Art, Animation, App, Blog, Book, Chemistry, Experiment, Film, Gaming, Invention, Intellectual Property, Music, Musical Theater, Play, Poetry, Program, Physics, Science, Short, Stand-Up, Thesis, Theory, Video Game, Website, or Other_]
+
+**USERS (aka SPARKS)**
+- username = textField
+- email = textField
+- password = textField
+- confirmPassword = textField
+
+**COMMENTS**
+- date = dateField
+- username = textField
+- comment = textField
+***
+***
+## _**WIREFRAME**_
+![Image]()
+***
+***
+## _**ERD**_
+![Image]()
+***
+***
 
