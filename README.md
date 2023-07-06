@@ -16,9 +16,9 @@
 ### _**Description**_
 We're fortunate to be surrounded by creativity. 
 
-Everywhere we look (if we look closely enough) is a  hance to spot a window for innovation, and with such marvels readily within our respective fields of vision, wouldn't we be fools to look away?
+Everywhere we look (if we look closely enough) is an opporunity to spot a brief window for innovation, and with such marvels already within eyeshot -- wouldn't we be fools to look away?
 
-Well, what if we _weren't_ looking away, but rather, were looking **directly** at it, but our ability to see it was obscured?
+Well, what if we _weren't_ looking away, but rather, were looking **directly** at it, but our ability to see it was obscured? What if there was just _too much_ clutter clouding our fields of vision?
 
 Introducing: **SMOKE** -- a social network specifically centered around showcasing creative endeavors.
 
