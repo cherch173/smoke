@@ -96,8 +96,8 @@ This model will have full CRUD capabilities.
     - [X] Concept Approval
     - [X] Make and import ERD
     - [X] Make and import Wireframe
-    - [] Trello Board
     - [X] Final Revision of ReadME
+    - [] Trello Board
 - **FRIDAY 07.07.2023**
     - [] Project Approval
     - [] Use vite@create to generate FrontEnd Framework
