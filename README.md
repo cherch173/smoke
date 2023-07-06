@@ -98,10 +98,10 @@ This model will have full CRUD capabilities.
     - [X] Make and import Wireframe
     - [X] Final Revision of ReadME
     - [X] Trello Board
+    - [X] touch .env and .gitIgnore
 - **FRIDAY 07.07.2023**
     - [] Project Approval
     - [] Use vite@create to generate FrontEnd Framework
-    - [] touch .env and .gitIgnore
     - [] Install dependencies
     - [] Express Generate BackEnd Framework
     - [] Install Mongoose
