@@ -10,7 +10,7 @@
 ***
 ***
 #### [**Github**](https://github.com/cherch173/smoke)
-#### [**Trello**]()
+#### [**Trello**](https://trello.com/b/FAubJ0Vz)
 ***
 ***
 ### _**Description**_
@@ -104,9 +104,9 @@ This model will have full CRUD capabilities.
     - [] touch .env and .gitIgnore
     - [] Install dependencies
     - [] Express Generate BackEnd Framework
-    - []
-    - []
-    - []
+    - [] Install Mongoose
+    - [] Install Axios
+    - [] Create Models in Backend
     - []
     - []
     - []
