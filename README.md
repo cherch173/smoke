@@ -82,7 +82,7 @@ This model will have full CRUD capabilities.
 ***
 ***
 ## _**WIREFRAME**_
-![Image]()
+![Image](public/images/smoke_wireframe.png)
 ***
 ***
 ## _**ERD**_
@@ -95,9 +95,9 @@ This model will have full CRUD capabilities.
     - [X] Draft and compose ReadME
     - [X] Concept Approval
     - [X] Make and import ERD
-    - [] Make and import Wireframe
+    - [X] Make and import Wireframe
     - [] Trello Board
-    - [] Final Revision of ReadME
+    - [X] Final Revision of ReadME
 - **FRIDAY 07.07.2023**
     - [] Project Approval
     - [] Use vite@create to generate FrontEnd Framework
