@@ -97,7 +97,7 @@ This model will have full CRUD capabilities.
     - [X] Make and import ERD
     - [X] Make and import Wireframe
     - [X] Final Revision of ReadME
-    - [] Trello Board
+    - [X] Trello Board
 - **FRIDAY 07.07.2023**
     - [] Project Approval
     - [] Use vite@create to generate FrontEnd Framework
@@ -106,7 +106,7 @@ This model will have full CRUD capabilities.
     - [] Express Generate BackEnd Framework
     - [] Install Mongoose
     - [] Install Axios
-    - [] Create Models in Backend
+    - [] Create ENDEAVORS Model in Backend
     - []
     - []
     - []
