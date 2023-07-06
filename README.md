@@ -89,4 +89,107 @@ This model will have full CRUD capabilities.
 ![Image]()
 ***
 ***
+## _**PROJECT FLOW**_
+- **THURSDAY 07.06.2023**
+    - [X] Project Conceptualization
+    - [X] Draft and compose ReadME
+    - [X] Concept Approval
+    - [] Make and import ERD
+    - [] Make and import Wireframe
+    - [] Trello Board
+    - [] Final Revision of ReadME
+- **FRIDAY 07.07.2023**
+    - [] Project Approval
+    - [] 
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+- **SATURDAY 07.08.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **SUNDAY 07.09.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **MONDAY 07.10.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **TUESDAY 07.11.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **WEDNESDAY 07.12.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **THURSDAY 07.13.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **FRIDAY 07.14.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **SATURDAY 07.15.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **SUNDAY 07.16.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **MONDAY 07.17.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **TUESDAY 07.18.2023**
+    - []
+    - []
+    - []
+    - []
+    - []
+- **WEDNESDAY 07.19.2023**
+    - [] Debug
+    - [] Final Tests
+    - [] Deploy
 
+***
+***
+
+![Image](https://thumbs.gfycat.com/HelplessSoftHeron-max-1mb.gif)
+***
+***
+### _**Credits**_
+##### **IMAGES USED**
+##### Smoke Gif -- [Tenor](https://media.tenor.com/anXw_NzGr8EAAAAC/smoke.gif)
+##### Twin Peaks Gif -- [Showtime](https://media.tenor.com/87hMoRvfqRQAAAAC/twin-peaks-twin-peaks-the-return.gif)
+##### Akira Gif -- [GfyCat](https://thumbs.gfycat.com/HelplessSoftHeron-max-1mb.gif)
