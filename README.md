@@ -101,7 +101,7 @@ This model will have full CRUD capabilities.
     - [X] touch .env and .gitIgnore
 - **FRIDAY 07.07.2023**
     - [] Project Approval
-    - [] Use vite@create to generate FrontEnd Framework
+    - [] Use vite@create to generate React Framework
     - [] Install dependencies
     - [] Express Generate BackEnd Framework
     - [] Install Mongoose
