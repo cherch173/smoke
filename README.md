@@ -104,12 +104,12 @@ This model will have full CRUD capabilities.
     - [X] Trello Board
     - [X] touch .env and .gitIgnore
 - **FRIDAY 07.07.2023**
-    - [] Project Approval
-    - [] Use vite@create to generate React Framework
-    - [] Install dependencies
+    - [X] Project Approval
+    - [X] Use vite@create to generate React Framework
+    - [X] Install dependencies
+    - [X] Install Mongoose
+    - [X] Install Axios
     - [] Express Generate BackEnd Framework
-    - [] Install Mongoose
-    - [] Install Axios
     - [] Create ENDEAVORS Model in Backend
     - [] Enter DATABASE_URL into .env
     - []
