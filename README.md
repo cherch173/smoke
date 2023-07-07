@@ -109,11 +109,11 @@ This model will have full CRUD capabilities.
     - [X] Install dependencies
     - [X] Install Mongoose
     - [X] Install Axios
-    - [] Create ENDEAVORS Model in Backend
-    - [] Enter Mongo DB DATABASE_URL into .env
+    - [X] Enter Mongo DB DATABASE_URL into .env
     - [] Connect to Databae and Verify with MongoDB
-    - [] Express Generate BackEnd Framework
-    - []
+    - [X] Express Generate BackEnd Framework
+    - [] Create NAV Bar
+    - [] Create ENDEAVORS Model in Backend
     - []
     - []
     - []
