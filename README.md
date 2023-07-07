@@ -107,7 +107,7 @@ This model will have full CRUD capabilities.
     - [] Install Mongoose
     - [] Install Axios
     - [] Create ENDEAVORS Model in Backend
-    - []
+    - [] Enter DATABASE_URL into .env
     - []
     - []
     - []
