@@ -1,5 +1,4 @@
 const { Endeavor } = require('../models')
-
 const getEndeavors = async (req, res) => {
     try {
         const endeavors = await Endeavor.find({})
@@ -11,7 +10,8 @@ const getEndeavors = async (req, res) => {
 
 const CreateEndeavor = async (req, res) => {
     try {
-        const endeavor = await Endeavor.create({ ...req.body })
+        const endeavor = await Endeavor.create(req.body)
+        console.log(endeavor)
         res.send(endeavor)
     } catch (error) {
         throw error
