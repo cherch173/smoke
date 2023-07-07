@@ -19,6 +19,13 @@ const CreateEndeavor = async (req, res) => {
     }
 }
 
+// Add fireButton Create
+// note: in both delete and like, first find the endeavor by Id
+// then utilize dot notation to push new data and then save() the endeavor
+// once its pushed. same for delete just remove as opposed to save.
+
+// Add firebutton Delete
+
 module.exports = {
     getEndeavors,
     CreateEndeavor

@@ -1,5 +1,14 @@
 const { Schema } = require('mongoose')
 
+const fireButtonSchema = new Schema(
+    {
+        userId: {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        }
+    }
+)
+
 const endeavorSchema = new Schema(
     {
         name: { type: String, required: true },
@@ -10,7 +19,7 @@ const endeavorSchema = new Schema(
         },
         website: { type: String },
         description: { type: String },
-        fireButton: { type: Boolean, default: false },
+        fireButton: [fireButtonSchema],
         comments: {
             type: Schema.Types.ObjectId,
             ref: 'Comment'
