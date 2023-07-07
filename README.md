@@ -114,10 +114,10 @@ This model will have full CRUD capabilities.
     - [X] Make all directories (M, V, C, DB, MW) 
     - [X] Compose index.js inside Express DB
     - [X] Enter Mongo DB DATABASE_URI into .env
+    - [X] Add node --watch server.js to package.json to activate npm run dev
+    - [X] Succesfully connect to Express Server (Backend)
+    - [X] Successfully connect to Vite Server (Frontend)
     - [] Connect to Database and Verify with MongoDB
-    - []
-    - []
-    - []
     - []
     - []
     - []
