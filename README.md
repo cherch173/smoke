@@ -122,13 +122,13 @@ This model will have full CRUD capabilities.
     - [X] Build index.js for Model
     - [X] Build out Controller for ENDEAVOR
     - [X] Route ENDEAVOR
-    - [X] Add new ENDEAVOR to DATABASE
-    - [] Controller for Genres
-    - [] Router for Genres
+    - [X] Add new ENDEAVOR to DATABASE using Insomnia
+    - [X] Controller for Genres
+    - [X] Router for Genres
+    - [X] Successfully Add all Genres within enum Paramrters with Insomnia
     - [] Controller for Comments
     - [] Router for Comments
     - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
-    - []
     - []
     - []
     - []

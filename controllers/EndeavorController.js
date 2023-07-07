@@ -1,4 +1,5 @@
 const { Endeavor } = require('../models')
+
 const getEndeavors = async (req, res) => {
     try {
         const endeavors = await Endeavor.find({})
