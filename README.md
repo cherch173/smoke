@@ -126,8 +126,12 @@ This model will have full CRUD capabilities.
     - [X] Controller for Genres
     - [X] Router for Genres
     - [X] Successfully Add all Genres within enum Paramrters with Insomnia
-    - [] Controller for Comments
-    - [] Router for Comments
+    - [X] Controller for Comments
+    - [X] Router for Comments
+    - [X] Begin AUTH on Backend and create User Model
+    - [X] Build out AuthController
+    - [] Build out Middleware
+    - [] Route AUTHRouter
     - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
     - []
     - []
