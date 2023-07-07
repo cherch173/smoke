@@ -58,7 +58,7 @@ We'll have FOUR MODELS, all which interact with eachother.
 **ENDEAVORS**
 - **name:** TextField
 - **featuredImage:** ImageField
-- **genre:** linked by ID
+- **genre:** linked by ID [build as array, max 3]
 - **website:** URLField (max 1 to prevent clutter)
 - **likeButton:** BooleanValue (branded as **FIRE**)
 - **comments:** linked by ID
@@ -66,7 +66,7 @@ We'll have FOUR MODELS, all which interact with eachother.
 
 This model will have full CRUD capabilities.
 
-**GENRES (One to Many)**
+**GENRES (Many to Many)**
 - **type:** TextField [_Art, Animation, App, Blog, Book, Chemistry, Experiment, Film, Gaming, Invention, Intellectual Property, Music, Musical Theater, Play, Poetry, Program, Physics, Science, Short, Stand-Up, Thesis, Theory, Video Game, Website, or Other_]
 
 **USERS (aka SPARKS)**
@@ -87,6 +87,10 @@ This model will have full CRUD capabilities.
 ***
 ## _**ERD**_
 ![Image](public/images/smoke.png)
+***
+***
+## _**COMPONENT HEIRARCHY DIAGRAM**_
+![Image]())
 ***
 ***
 ## _**PROJECT FLOW**_
