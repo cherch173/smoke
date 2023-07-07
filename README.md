@@ -118,9 +118,15 @@ This model will have full CRUD capabilities.
     - [X] Succesfully connect to Express Server (Backend)
     - [X] Successfully connect to Vite Server (Frontend)
     - [X] Connect to Database and Verify with MongoDB
-    - [] Begin Model for ENDEAVOR
+    - [X] Build Model for ENDEAVOR, GENRES & COMMENTS
+    - [X] Build index.js for Model
     - [] Begin Controller for ENDEAVOR
     - [] Route ENDEAVOR
+    - []
+    - []
+    - []
+    - []
+    - []
     - []
     - []
 - **SATURDAY 07.08.2023**

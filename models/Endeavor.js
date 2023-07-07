@@ -21,7 +21,27 @@ const genreSchema = new Schema(
             required: true,
             max: 3
         }
-    }
+    },
+    { timestamps: true }
+)
+
+const commentSchema = new Schema(
+    {
+        date: {
+            type: Date
+        },
+        comment: { 
+            type: String,
+            required: true
+        },
+        user: {
+            type: Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
+        },
+        userName: String,
+        userAvatar: String
+    }, {timestamps: true}
 )
 
 module.exports = endeavorSchema
