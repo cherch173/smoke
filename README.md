@@ -109,16 +109,23 @@ This model will have full CRUD capabilities.
     - [X] Install dependencies
     - [X] Install Mongoose
     - [X] Install Axios
-    - [X] Enter Mongo DB DATABASE_URL into .env
-    - [] Connect to Databae and Verify with MongoDB
     - [X] Express Generate BackEnd Framework
-    - [] Create NAV Bar
-    - [] Create ENDEAVORS Model in Backend
+    - [X] Compose server.js
+    - [X] Make all directories (M, V, C, DB, MW) 
+    - [X] Compose index.js inside Express DB
+    - [X] Enter Mongo DB DATABASE_URI into .env
+    - [] Connect to Database and Verify with MongoDB
+    - []
+    - []
+    - []
+    - []
     - []
     - []
     - []
     - []
 - **SATURDAY 07.08.2023**
+    - [] Create NAV Bar
+    - [] Create ENDEAVORS Model in Backend
     - []
     - []
     - []
