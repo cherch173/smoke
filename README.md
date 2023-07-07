@@ -120,7 +120,7 @@ This model will have full CRUD capabilities.
     - [X] Connect to Database and Verify with MongoDB
     - [X] Build Model for ENDEAVOR, GENRES & COMMENTS
     - [X] Build index.js for Model
-    - [] Begin Controller for ENDEAVOR
+    - [] Build out Controller for ENDEAVOR
     - [] Route ENDEAVOR
     - []
     - []
@@ -131,7 +131,7 @@ This model will have full CRUD capabilities.
     - []
 - **SATURDAY 07.08.2023**
     - [] Create NAV Bar
-    - [] Create ENDEAVORS Model in Backend
+    - [] Create USERS Model in Backend
     - []
     - []
     - []
