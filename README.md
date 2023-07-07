@@ -120,10 +120,10 @@ This model will have full CRUD capabilities.
     - [X] Connect to Database and Verify with MongoDB
     - [X] Build Model for ENDEAVOR, GENRES & COMMENTS
     - [X] Build index.js for Model
-    - [] Build out Controller for ENDEAVOR
-    - [] Route ENDEAVOR
-    - []
-    - []
+    - [X] Build out Controller for ENDEAVOR
+    - [X] Route ENDEAVOR
+    - [] Add new ENDEAVOR to DATABASE
+    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
     - []
     - []
     - []

@@ -9,6 +9,16 @@ const getEndeavors = async (req, res) => {
     }
 }
 
+const CreateEndeavor = async (req, res) => {
+    try {
+        const endeavor = await Endeavor.create({ ...req.body })
+        res.send(endeavor)
+    } catch (error) {
+        throw error
+    }
+}
+
 module.exports = {
-    getEndeavors
+    getEndeavors,
+    CreateEndeavor
 }
