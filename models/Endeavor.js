@@ -30,7 +30,7 @@ const commentSchema = new Schema(
         date: {
             type: Date
         },
-        comment: { 
+        comment: {
             type: String,
             required: true
         },
@@ -41,7 +41,7 @@ const commentSchema = new Schema(
         },
         userName: String,
         userAvatar: String
-    }, {timestamps: true}
+    }, { timestamps: true }
 )
 
 module.exports = endeavorSchema
