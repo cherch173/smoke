@@ -130,13 +130,11 @@ This model will have full CRUD capabilities.
     - [X] Router for Comments
     - [X] Begin AUTH on Backend and create User Model
     - [X] Build out AuthController
-    - [] Build out Middleware
-    - [] Route AUTHRouter
-    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
-    - []
-    - []
-    - []
+    - [X] Build out Middleware
+    - [X] Route AUTHRouter
+    - [X] Add Tokens to existing Routes
 - **SATURDAY 07.08.2023**
+    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
     - [] Create NAV Bar
     - [] Create USERS Model in Backend
     - []
