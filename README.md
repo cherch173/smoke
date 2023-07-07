@@ -117,8 +117,8 @@ This model will have full CRUD capabilities.
     - [X] Add node --watch server.js to package.json to activate npm run dev
     - [X] Succesfully connect to Express Server (Backend)
     - [X] Successfully connect to Vite Server (Frontend)
-    - [] Connect to Database and Verify with MongoDB
-    - []
+    - [X] Connect to Database and Verify with MongoDB
+    - [] Begin Model & Controller for ENDEAVOR
     - []
     - []
     - []
