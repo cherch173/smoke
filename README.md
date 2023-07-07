@@ -90,7 +90,7 @@ This model will have full CRUD capabilities.
 ***
 ***
 ## _**COMPONENT HEIRARCHY DIAGRAM**_
-![Image]())
+![Image]()
 ***
 ***
 ## _**PROJECT FLOW**_
@@ -109,9 +109,12 @@ This model will have full CRUD capabilities.
     - [X] Install dependencies
     - [X] Install Mongoose
     - [X] Install Axios
-    - [] Express Generate BackEnd Framework
     - [] Create ENDEAVORS Model in Backend
-    - [] Enter DATABASE_URL into .env
+    - [] Enter Mongo DB DATABASE_URL into .env
+    - [] Connect to Databae and Verify with MongoDB
+    - [] Express Generate BackEnd Framework
+    - []
+    - []
     - []
     - []
     - []
