@@ -131,23 +131,21 @@ This model will have full CRUD capabilities.
     - [X] Begin AUTH on Backend and create User Model
     - [X] Build out AuthController
     - [X] Build out Middleware
+- **SATURDAY 07.08.2023**
     - [X] Route AUTHRouter
     - [X] Add Tokens to existing Routes
-- **SATURDAY 07.08.2023**
-    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
-    - [] Create NAV Bar
-    - [] Create USERS Model in Backend
-    - []
-    - []
-    - []
-    - []
-    - []
+    - [X] Create USER Model in Backend
+    - [X] Verify USER Data being sent to MongoDB
 - **SUNDAY 07.09.2023**
-    - []
-    - []
-    - []
-    - []
-    - []
+    - [] Like Button functionality
+    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
+    - [] Test ENDEAVOR UPDATE / DELETE with Insomnia
+    - [] UPDATE / DELETE for GENRE & COMMENTS (M, V, C)
+    - [] Test ENDEAVOR UPDATE / DELETE with Insomnia 
+    - [] Begin Frontend Construction starting at the Top
+    - [] Create NAV Bar
+    - [] Begin HOME & ABOUT Page design
+    - [] Confirm Nav moves between ROOT & ABOUT Pages
 - **MONDAY 07.10.2023**
     - []
     - []
