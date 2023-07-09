@@ -152,8 +152,13 @@ This model will have full CRUD capabilities.
     - []
     - []
     - []
-- **TUESDAY 07.11.2023**
     - []
+    - []
+    - []
+    - []
+    - []
+- **TUESDAY 07.11.2023**
+    - [] MVP
     - []
     - []
     - []
