@@ -6,25 +6,20 @@
   box-sizing: border-box;
 }
 
+
+a {
+  color: teal;
+}
+
 .nav {
   margin-right: 1em;
   display: flex;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
 
 h4 {
   font-size: 3vmin;
@@ -34,4 +29,14 @@ h4 {
 .fireText {
   color: orange;
   text-shadow: -.5px .5px black;
+}
+
+.textGeneral {
+  font-size: 1.5vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
