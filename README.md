@@ -148,10 +148,10 @@ This model will have full CRUD capabilities.
     - [X] IMPORT BrowserRouter to Main.jsx
     - [X] Create HOME.jsx Page
     - [X] Create NAV Bar Component
-    - [] Build NAV Bar Component
-    - [] Begin HOME Page design
-    - [] Create ABOUT Page
-    - [] Complete ABOUT Page
+    - [X] Build NAV Bar Component
+    - [X] Begin HOME Page design
+    - [X] Create ABOUT Page
+    - [X] Complete ABOUT Page
     - [] Confirm Nav moves between ROOT & ABOUT Pages
     - [] Build ENDEAVOR FEED.jsx
     - []
