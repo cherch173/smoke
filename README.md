@@ -159,8 +159,8 @@ This model will have full CRUD capabilities.
     - [X] mkdir SERVICES folder
     - [X] Build api.js in SERVICES
     - [X] Build EndeavorServices.js in SERVICES
-    - [] Build Auth.js in SERVICES
-    - [] Create Data dir and SERVICES
+    - [X] Build Auth.js in SERVICES
+    - [X] Complete SERVICES
     - [] Get DATA into FEED
     - [] Get GENRE Data to link with ENDEAVOR DATA
     - []
