@@ -144,8 +144,6 @@ This model will have full CRUD capabilities.
     - [X] Test GENRE UPDATE / DELETE with Insomnia 
     - [X] UPDATE / DELETE for COMMENT (M, V, C)
     - [X] Test COMMENT UPDATE / DELETE with Insomnia 
-    - [] UPDATE / DELETE for USER (M V C)
-    - [] Test USER UPDATE / DELETE with Insomnia
     - [] Begin Frontend Construction starting at the Top
     - [] Like Button functionality
     - [] Create NAV Bar
@@ -161,8 +159,10 @@ This model will have full CRUD capabilities.
     - []
     - []
     - []
-- **TUESDAY 07.11.2023**
     - []
+- **TUESDAY 07.11.2023**
+    - [] Test USER UPDATE / DELETE with Insomnia
+    - [] UPDATE / DELETE for USER (M V C)
     - []
     - []
     - []
