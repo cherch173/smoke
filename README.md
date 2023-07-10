@@ -158,7 +158,7 @@ This model will have full CRUD capabilities.
     - [X] Test FEED interactivity
     - [X] mkdir SERVICES folder
     - [X] Build api.js in SERVICES
-    - [] Build EndeavorServices.js in SERVICES
+    - [X] Build EndeavorServices.js in SERVICES
     - [] Build Auth.js in SERVICES
     - [] Create Data dir and SERVICES
     - [] Get DATA into FEED
