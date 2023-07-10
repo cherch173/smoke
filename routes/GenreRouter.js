@@ -9,5 +9,18 @@ router.post(
     middleware.verifyToken, 
     controller.CreateGenre
 )
+router.put(
+    '/:genre_id',
+    middleware.stripToken,
+    middleware.verifyToken,
+    controller.UpdateGenre
+)
+
+router.delete(
+    '/:genre_id',
+    middleware.stripToken,
+    middleware.verifyToken,
+    controller.DeleteGenre
+)
 
 module.exports = router

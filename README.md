@@ -139,9 +139,11 @@ This model will have full CRUD capabilities.
     - [X] Verify USER Data being sent to MongoDB
 - **MONDAY 07.10.2023**
     - [X] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
-    - [] Test ENDEAVOR UPDATE / DELETE with Insomnia
-    - [] UPDATE / DELETE for GENRE & COMMENTS (M, V, C)
-    - [] Test GENRE & COMMENT UPDATE / DELETE with Insomnia 
+    - [X] Test ENDEAVOR UPDATE / DELETE with Insomnia
+    - [X] UPDATE / DELETE for GENRE (M, V, C)
+    - [X] Test GENRE UPDATE / DELETE with Insomnia 
+    - [] UPDATE / DELETE for COMMENT (M, V, C)
+    - [] Test COMMENT UPDATE / DELETE with Insomnia 
     - [] Begin Frontend Construction starting at the Top
     - [] Like Button functionality
     - [] Create NAV Bar
