@@ -69,3 +69,14 @@ h4 {
   font-size: 3vmin;
 }
 
+.flameImg {
+  max-width: 5vmin;
+  max-height: 5vmin;
+}
+
+.flameImg:hover {
+  transform: scale(105%);
+  transition: ease-in 142ms;
+  opacity: 86%;
+}
+

@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { GetEndeavors } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
+import FireButton from '../components/FireButton'
 
 const Feed = () => {
     let navigate = useNavigate()
@@ -31,7 +32,7 @@ const Feed = () => {
                         <span className='fireText'>genres: </span> 
                         {endeavor.genres}
                     </p>
-                    {/* <FireButton /> */}
+                    <FireButton />
                     <p>
                         <span className='fireText'>comments: </span> 
                         {endeavor.comments}
