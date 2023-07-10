@@ -18,13 +18,17 @@ a {
   color: white;
   padding: 2vmin;
   font-size: 3vmin;
+  text-decoration: none;
 }
 
 a:hover {
-  display: inline;
   color: blanchedalmond;
   transform: scale(103%);
   transition: ease-in 173ms;
+}
+
+a:visited {
+  color: bisque
 }
 
 .nav {
