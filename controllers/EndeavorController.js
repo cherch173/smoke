@@ -21,7 +21,7 @@ const CreateEndeavor = async (req, res) => {
 
 const UpdateEndeavor = async (req, res) => {
     try {
-        const endeavor = await Endeavor.findByIdAndUpdate(req.params.endeavor_id, req.body, {new: true})
+        const endeavor = await Endeavor.findByIdAndUpdate(req.params.endeavor_id, req.body, { new: true })
         res.send(endeavor)
     } catch (error) {
         throw error
@@ -30,8 +30,8 @@ const UpdateEndeavor = async (req, res) => {
 
 const DeleteEndeavor = async (req, res) => {
     try {
-        await Endeavor.deleteOne({ _id: req.params.endeavor_id})
-        res.send({ msg: 'Post Deleted', payload: req.params.endeavor_id, status: 'Ok'})
+        await Endeavor.deleteOne({ _id: req.params.endeavor_id })
+        res.send({ msg: 'Post Deleted', payload: req.params.endeavor_id, status: 'Ok' })
     } catch (error) {
         throw error
     }

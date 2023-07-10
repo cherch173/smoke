@@ -21,20 +21,20 @@ const CreateGenre = async (req, res) => {
 
 const UpdateGenre = async (req, res) => {
     try {
-        const genre = await Genre.findByIdAndUpdate(req.params.post_id, req.body, {new: true})
+        const genre = await Genre.findByIdAndUpdate(req.params.genre_id, req.body, { new: true })
         res.send(genre)
-      } catch (error) {
+    } catch (error) {
         throw error
-      }
+    }
 }
 
 const DeleteGenre = async (req, res) => {
     try {
-        await Genre.deleteOne({ _id: req.params.post_id })
-        res.send({ msg: 'Post Deleted', payload: req.params.post_id, status: 'Ok' })
-      } catch (error) {
+        await Genre.deleteOne({ _id: req.params.genre_id })
+        res.send({ msg: 'Post Deleted', payload: req.params.genre_id, status: 'Ok' })
+    } catch (error) {
         throw error
-      }
+    }
 }
 
 

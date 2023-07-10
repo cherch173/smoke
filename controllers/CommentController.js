@@ -18,7 +18,27 @@ const CreateComment = async (req, res) => {
     }
 }
 
+const UpdateComment = async (req, res) => {
+    try {
+        const comment = await Comment.findByIdAndUpdate(req.params.comment_id, req.body, { new: true })
+        res.send(comment)
+    } catch (error) {
+        throw error
+    }
+}
+
+const DeleteComment = async (req, res) => {
+    try {
+        await Comment.deleteOne({ _id: req.params.comment_id })
+        res.send({ msg: 'Post Deleted', payload: req.params.comment_id, status: 'Ok' })
+    } catch (error) {
+        throw error
+    }
+}
+
 module.exports = {
     getComments,
-    CreateComment
+    CreateComment,
+    UpdateComment,
+    DeleteComment
 }
