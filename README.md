@@ -156,10 +156,13 @@ This model will have full CRUD capabilities.
     - [X] Build ENDEAVOR FEED.jsx w/ temp <p> of sup
     - [X] Add FEED Route (/endeavors) to NAV
     - [X] Test FEED interactivity
+    - [X] mkdir SERVICES folder
+    - [X] Build api.js in SERVICES
+    - [] Build EndeavorServices.js in SERVICES
+    - [] Build Auth.js in SERVICES
     - [] Create Data dir and SERVICES
     - [] Get DATA into FEED
     - [] Get GENRE Data to link with ENDEAVOR DATA
-    - []
     - []
     - []
     - []
