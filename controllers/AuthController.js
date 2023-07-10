@@ -8,8 +8,8 @@ const Register = async (req, res) => {
         let existingUser = await User.findOne({ email })
         if (existingUser) {
             return res
-            .status(400)
-            .send('A user with that email has already been registered')
+                .status(400)
+                .send('A user with that email has already been registered')
         } else {
             const user = await User.create({ name, email, passwordDigest })
             res.send(user)
