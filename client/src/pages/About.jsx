@@ -21,8 +21,6 @@ const About = () => {
             <p className='textGeneral'>
                 All after all, we know that where there's <span className='fireText'>smoke</span>, there's <span className='fireText'>fire</span>.
             </p>
-            <br />
-            <button>BACK</button>
         </div>
     )
 }

@@ -158,17 +158,32 @@ This model will have full CRUD capabilities.
     - [X] Test FEED interactivity
     - [] Create Data dir and SERVICES
     - [] Get DATA into FEED
+    - [] Get GENRE Data to link with ENDEAVOR DATA
     - []
-    - [] Like Button functionality
+    - []
+    - []
+    - []
+    - []
 - **TUESDAY 07.11.2023**
+    - [] LIKE Button functionality
+    - [] Add LIKE to Endeavor 
+    - [] Add COMMENTS to ENDEAVOR
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
     - []
     - []
     - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
+    - []
 - **WEDNESDAY 07.12.2023**
     - [] MVP
-    - []
     - []
     - []
     - []
