@@ -138,12 +138,12 @@ This model will have full CRUD capabilities.
     - [X] Create USER Model in Backend
     - [X] Verify USER Data being sent to MongoDB
 - **MONDAY 07.10.2023**
-    - [] Like Button functionality
-    - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
+    - [X] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
     - [] Test ENDEAVOR UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for GENRE & COMMENTS (M, V, C)
-    - [] Test ENDEAVOR UPDATE / DELETE with Insomnia 
+    - [] Test GENRE & COMMENT UPDATE / DELETE with Insomnia 
     - [] Begin Frontend Construction starting at the Top
+    - [] Like Button functionality
     - [] Create NAV Bar
     - [] Begin HOME & ABOUT Page design
     - [] Confirm Nav moves between ROOT & ABOUT Pages
