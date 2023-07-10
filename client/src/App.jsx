@@ -3,18 +3,22 @@ import { Route, Routes } from 'react-router'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About'
+import Feed from './pages/Feed'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Nav />
+      <header>
+        <Nav element={<Nav />}/>
+      </header>
       <br />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/endeavors' element={<Feed />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>

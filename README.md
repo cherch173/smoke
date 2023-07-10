@@ -152,14 +152,14 @@ This model will have full CRUD capabilities.
     - [X] Begin HOME Page design
     - [X] Create ABOUT Page
     - [X] Complete ABOUT Page
-    - [] Confirm Nav moves between ROOT & ABOUT Pages
-    - [] Build ENDEAVOR FEED.jsx
+    - [X] Confirm Nav moves between ROOT & ABOUT Pages
+    - [X] Build ENDEAVOR FEED.jsx w/ temp <p> of sup
+    - [X] Add FEED Route (/endeavors) to NAV
+    - [X] Test FEED interactivity
+    - [] Create Data dir and SERVICES
+    - [] Get DATA into FEED
     - []
     - [] Like Button functionality
-    - []
-    - []
-    - []
-    - []
 - **TUESDAY 07.11.2023**
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
