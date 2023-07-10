@@ -145,7 +145,6 @@ This model will have full CRUD capabilities.
     - [X] UPDATE / DELETE for COMMENT (M, V, C)
     - [X] Test COMMENT UPDATE / DELETE with Insomnia 
     - [] Begin Frontend Construction starting at the Top
-    - [] Like Button functionality
     - [] Create NAV Bar
     - [] Begin HOME & ABOUT Page design
     - [] Confirm Nav moves between ROOT & ABOUT Pages
@@ -156,6 +155,7 @@ This model will have full CRUD capabilities.
     - []
     - []
     - []
+    - [] Like Button functionality
     - []
     - []
     - []
