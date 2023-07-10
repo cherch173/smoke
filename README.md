@@ -144,16 +144,16 @@ This model will have full CRUD capabilities.
     - [X] Test GENRE UPDATE / DELETE with Insomnia 
     - [X] UPDATE / DELETE for COMMENT (M, V, C)
     - [X] Test COMMENT UPDATE / DELETE with Insomnia 
-    - [] Begin Frontend Construction starting at the Top
-    - [] Create NAV Bar
-    - [] Begin HOME & ABOUT Page design
+    - [X] Begin Frontend Construction starting at the Top
+    - [X] IMPORT BrowserRouter to Main.jsx
+    - [X] Create HOME.jsx Page
+    - [X] Create NAV Bar Component
+    - [] Build NAV Bar Component
+    - [] Begin HOME Page design
+    - [] Create ABOUT Page
+    - [] Complete ABOUT Page
     - [] Confirm Nav moves between ROOT & ABOUT Pages
-    - []
-    - []
-    - []
-    - []
-    - []
-    - []
+    - [] Build ENDEAVOR FEED.jsx
     - []
     - [] Like Button functionality
     - []

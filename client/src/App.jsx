@@ -1,4 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router'
+import Nav from './components/Nav'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
@@ -6,7 +9,13 @@ function App() {
 
   return (
     <div>
-      <h3>welcome to SMOKE</h3>
+      <Nav />
+      <br />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
     </div>
   )
 }

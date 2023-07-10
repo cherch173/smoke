@@ -3,29 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav {
+  margin-right: 1em;
+  display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -39,4 +24,14 @@
 
 .read-the-docs {
   color: #888;
+}
+
+h4 {
+  font-size: 3vmin;
+  text-shadow: -.5px .5px black;
+}
+
+.fireText {
+  color: orange;
+  text-shadow: -.5px .5px black;
 }
