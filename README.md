@@ -161,16 +161,16 @@ This model will have full CRUD capabilities.
     - [X] Build EndeavorServices.js in SERVICES
     - [X] Build Auth.js in SERVICES
     - [X] Complete SERVICES
-    - [] Get DATA into FEED
-    - [] Get GENRE Data to link with ENDEAVOR DATA
-    - []
-    - []
+    - [X] Get DATA into FEED
+    - [X] Test Data with Insomnia and MongoDB
+    - [] Get GENRE Data to link with ENDEAVOR DATA in FEED
+    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
+    - [] LIKE Button functionality
+    - [] Add LIKE to Endeavor 
+
     - []
     - []
 - **TUESDAY 07.11.2023**
-    - [] LIKE Button functionality
-    - [] Add LIKE to Endeavor 
-    - [] Add COMMENTS to ENDEAVOR
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
     - []
