@@ -134,9 +134,10 @@ This model will have full CRUD capabilities.
 - **SATURDAY 07.08.2023**
     - [X] Route AUTHRouter
     - [X] Add Tokens to existing Routes
+- **SUNDAY 07.09.2023**
     - [X] Create USER Model in Backend
     - [X] Verify USER Data being sent to MongoDB
-- **SUNDAY 07.09.2023**
+- **MONDAY 07.10.2023**
     - [] Like Button functionality
     - [] UPDATE / DELETE Functionality of ENDEAVOR (M, V, C)
     - [] Test ENDEAVOR UPDATE / DELETE with Insomnia
@@ -146,7 +147,6 @@ This model will have full CRUD capabilities.
     - [] Create NAV Bar
     - [] Begin HOME & ABOUT Page design
     - [] Confirm Nav moves between ROOT & ABOUT Pages
-- **MONDAY 07.10.2023**
     - []
     - []
     - []
@@ -158,12 +158,12 @@ This model will have full CRUD capabilities.
     - []
     - []
 - **TUESDAY 07.11.2023**
-    - [] MVP
     - []
     - []
     - []
     - []
 - **WEDNESDAY 07.12.2023**
+    - [] MVP
     - []
     - []
     - []
