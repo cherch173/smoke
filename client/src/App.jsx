@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
-import FireButton from './components/FireButton'
+
 import './App.css'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <header>
-        <Nav element={<Nav />}/>
+        <Nav element={<Nav />} />
       </header>
       <br />
       <main>

@@ -13,6 +13,9 @@ const Nav = () => {
                     <Link to="/endeavors">FEED</Link>
                 </li>
                 <li className="navLink">
+                    <Link to="/new">ADD NEW</Link>
+                </li>
+                <li className="navLink">
                     <Link to="/about">ABOUT</Link>
                 </li>
             </ul>

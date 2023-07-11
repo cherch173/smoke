@@ -25,23 +25,24 @@ const Feed = () => {
                     <Link to={`${endeavor._id}`}>
                         <h4>{endeavor.name}</h4>
                     </Link>
-                        <p>
-                            <span className='fireText'>description: </span>
-                            {endeavor.description}
-                        </p>
-                        <p>
-                            <span className='fireText'>website: </span>
-                            <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
-                        </p>
-                        <p>
-                            <span className='fireText'>genres: </span>
-                            {!!endeavor.genres && endeavor.genres.genre}
-                        </p>
-                        <FireButton />
-                        <p>
-                            <span className='fireText'>comments: </span>
-                            {endeavor.comments}
-                        </p>
+                    <img src={endeavor.image} alt="endeavorImg" className="endeavorImage" />
+                    <p>
+                        <span className='fireText'>description: </span>
+                        {endeavor.description}
+                    </p>
+                    <p>
+                        <span className='fireText'>website: </span>
+                        <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
+                    </p>
+                    <p>
+                        <span className='fireText'>genre: </span>
+                        {!!endeavor.genres && endeavor.genres.genre}
+                    </p>
+                    <FireButton />
+                    <p>
+                        <span className='fireText'>comments: </span>
+                        {!!endeavor.comments && endeavor.comments.comment}
+                    </p>
                 </div>
             ))}
 
