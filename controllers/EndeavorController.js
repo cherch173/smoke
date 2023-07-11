@@ -19,6 +19,7 @@ const getEndeavorById = async (req,res) => {
 }
 
 const CreateEndeavor = async (req, res) => {
+    // console.log(req.body)
     try {
         const endeavor = await Endeavor.create(req.body)
         console.log(endeavor)

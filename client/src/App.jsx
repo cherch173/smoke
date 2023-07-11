@@ -6,10 +6,11 @@ import About from './pages/About'
 import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
 import NewForm from './components/NewForm'
-
 import './App.css'
+import { CheckSession } from './services/Auth'
 
 function App() {
+  const [user, setUser] = useState(null)
 
   return (
     <div>

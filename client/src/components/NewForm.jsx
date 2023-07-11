@@ -18,6 +18,7 @@ const NewForm = ({getEndeavors}) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         await axios.post('http://localhost:3001/endeavors', formState)
+        console.log(formState)
         setFormState(initialState)
         getEndeavors()
     }
@@ -42,7 +43,6 @@ const NewForm = ({getEndeavors}) => {
         <label htmlFor="website" className="fireText">official website:</label>
         <input type="text" id="website" onChange={handleChange} value={formState.website}/>
         <br />
-
         <label htmlFor="description" className="fireText">description:</label>
         <textarea type="textarea" id="description" className="descriptionText" onChange={handleChange} value={formState.description}/>
         <br />
