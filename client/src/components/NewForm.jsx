@@ -8,7 +8,7 @@ const NewForm = ({getEndeavors}) => {
     const initialState = {
         name: '',
         image: '',
-        webiste: '',
+        website: '',
         description: '',
         genre: 'Intellectual Property',
     }
@@ -34,15 +34,16 @@ const NewForm = ({getEndeavors}) => {
         <br />
         <br />
         <label htmlFor="name" className="fireText">project name:</label>
-        <input type="text" id="name"/>
+        <input type="text" id="name" onChange={handleChange} value={formState.name}/>
         <br />
         <label htmlFor="image" className="fireText">image url:</label>
-        <input type="text" id="image" />
+        <input type="text" id="image" onChange={handleChange} value={formState.image}/>
         <br />
-        <label htmlFor="website" className="fireText">website:</label>
-        <input type="text" id="website" />
+        <label htmlFor="website" className="fireText">official website:</label>
+        <input type="text" id="website" onChange={handleChange} value={formState.website}/>
         <br />
-        <label htmlFor="image" className="fireText">description:</label>
+
+        <label htmlFor="description" className="fireText">description:</label>
         <textarea type="textarea" id="description" className="descriptionText" onChange={handleChange} value={formState.description}/>
         <br />
         <br />
@@ -91,7 +92,6 @@ const NewForm = ({getEndeavors}) => {
         <br />
         <br />
         <button className="button" type="submit">SUBMIT</button>
-
       </form>
     </div>
   )
