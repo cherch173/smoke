@@ -3,19 +3,51 @@ import { useState } from 'react'
 import axios from 'axios'
 
 
-const NewForm = () => {
+const NewForm = ({getEndeavors}) => {
+
+    const initialState = {
+        name: '',
+        image: '',
+        webiste: '',
+        description: '',
+        genre: 'Intellectual Property',
+    }
+
+    const [formState, setFormState] = useState(initialState)
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await axios.post('http://localhost:3001/endeavors', formState)
+        setFormState(initialState)
+        getEndeavors()
+    }
+
+    const handleChange = (e) => {
+        setFormState({ ...formState, [e.target.id]: e.target.value })
+    }
 
 
   return (
     <div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <label htmlFor="newEndeavor">Add a new Endeavor to <span className="fireText">SMOKE</span></label>
         <br />
-        <label htmlFor="name" className="fireText">name:</label>
+        <br />
+        <label htmlFor="name" className="fireText">project name:</label>
         <input type="text" id="name"/>
         <br />
+        <label htmlFor="image" className="fireText">image url:</label>
+        <input type="text" id="image" />
+        <br />
+        <label htmlFor="website" className="fireText">website:</label>
+        <input type="text" id="website" />
+        <br />
+        <label htmlFor="image" className="fireText">description:</label>
+        <textarea type="textarea" id="description" className="descriptionText" onChange={handleChange} value={formState.description}/>
+        <br />
+        <br />
         <label htmlFor="genre" className="fireText">genre:</label>
-        <select>
+        <select id="genre" onChange={handleChange} value={formState.genre}>
             <option value="Animation">Animation</option>
             <option value="Art">Art</option>
             <option value="App">App</option>
@@ -56,6 +88,9 @@ const NewForm = () => {
             <option value="Web Application">Web Application</option>
             <option value="Website">Website</option>
         </select>
+        <br />
+        <br />
+        <button className="button" type="submit">SUBMIT</button>
 
       </form>
     </div>
