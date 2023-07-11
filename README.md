@@ -171,9 +171,9 @@ This model will have full CRUD capabilities.
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
+    - [] Build ADD NEW ENDEAVOR
+    - [] Build ADD NEW COMMENT
     - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
-    - []
-    - []
     - []
     - []
     - []
