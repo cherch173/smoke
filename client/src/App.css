@@ -24,7 +24,7 @@ body {
 }
 
 .nav:hover {
-  color: teal;
+  color: rgb(250, 195, 128);
 }
 
 .navLine {
@@ -37,11 +37,10 @@ body {
 }
 
 
-
 a {
   color: white;
   padding: 2vmin;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   text-decoration: none;
 }
 
@@ -67,7 +66,7 @@ p {
   padding: 1.5vmin;
   background-color: rgb(62, 62, 62);
   border: 2px solid blanchedalmond;
-  margin: 4vmin;
+  margin: 4.2vmin;
   border-radius: 5px;
   box-shadow: -.25px .25px whitesmoke, -.5px .5px black;
 }

@@ -4,8 +4,8 @@ import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About'
 import Feed from './pages/Feed'
+import Details from './pages/EndeavorDetails'
 import FireButton from './components/FireButton'
-
 import './App.css'
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/endeavors' element={<Feed />} />
+          <Route path='/endeavors/:id' element={<Details />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>

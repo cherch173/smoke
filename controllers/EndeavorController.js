@@ -2,10 +2,19 @@ const { Endeavor } = require('../models')
 
 const getEndeavors = async (req, res) => {
     try {
-        const endeavors = await Endeavor.find({})
+        const endeavors = await Endeavor.find({}).populate('genres')
         res.send(endeavors)
     } catch (error) {
         throw error
+    }
+}
+
+const getEndeavorById = async (req,res) => {
+    try {
+        const endeavor = await Endeavor.findById(req.params.id).populate('genres')
+        res.send(endeavor)
+    } catch (error) {
+        throw (error)
     }
 }
 
@@ -51,5 +60,6 @@ module.exports = {
     getEndeavors,
     CreateEndeavor,
     UpdateEndeavor,
-    DeleteEndeavor
+    DeleteEndeavor,
+    getEndeavorById
 }

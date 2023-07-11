@@ -8,3 +8,12 @@ export const GetEndeavors = async () => {
         throw error
     }
 }
+
+export const GetEndeavor = async (id) => {
+    try {
+        const res = await Client.get(`/endeavors/${id}`)
+        return res.data
+    } catch (error) {
+        throw error
+    }
+}

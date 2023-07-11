@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { GetEndeavors } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
+import { Link } from 'react-router-dom'
 
 const Feed = () => {
     let navigate = useNavigate()
@@ -15,30 +16,32 @@ const Feed = () => {
         }
         handleEndeavors()
     }, [])
+
     return (
         <div className="grid col=4">
             <h4 className='fireText'>SMOKE</h4>
             {endeavors.map((endeavor, idx) => (
                 <div className="card" key={idx}>
-                    <h4>{endeavor.name}</h4>
-                    <p>
-                        <span className='fireText'>website: </span>
-                        <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
-                    </p>
-                    <p>
-                        <span className='fireText'>description: </span>
-                        {endeavor.description}
-                    </p>
-                    <p>
-                        <span className='fireText'>genres: </span>
-                        {endeavor.genres}
-                    </p>
-                    <FireButton />
-                    <p>
-                        <span className='fireText'>comments: </span>
-                        {endeavor.comments}
-                    </p>
-
+                    <Link to={`${endeavor._id}`}>
+                        <h4>{endeavor.name}</h4>
+                    </Link>
+                        <p>
+                            <span className='fireText'>description: </span>
+                            {endeavor.description}
+                        </p>
+                        <p>
+                            <span className='fireText'>website: </span>
+                            <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
+                        </p>
+                        <p>
+                            <span className='fireText'>genres: </span>
+                            {!!endeavor.genres && endeavor.genres.genre}
+                        </p>
+                        <FireButton />
+                        <p>
+                            <span className='fireText'>comments: </span>
+                            {endeavor.comments}
+                        </p>
                 </div>
             ))}
 

@@ -167,6 +167,7 @@ This model will have full CRUD capabilities.
     - [X] LIKE Button functionality
     - [X] LIKE BUTTON IMG confirms onClick to add to count
 - **TUESDAY 07.11.2023**
+    - [] DETAIL FUNCTIONALITY for ENDEAVOR -- i.e. EndeavorDetails
     - [] Get GENRE Data to link with ENDEAVOR DATA in FEED
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Test USER UPDATE / DELETE with Insomnia
@@ -174,9 +175,8 @@ This model will have full CRUD capabilities.
     - [] Build ADD NEW ENDEAVOR
     - [] Build ADD NEW COMMENT
     - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
-    - []
-    - []
-    - []
+    - [] Conditional Rendering for LOGGED IN vs LOGGED OUT
+    - [] Make sure a USER can only LIKE a POST ONCE
     - []
     - []
     - []

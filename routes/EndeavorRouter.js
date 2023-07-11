@@ -3,6 +3,7 @@ const controller = require('../controllers/EndeavorController')
 const middleware = require('../middleware')
 
 router.get('/', controller.getEndeavors)
+router.get('/:id', controller.getEndeavorById)
 router.post(
     '/', 
     middleware.stripToken,
