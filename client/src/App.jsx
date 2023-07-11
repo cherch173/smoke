@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About'
 import Feed from './pages/Feed'
+import FireButton from './components/FireButton'
 
 import './App.css'
 

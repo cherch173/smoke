@@ -163,18 +163,15 @@ This model will have full CRUD capabilities.
     - [X] Complete SERVICES
     - [X] Get DATA into FEED
     - [X] Test Data with Insomnia and MongoDB
+    - [X] Add LIKE to Endeavor 
+    - [X] LIKE Button functionality
+    - [] figure out why PNG for FireButton & CoolButton isn't rendering
     - [] Get GENRE Data to link with ENDEAVOR DATA in FEED
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
-    - [] LIKE Button functionality
-    - [] Add LIKE to Endeavor 
-    - []
-    - []
-    - []
-    - []
 - **TUESDAY 07.11.2023**
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
-    - []
+    - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
     - []
     - []
     - []

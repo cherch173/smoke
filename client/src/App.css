@@ -11,25 +11,10 @@ body {
   flex-direction: column;
   color: whitesmoke;
   background-color: rgb(46, 46, 46);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
-a {
-  color: white;
-  padding: 2vmin;
-  font-size: 3vmin;
-  text-decoration: none;
-}
 
-a:hover {
-  color: blanchedalmond;
-  transform: scale(103%);
-  transition: ease-in 173ms;
-}
-
-a:visited {
-  color: bisque
-}
 
 .nav {
   display: flex;
@@ -46,12 +31,42 @@ a:visited {
   color: blanchedalmond;
 }
 
+a {
+  color: white;
+  padding: 2vmin;
+  font-size: 3vmin;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(253, 224, 182);
+  transform: scale(103%);
+  transition: ease-in 173ms;
+}
+
+a:visited {
+  color: rgb(252, 214, 143);
+}
+
+a:active {
+  color: orange;
+}
+
 p {
   max-width: 420px;
 }
 
 .card {
   padding: 1vmin;
+  background-color: rgb(87, 87, 87);
+  border: 2px solid blanchedalmond;
+  margin: 2.5vmin;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(101%);
+  transition: ease-in 142ms;
 }
 
 
@@ -59,6 +74,11 @@ h4 {
   font-size: 4vmin;
   text-shadow: -.5px .5px black;
 }
+h5 {
+  font-size: 2vmin;
+  text-shadow: -.5px .5px black;
+}
+
 
 .fireText {
   color: orange;
@@ -66,7 +86,7 @@ h4 {
 }
 
 .textGeneral {
-  font-size: 3vmin;
+  font-size: 2.5vmin;
 }
 
 .flameImg {
@@ -78,5 +98,6 @@ h4 {
   transform: scale(105%);
   transition: ease-in 142ms;
   opacity: 86%;
+  cursor: pointer;
 }
 

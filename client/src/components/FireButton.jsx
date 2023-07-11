@@ -13,9 +13,9 @@ function FireButton() {
     }
     return (
         <div>
-            <img className="flameImg" src="images/flame.png" alt="FireButton" onClick={addLikes} /> -- 
-            <img className="flameImg"src="images/flame2.png" alt=" CoolButton" onClick={disLikes} />
-            <p><b>{totalLikes}</b>sparks</p>
+            <img className="flameImg" src="client/public/flame.png" alt="FireButton" onClick={addLikes} /> -- 
+            <img className="flameImg"src="client/public/flame2.png" alt=" CoolButton " onClick={disLikes} />
+            <p><b>{totalLikes} </b> SPARKS</p>
         </div>
     )
 }
