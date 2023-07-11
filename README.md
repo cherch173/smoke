@@ -166,9 +166,9 @@ This model will have full CRUD capabilities.
     - [X] Add LIKE to Endeavor 
     - [X] LIKE Button functionality
     - [X] LIKE BUTTON IMG confirms onClick to add to count
+- **TUESDAY 07.11.2023**
     - [] Get GENRE Data to link with ENDEAVOR DATA in FEED
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
-- **TUESDAY 07.11.2023**
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] UPDATE / DELETE for USER (M V C)
     - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT

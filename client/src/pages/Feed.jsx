@@ -17,30 +17,31 @@ const Feed = () => {
     }, [])
     return (
         <div className="grid col=4">
+            <h4 className='fireText'>SMOKE</h4>
             {endeavors.map((endeavor, idx) => (
                 <div className="card" key={idx}>
                     <h4>{endeavor.name}</h4>
                     <p>
-                        <span className='fireText'>website: </span> 
+                        <span className='fireText'>website: </span>
                         <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
                     </p>
                     <p>
-                        <span className='fireText'>description: </span> 
+                        <span className='fireText'>description: </span>
                         {endeavor.description}
                     </p>
                     <p>
-                        <span className='fireText'>genres: </span> 
+                        <span className='fireText'>genres: </span>
                         {endeavor.genres}
                     </p>
                     <FireButton />
                     <p>
-                        <span className='fireText'>comments: </span> 
+                        <span className='fireText'>comments: </span>
                         {endeavor.comments}
                     </p>
 
                 </div>
             ))}
-            
+
         </div>
     )
 }

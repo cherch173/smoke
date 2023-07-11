@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
-  return (
+    return (
 
         <div className="nav">
             <ul className="navLine">
@@ -18,6 +18,7 @@ const Nav = () => {
             </ul>
         </div>
 
-)}
+    )
+}
 
 export default Nav
