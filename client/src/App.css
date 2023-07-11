@@ -90,11 +90,25 @@ h5 {
 }
 
 .flameImg {
+  max-width: 6min;
+  max-height: 8vmin;
+  margin: 2vmin;
+  border-radius: 30%;
+}
+.coolImg {
   max-width: 5vmin;
   max-height: 5vmin;
+  margin: 2vmin;
+  border-radius: 30%;
 }
 
 .flameImg:hover {
+  transform: scale(105%);
+  transition: ease-in 142ms;
+  opacity: 86%;
+  cursor: pointer;
+}
+.coolImg:hover {
   transform: scale(105%);
   transition: ease-in 142ms;
   opacity: 86%;

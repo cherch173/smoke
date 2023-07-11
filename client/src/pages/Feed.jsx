@@ -17,8 +17,8 @@ const Feed = () => {
     }, [])
     return (
         <div className="grid col=4">
-            {endeavors.map((endeavor) => (
-                <div className="card" key={GetEndeavors.id}>
+            {endeavors.map((endeavor, idx) => (
+                <div className="card" key={idx}>
                     <h4>{endeavor.name}</h4>
                     <p>
                         <span className='fireText'>website: </span> 
