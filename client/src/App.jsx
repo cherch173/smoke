@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
+import NewForm from './components/NewForm'
 
 import './App.css'
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/endeavors' element={<Feed />} />
           <Route path='/endeavors/:id' element={<Details />} />
+          <Route path='new' element={<NewForm />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>

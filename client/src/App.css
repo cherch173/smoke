@@ -62,6 +62,14 @@ p {
   max-width: 420px;
 }
 
+input {
+  margin: 1vmin;
+}
+
+label {
+  margin: 1vmin;
+}
+
 .card {
   padding: 1.5vmin;
   background-color: rgb(62, 62, 62);
