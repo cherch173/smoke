@@ -23,9 +23,9 @@ app.use('/genres', GenreRouter)
 app.use('/comments', CommentRouter)
 app.use('/users', AuthRouter)
 
-// app.use('/', (req, res) => {
-//   res.send(`Connected to le Backend, friend!`)
-// })
+app.use('/', (req, res) => {
+  res.send(`Connected to le Backend, friend!`)
+})
 
 app.listen(PORT, () => {
   console.log(`Running Express server on Port ${PORT} . . .`)
