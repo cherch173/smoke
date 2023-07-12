@@ -183,6 +183,9 @@ This model will have full CRUD capabilities.
 - **WEDNESDAY 07.12.2023**
     - [X] Confirm ADD NEW Endeavor Form sends to Backend
     - [X] Successfully ADD NEW Endeavor
+    - [X] Add a FOOTER
+    - [X] Add CONTACT (mailto:) to FOOTER
+    - [X] Build GetYear Functionality for Copyright
     - [] Build ADD NEW COMMENT
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Make sure a USER can only LIKE a POST ONCE
