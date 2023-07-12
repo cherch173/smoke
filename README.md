@@ -185,6 +185,7 @@ This model will have full CRUD capabilities.
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Build ADD NEW COMMENT
     - [] Make sure a USER can only LIKE a POST ONCE
+    - [] Ensure that LIKE COUNT SAVES
     - [] UPDATE / DELETE for USER (M V C)
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] MVP

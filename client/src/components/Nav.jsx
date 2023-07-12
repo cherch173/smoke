@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Nav = ({ user, handleLogOut }) => {
     let userOptions
     if (user) {

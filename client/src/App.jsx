@@ -30,7 +30,6 @@ function App() {
     localStorage.clear()
   }
 
-
   return (
     <div>
       <header>
