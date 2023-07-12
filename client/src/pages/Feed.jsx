@@ -32,7 +32,7 @@ const Feed = ({user}) => {
                     </p>
                     <p>
                         <span className='fireText'>website: </span>
-                        <a className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
+                        <a target="_blank" className="endeavorLink" href={endeavor.website}>{endeavor.website}</a>
                     </p>
                     <p>
                         <span className='fireText'>genre: </span>
