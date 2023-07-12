@@ -16,6 +16,12 @@ router.put(
     middleware.verifyToken,
     controller.UpdateEndeavor
 )
+router.put(
+    '/:endeavor_id/:user_id',
+    middleware.stripToken,
+    middleware.verifyToken,
+    controller.addLike
+)
 
 router.delete(
     '/:endeavor_id',

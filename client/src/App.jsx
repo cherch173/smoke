@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
+import Comment from './components/Comment'
 import NewForm from './components/NewForm'
 import Register from './pages/Register'
 import SignIn from './pages/SignIn'
@@ -52,7 +53,7 @@ function App() {
           <Route path='/endeavors/:id' element={<Details user={user} />} />
           <Route path='new' element={<NewForm user={user} />} />
           <Route path="/about" element={<About />} />
-        </Routes>
+        </Routes> 
         <br />
         <footer className="footer">
           © {getYear()} Cherch, all rights reserved

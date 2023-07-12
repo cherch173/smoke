@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { GetEndeavor } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 
-const EndeavorDetails = () => {
+const EndeavorDetails = ({user}) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -24,7 +24,7 @@ const EndeavorDetails = () => {
       <div className='detail-header'>
         <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
         <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
-        <FireButton />
+        <FireButton endeavor={endeavor} user={user}/>
         <p>
           <span className='fireText'>
             genre:
@@ -49,8 +49,10 @@ const EndeavorDetails = () => {
           </span>
           {!!endeavor.comments && endeavor.comments.comment}
         </p>
+        <br />
+        <br />
       </div>
-      <Link to={`${"/endeavors"}`}><button className="button">Back</button></Link>
+      <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
 
     </div>
   )

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { GetEndeavors } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
+import Comment from '../components/Comment'
 import { Link } from 'react-router-dom'
 
 const Feed = ({user}) => {
@@ -38,11 +39,13 @@ const Feed = ({user}) => {
                         <span className='fireText'>genre: </span>
                         {!!endeavor.genres && endeavor.genres.genre}
                     </p>
-                    <FireButton />
-                    <p>
+                    <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user}/>
                         <span className='fireText'>comments: </span>
+                    
+                    <Comment />
+                    {/* <p>
                         {!!endeavor.comments && endeavor.comments.comment}
-                    </p>
+                    </p> */}
                 </div>
             ))}
         </div>

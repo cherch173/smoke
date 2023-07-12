@@ -9,7 +9,7 @@ const Nav = ({ user, handleLogOut }) => {
             <nav>
                 <h6>welcome
                     <span className='fireText'>
-                    {user.email}
+                    {user.name}
                     </span> 
                 </h6>
                 <Link to="/endeavors">MAIN FEED</Link>

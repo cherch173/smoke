@@ -9,9 +9,9 @@ const getEndeavors = async (req, res) => {
     }
 }
 
-const getEndeavorById = async (req,res) => {
+const getEndeavorById = async (req, res) => {
     try {
-        const endeavor = await Endeavor.findById(req.params.id).populate('genres')
+        const endeavor = await Endeavor.findById(req.params.id).populate('genres', 'comments')
         res.send(endeavor)
     } catch (error) {
         throw (error)
@@ -48,12 +48,20 @@ const DeleteEndeavor = async (req, res) => {
 
 }
 
-// Add fireButton Create
-// note: in both delete and like, first find the endeavor by Id
-// then utilize dot notation to push new data and then save() the endeavor
-// once its pushed. same for delete just remove as opposed to save.
-
-
+const addLike = async (req, res) => {
+    try {
+        const endeavor = await Endeavor.findById(req.params.endeavor_id)
+        // if (!endeavor.fireButton) {
+        //     endeavor.fireButton = []
+        // }
+        endeavor.fireButton.push(req.params.user_id)
+        console.log(endeavor)
+        await endeavor.save()
+        res.status(201).send({ msg: 'you liked this endeavor', status: 'liked', endeavor })
+    } catch (error) {
+        throw error
+    }
+}
 
 // Add firebutton Delete
 
@@ -62,5 +70,6 @@ module.exports = {
     CreateEndeavor,
     UpdateEndeavor,
     DeleteEndeavor,
-    getEndeavorById
+    getEndeavorById,
+    addLike
 }

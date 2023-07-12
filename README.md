@@ -186,10 +186,12 @@ This model will have full CRUD capabilities.
     - [X] Add a FOOTER
     - [X] Add CONTACT (mailto:) to FOOTER
     - [X] Build GetYear Functionality for Copyright
+    - [X] Create Comment.jsx
+    - [X] Route Comment.jsx into FEED (Endeavor)
+    - [] Ensure that LIKE COUNT SAVES
+    - [] Make sure a USER can only LIKE a POST ONCE
     - [] Build ADD NEW COMMENT
     - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
-    - [] Make sure a USER can only LIKE a POST ONCE
-    - [] Ensure that LIKE COUNT SAVES
     - [] UPDATE / DELETE for USER (M V C)
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] MVP
