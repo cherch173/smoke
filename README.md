@@ -170,15 +170,20 @@ This model will have full CRUD capabilities.
     - [X] DETAIL FUNCTIONALITY for ENDEAVOR -- i.e. EndeavorDetails
     - [X] Get GENRE Data to link with ENDEAVOR DATA in FEED
     - [X] Build ADD NEW ENDEAVOR Form
-    - [] Confirm ADD NEW ENDEAVOR Form sends to Backend
-    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
-    - [] Test USER UPDATE / DELETE with Insomnia
-    - [] UPDATE / DELETE for USER (M V C)
-    - [] Build ADD NEW COMMENT
+    - [X] Build out REGISTER Page and add to App.jsx
+    - [X] Build out the SIGN IN Page and add to App.jsx
+    - [X] Confirm SIGN IN works with the only USER created on backend 
+    - [] Store the JWT 
+    - [] 
+    - [] 
     - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
     - [] Conditional Rendering for LOGGED IN vs LOGGED OUT
+    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
+    - [] UPDATE / DELETE for USER (M V C)
+    - [] Test USER UPDATE / DELETE with Insomnia
+    - [] Confirm ADD NEW ENDEAVOR Form sends to Backend
+    - [] Build ADD NEW COMMENT
     - [] Make sure a USER can only LIKE a POST ONCE
-    - []
     - []
     - []
     - []
