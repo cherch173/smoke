@@ -106,7 +106,7 @@ h5 {
   text-shadow: -.5px .5px black;
 }
 
-h6{
+h6 {
   font-size: 2vmin;
   text-shadow: -.5px .5px black;
 
@@ -121,6 +121,12 @@ h6{
 
 .textGeneral {
   font-size: 2.5vmin;
+}
+
+.headerText {
+  color: blanchedalmond;
+  text-shadow: -.5px .5px black;
+  margin: .5vmin;
 }
 
 .flameImg {
@@ -161,13 +167,13 @@ h6{
   border-radius: 5px;
   width: fit-content;
   background-color: whitesmoke;
-  color: rgb(165, 107, 0);
+  color: rgb(143, 93, 0);
   border: 1px solid rgb(165, 107, 0);
   font-size: 2.5vmin;
 }
 
 .button:hover {
-  transform: scale(105%);
+  transform: scale(102%);
   transition: ease-in 142ms;
   background-color: blanchedalmond;
   color: black;

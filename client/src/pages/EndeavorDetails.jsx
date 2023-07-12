@@ -23,7 +23,7 @@ const EndeavorDetails = () => {
     <div className='detail'>
       <div className='detail-header'>
         <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
-        <h4>{!!endeavor.name && endeavor.name}</h4>
+        <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
         <FireButton />
         <p>
           <span className='fireText'>
