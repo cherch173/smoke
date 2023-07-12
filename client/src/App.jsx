@@ -53,7 +53,11 @@ function App() {
           <Route path='new' element={<NewForm user={user} />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <footer>© {getYear()} Cherch, all rights reserved.</footer>
+        <br />
+        <footer className="footer">
+          © {getYear()} Cherch, all rights reserved
+          <a className="footerLink" target="_blank" href="mailto:cherchofficial@gmail.com">CONTACT</a>
+        </footer>
       </main>
 
     </div>

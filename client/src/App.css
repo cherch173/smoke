@@ -178,3 +178,16 @@ h6 {
   background-color: blanchedalmond;
   color: black;
 }
+
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+.footerLink {
+  font-size: 2vmin;
+}
