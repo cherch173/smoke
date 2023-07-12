@@ -6,6 +6,8 @@ import About from './pages/About'
 import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
 import NewForm from './components/NewForm'
+import Register from './pages/Register'
+import SignIn from './pages/SignIn'
 import './App.css'
 import { CheckSession } from './services/Auth'
 
@@ -21,6 +23,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<SignIn setUser={setUser}/>} />
+          <Route path="/register" element={<Register />} />
           <Route path='/endeavors' element={<Feed />} />
           <Route path='/endeavors/:id' element={<Details />} />
           <Route path='new' element={<NewForm />} />
