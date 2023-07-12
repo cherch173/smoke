@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
 import { Link } from 'react-router-dom'
 
-const Feed = () => {
+const Feed = ({user}) => {
     let navigate = useNavigate()
     const [endeavors, setEndeavors] = useState([])
 
@@ -17,7 +17,7 @@ const Feed = () => {
         handleEndeavors()
     }, [])
 
-    return (
+    return user ? (
         <div className="grid col=4">
             <h4 className='fireText'>SMOKE</h4>
             {endeavors.map((endeavor, idx) => (
@@ -45,8 +45,12 @@ const Feed = () => {
                     </p>
                 </div>
             ))}
-
         </div>
+    ) : (
+        <div className="protected">
+      <h5>Sorry, in order to view this page you must be signed in.</h5>
+      <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+    </div>
     )
 }
 

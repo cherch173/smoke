@@ -24,10 +24,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn setUser={setUser}/>} />
-          <Route path="/register" element={<Register />} />
-          <Route path='/endeavors' element={<Feed />} />
-          <Route path='/endeavors/:id' element={<Details />} />
-          <Route path='new' element={<NewForm />} />
+          <Route path="/register" element={<Register user={user}/>} />
+          <Route path='/endeavors' element={<Feed user={user}/>} />
+          <Route path='/endeavors/:id' element={<Details user={user} />} />
+          <Route path='new' element={<NewForm user={user}/>} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
