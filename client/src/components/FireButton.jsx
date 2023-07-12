@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function FireButton({ endeavorId, user, endeavor }) {
-    // const [fireState, setFireState] = useState()
+    const [fireState, setFireState] = useState()
     const [totalLikes, setTotalLikes] = useState(0);
 
     let navigate = useNavigate()
