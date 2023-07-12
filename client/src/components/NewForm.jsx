@@ -10,7 +10,7 @@ const NewForm = ({ getEndeavors }) => {
     image: '',
     website: '',
     description: '',
-    genre: '',
+    genres: '',
   }
 
   const [formState, setFormState] = useState(initialState)
@@ -49,8 +49,8 @@ const NewForm = ({ getEndeavors }) => {
         <textarea type="textarea" id="description" className="descriptionText" onChange={handleChange} value={formState.description} />
         <br />
         <br />
-        <label htmlFor="genre" className="fireText">genre:</label>
-        <select id="genre" onChange={handleChange} value={formState.genre}>
+        <label htmlFor="genres" className="fireText">genres:</label>
+        <select id="genres" onChange={handleChange} value={formState.genres}>
           <option value="Animation">Animation</option>
           <option value="Art">Art</option>
           <option value="App">App</option>
