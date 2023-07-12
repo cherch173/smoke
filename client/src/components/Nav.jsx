@@ -1,25 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Nav = () => {
+const Nav = ({ user, handleLogOut }) => {
+    let userOptions
+    if (user) {
+        userOptions = (
+            <nav>
+                <Link to="/endeavors">MAIN FEED</Link>
+                <Link to="/new">ADD NEW</Link>
+                <Link to="/about">ABOUT</Link>
+                <Link onClick={handleLogOut} to="/">LOG OUT</Link>
+            </nav>
+        )
+    }
+
+    const publicOptions = (
+        <nav className="navLine">
+            <Link to="/">HOME</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/register">REGISTER</Link>
+            <Link to="/signin">LOG IN</Link>
+        </nav>
+    )
     return (
 
-        <div className="nav">
-            <ul className="navLine">
-                <li className="navLink">
-                    <Link to="/">HOME</Link>
-                </li>
-                <li className="navLink">
-                    <Link to="/endeavors">FEED</Link>
-                </li>
-                <li className="navLink">
-                    <Link to="/new">ADD NEW</Link>
-                </li>
-                <li className="navLink">
-                    <Link to="/about">ABOUT</Link>
-                </li>
-            </ul>
-        </div>
+        <header>
+            {user ? userOptions : publicOptions}
+        </header>
 
     )
 }

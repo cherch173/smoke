@@ -13,7 +13,7 @@ const Register = () => {
 
     let navigate = useNavigate()
     const handleChange = (e) => {
-        setFormValues({...formValues, [e.target.name]: e.target.value })
+        setFormValues({ ...formValues, [e.target.name]: e.target.value })
     }
 
     const handleSubmit = async (e) => {
@@ -34,10 +34,11 @@ const Register = () => {
 
     return (
         <div className="signin col">
+            <h4>Register</h4>
             <div className="card-overlay centered">
                 <form className="col" onSubmit={handleSubmit}>
                     <div className="input-wrapper">
-                        <label htmlFor="name">Name</label>
+                        <label className="fireText" htmlFor="name">Name: </label>
                         <input
                             onChange={handleChange}
                             name="name"
@@ -48,7 +49,7 @@ const Register = () => {
                         />
                     </div>
                     <div className="input-wrapper">
-                        <label htmlFor="email">Email</label>
+                        <label className="fireText" htmlFor="email">Email: </label>
                         <input
                             onChange={handleChange}
                             name="email"
@@ -60,7 +61,7 @@ const Register = () => {
                     </div>
 
                     <div className="input-wrapper">
-                        <label htmlFor="password">Password</label>
+                        <label className="fireText" htmlFor="password">Password: </label>
                         <input
                             onChange={handleChange}
                             type="password"
@@ -70,7 +71,7 @@ const Register = () => {
                         />
                     </div>
                     <div className="input-wrapper">
-                        <label htmlFor="confirmPassword">Confirm Password</label>
+                        <label className="fireText" htmlFor="confirmPassword">Confirm Password: </label>
                         <input
                             onChange={handleChange}
                             type="password"
@@ -79,14 +80,15 @@ const Register = () => {
                             required
                         />
                     </div>
-                    <button
+                    <br />
+                    <button className="button"
                         disabled={
                             !formValues.email ||
                             (!formValues.password &&
                                 formValues.confirmPassword === formValues.password)
                         }
                     >
-                        Sign In
+                        REGISTER
                     </button>
                 </form>
             </div>

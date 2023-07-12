@@ -13,11 +13,31 @@ import { CheckSession } from './services/Auth'
 
 function App() {
   const [user, setUser] = useState(null)
+  const checkToken = async () => {
+    const user = await CheckSession()
+    setUser(user)
+  }
+
+  useEffect(() => {
+    const token =localStorage.getItem('token')
+    if (token) {
+      checkToken()
+    }
+  }, [])
+
+  const handleLogOut = () => {
+    setUser(null)
+    localStorage.clear()
+  }
+
 
   return (
     <div>
       <header>
-        <Nav element={<Nav />} />
+        <Nav 
+        user={user}
+        handlLogOut={handleLogOut}
+        />
       </header>
       <br />
       <main>

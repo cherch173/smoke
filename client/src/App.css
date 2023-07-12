@@ -36,6 +36,13 @@ body {
   color: blanchedalmond;
 }
 
+.navImage {
+  max-width: 6min;
+  max-height: 8vmin;
+  margin: 2vmin;
+  border-radius: 30%;
+}
+
 
 a {
   color: white;

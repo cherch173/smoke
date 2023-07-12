@@ -173,30 +173,23 @@ This model will have full CRUD capabilities.
     - [X] Build out REGISTER Page and add to App.jsx
     - [X] Build out the SIGN IN Page and add to App.jsx
     - [X] Confirm SIGN IN works with the only USER created on backend 
-    - [] Store the JWT 
-    - [] 
-    - [] 
-    - [] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
-    - [] Conditional Rendering for LOGGED IN vs LOGGED OUT
-    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
-    - [] UPDATE / DELETE for USER (M V C)
-    - [] Test USER UPDATE / DELETE with Insomnia
+    - [X] Store the JWT 
+    - [X] AUTH LINKS to NAV like SIGN UP / LOGIN / LOGOUT
+    - [X] Confirm in MongoDB that NEW USERS can be CREATED 
+    - [X] Update App.jsx to handle LOG IN & LOG OUT 
+    - [X] Conditional Rendering for LOGGED IN vs LOGGED OUT in FEED
+    - [X] Conditional Rendering for LOGGED IN vs LOGGED OUT in NAV
+    - [] Confirm LOG OUT works
+- **WEDNESDAY 07.12.2023**
     - [] Confirm ADD NEW ENDEAVOR Form sends to Backend
+    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Build ADD NEW COMMENT
     - [] Make sure a USER can only LIKE a POST ONCE
-    - []
-    - []
-    - []
-    - []
-    - []
-- **WEDNESDAY 07.12.2023**
+    - [] UPDATE / DELETE for USER (M V C)
+    - [] Test USER UPDATE / DELETE with Insomnia
     - [] MVP
-    - []
-    - []
-    - []
-    - []
 - **THURSDAY 07.13.2023**
-    - []
+    - [] ADD CSS Styling
     - []
     - []
     - []
