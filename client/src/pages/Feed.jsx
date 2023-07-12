@@ -24,8 +24,8 @@ const Feed = ({user}) => {
                 <div className="card" key={idx}>
                     <Link to={`${endeavor._id}`}>
                         <h4>{endeavor.name}</h4>
-                    </Link>
                     <img src={endeavor.image} alt="endeavorImg" className="endeavorImage" />
+                    </Link>
                     <p>
                         <span className='fireText'>description: </span>
                         {endeavor.description}
