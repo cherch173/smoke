@@ -169,7 +169,7 @@ This model will have full CRUD capabilities.
 - **TUESDAY 07.11.2023**
     - [X] DETAIL FUNCTIONALITY for ENDEAVOR -- i.e. EndeavorDetails
     - [X] Get GENRE Data to link with ENDEAVOR DATA in FEED
-    - [X] Build ADD NEW ENDEAVOR Form
+    - [X] Build ADD NEW Endeavor Form
     - [X] Build out REGISTER Page and add to App.jsx
     - [X] Build out the SIGN IN Page and add to App.jsx
     - [X] Confirm SIGN IN works with the only USER created on backend 
@@ -179,11 +179,12 @@ This model will have full CRUD capabilities.
     - [X] Update App.jsx to handle LOG IN & LOG OUT 
     - [X] Conditional Rendering for LOGGED IN vs LOGGED OUT in FEED
     - [X] Conditional Rendering for LOGGED IN vs LOGGED OUT in NAV
-    - [] Confirm LOG OUT works
+    - [X] Confirm LOG OUT works
 - **WEDNESDAY 07.12.2023**
-    - [] Confirm ADD NEW ENDEAVOR Form sends to Backend
-    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
+    - [X] Confirm ADD NEW Endeavor Form sends to Backend
+    - [X] Successfully ADD NEW Endeavor
     - [] Build ADD NEW COMMENT
+    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
     - [] Make sure a USER can only LIKE a POST ONCE
     - [] Ensure that LIKE COUNT SAVES
     - [] UPDATE / DELETE for USER (M V C)
@@ -191,7 +192,7 @@ This model will have full CRUD capabilities.
     - [] MVP
 - **THURSDAY 07.13.2023**
     - [] ADD CSS Styling
-    - []
+    - [] Debug
     - []
     - []
     - []

@@ -19,37 +19,43 @@ function App() {
   }
 
   useEffect(() => {
-    const token =localStorage.getItem('token')
+    const token = localStorage.getItem('token')
     if (token) {
       checkToken()
     }
   }, [])
 
   const handleLogOut = () => {
+    localStorage.removeItem('token')
     setUser(null)
-    localStorage.clear()
   }
+
+  const getYear =() => {
+    return new Date().getFullYear()
+}
 
   return (
     <div>
       <header>
-        <Nav 
-        user={user}
-        handlLogOut={handleLogOut}
+        <Nav
+          user={user}
+          handleLogOut={handleLogOut}
         />
       </header>
       <br />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signin" element={<SignIn setUser={setUser}/>} />
-          <Route path="/register" element={<Register user={user}/>} />
-          <Route path='/endeavors' element={<Feed user={user}/>} />
+          <Route path="/signin" element={<SignIn setUser={setUser} />} />
+          <Route path="/register" element={<Register user={user} />} />
+          <Route path='/endeavors' element={<Feed user={user} />} />
           <Route path='/endeavors/:id' element={<Details user={user} />} />
-          <Route path='new' element={<NewForm user={user}/>} />
+          <Route path='new' element={<NewForm user={user} />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <footer>© {getYear()} Cherch, all rights reserved.</footer>
       </main>
+
     </div>
   )
 }

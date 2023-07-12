@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import axios from 'axios'
+import Client from '../services/api'
+import { useNavigate } from 'react-router-dom'
 
 
 const NewForm = ({getEndeavors}) => {
@@ -15,12 +16,14 @@ const NewForm = ({getEndeavors}) => {
 
     const [formState, setFormState] = useState(initialState)
 
+    const navigate = useNavigate()
+
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await axios.post('http://localhost:3001/endeavors', formState)
+        await Client.post('/endeavors', formState)
         console.log(formState)
         setFormState(initialState)
-        getEndeavors()
+        navigate('/endeavors')
     }
 
     const handleChange = (e) => {
