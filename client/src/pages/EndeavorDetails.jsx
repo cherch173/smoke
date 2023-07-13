@@ -25,7 +25,6 @@ const EndeavorDetails = ({ user }) => {
       <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
       <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
       <div className='card'>
-        <FireButton endeavor={endeavor} user={user} />
         <p>
           <span className='fireText'>
             genre:
@@ -44,12 +43,9 @@ const EndeavorDetails = ({ user }) => {
           </span>
           <a target="_blank" href={endeavor.website}>{endeavor.website}</a>
         </p>
-        <p>
-          <span className='fireText'>
-            comments:
-          </span>
-          <Comment />
-        </p>
+        <FireButton endeavor={endeavor} user={user} />
+        <br />
+        <Comment />
         <br />
         <br />
       </div>
