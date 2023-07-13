@@ -3,28 +3,35 @@ import Client from "../services/api";
 import { useNavigate } from "react-router-dom";
 
 
-function FireButton({ endeavorId, user, endeavor }) {
+function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
     const [fireState, setFireState] = useState()
     const [totalLikes, setTotalLikes] = useState(0);
 
     let navigate = useNavigate()
 
     const addLikes = async (e) => {
-        setTotalLikes(totalLikes + 1);
-        await Client.put(`/endeavors/${endeavorId}/${user.id}`)
-        // setFireState()
-        navigate('/endeavors')
+        e.preventDefault()
+        const stringified = endeavor.fireButton.map(id => id.toString())
+        console.log(stringified.includes(user.id.toString()))
+        if (!stringified.includes(user.id.toString())) {
+            await Client.put(`/endeavors/${endeavorId}/${user.id}`)
+            handleEndeavors()
+            navigate('/endeavors')
+        }
+        // setTotalLikes(totalLikes + 1);
 
     }
-    const disLikes = () => {
-        if (totalLikes > 0) {
-            setTotalLikes(totalLikes - 1)
+    const disLikes = async (e) => {
+        e.preventDefault()
+        const stringified = endeavor.fireButton.map(id => id.toString())
+        console.log(stringified.includes(user.id.toString()))
+        if (stringified.includes(user.id.toString())) {
+            await Client.put(`/endeavors/${endeavorId}/${user.id}/dislike`)
+            handleEndeavors()
+            navigate('/endeavors')
         }
     }
 
-    // const handleChange = (e) => {
-    //     setFireState({ ...fireState, [e.target.id]: e.target.value })
-    // }
 
     return (
         <div>

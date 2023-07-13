@@ -37,7 +37,7 @@ const endeavorSchema = new Schema(
         fireButton: [{
             type: Schema.Types.ObjectId,
             ref: 'User',
-            unique: true
+            // unique: true
         }],
         comments: {
             type: Schema.Types.ObjectId,

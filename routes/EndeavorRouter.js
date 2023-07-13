@@ -22,6 +22,12 @@ router.put(
     middleware.verifyToken,
     controller.addLike
 )
+router.put(
+    '/:endeavor_id/:user_id/dislike',
+    middleware.stripToken,
+    middleware.verifyToken,
+    controller.disLike
+)
 
 router.delete(
     '/:endeavor_id',

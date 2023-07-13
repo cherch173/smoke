@@ -51,9 +51,7 @@ const DeleteEndeavor = async (req, res) => {
 const addLike = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.endeavor_id)
-        // if (!endeavor.fireButton) {
-        //     endeavor.fireButton = []
-        // }
+
         endeavor.fireButton.push(req.params.user_id)
         console.log(endeavor)
         await endeavor.save()
@@ -63,7 +61,18 @@ const addLike = async (req, res) => {
     }
 }
 
-// Add firebutton Delete
+const disLike = async (req, res) => {
+    try {
+        const endeavor = await Endeavor.findById(req.params.endeavor_id)
+        endeavor.fireButton.splice(endeavor.fireButton.indexOf(req.params.user_id), 1)
+        console.log(endeavor)
+        await endeavor.save()
+        res.status(201).send({ msg: 'you downvoted this endeavor', status: 'disliked', endeavor })
+    } catch (error) {
+        throw error
+    }
+}
+
 
 module.exports = {
     getEndeavors,
@@ -71,5 +80,6 @@ module.exports = {
     UpdateEndeavor,
     DeleteEndeavor,
     getEndeavorById,
-    addLike
+    addLike,
+    disLike
 }

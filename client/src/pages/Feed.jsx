@@ -11,12 +11,13 @@ const Feed = ({user}) => {
     const [endeavors, setEndeavors] = useState([])
 
     useEffect(() => {
-        const handleEndeavors = async () => {
-            const data = await GetEndeavors()
-            setEndeavors(data)
-        }
         handleEndeavors()
     }, [])
+
+    const handleEndeavors = async () => {
+        const data = await GetEndeavors()
+        setEndeavors(data)
+    }
 
     return user ? (
         <div className="grid col=4">
@@ -39,7 +40,7 @@ const Feed = ({user}) => {
                         <span className='fireText'>genre: </span>
                         {!!endeavor.genres && endeavor.genres}
                     </p>
-                    <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user}/>
+                    <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors}/>
                         <span className='fireText'>comments: </span>
                     
                     <Comment />
