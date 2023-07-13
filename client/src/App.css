@@ -70,6 +70,7 @@ label {
   margin: 1vmin;
 }
 
+
 .card {
   padding: 3vmin;
   background-color: rgb(62, 62, 62);
@@ -84,15 +85,36 @@ label {
 }
 
 .card:hover {
-  background-color: rgb(89, 89, 89);
-  transform: scale(100.17%);
+  background-color: rgb(73, 73, 73);
+  /* transform: scale(100.17%); */
   transition: ease-in 142ms;
 }
+.socialCard {
+  padding: 3vmin;
+  /* background-color: rgb(62, 62, 62); */
+  /* border: 1px solid orange; */
+  margin: 2.5vmin;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-overflow: wrap;
+  text-shadow: -.25px .25px black;
+
+}
+
+.socialCard:hover {
+  color: rgb(255, 215, 165);
+}
+
+/* .socialCard:hover {
+  transition: ease-in 142ms;
+} */
 
 .fireText {
   color: orange;
   text-shadow: -.5px .5px black;
-  margin: .5vmin;
+  margin: .42vmin;
 }
 
 h4 {
@@ -133,7 +155,6 @@ p {
   font-size: 2.5vmin;
 }
 
-
 .flameImg {
   max-width: 6min;
   max-height: 8vmin;
@@ -170,6 +191,12 @@ p {
   box-shadow: 0 0 -.25px .25px whitesmoke, 0 0 -.5px .5px black;
 }
 
+.fireButtonContainer {
+  /* background-color: rgb(46, 46, 46); */
+  border-radius: 5px;
+  padding: .25vmin;
+}
+
 .commentTable {
   text-align: center;
   display: grid;
@@ -177,7 +204,6 @@ p {
   grid-template-columns: repeat(3, 10vmin);
   position: relative;
 }
-
 
 tr {
   width: fit-content;
@@ -203,7 +229,6 @@ td {
   border-radius: 5px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 
 .button {
   border-radius: 5px;

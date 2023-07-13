@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Client from "../services/api";
 
-const Comment = ({ handleEndeavors, endeavor, user }) => {
+const Comment = ({ handleEndeavors, endeavor, user, endeavorId, userId }) => {
     const initialState = {
         comment: 'add a comment here'
     }
@@ -25,41 +25,39 @@ const Comment = ({ handleEndeavors, endeavor, user }) => {
 
     return (
         <div>
-            <wrapper>
-                <table className="commentTable">
-                    <thead className="commentHeader">
-                        <tr>
-                            <th>DATE</th>
-                            <th>USER</th>
-                            <th>COMMENT</th>
-                        </tr>
-                    </thead>
+            <table className="commentTable">
+                <thead className="commentHeader">
+                    <tr>
+                        <th>DATE</th>
+                        <th>USER</th>
+                        <th>COMMENT</th>
+                    </tr>
+                </thead>
 
-                    <tbody className="commentBody">
-                        <tr>
-                            <td>{endeavor.comments && endeavor.comments.date}</td>
-                            <td>{endeavor.comments && endeavor.comments.user}</td>
-                            <td>{endeavor.comments && endeavor.comments.comment}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <tbody className="commentBody">
+                    <tr>
+                        <td>{endeavor.comments && endeavor.comments.date}</td>
+                        <td>{endeavor.comments}</td>
+                        <td>{endeavor.comments}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <form onSubmit={handleSubmit}>
+                <textarea
+                    className="newComment"
+                    name="comment"
+                    id="comment"
+                    cols="25"
+                    rows="5"
+                    onChange={handleChange}
+                    value={commentState.comment}
+                >
+                </textarea>
                 <br />
-                <form onSubmit={handleSubmit}>
-                    <textarea
-                        className="newComment"
-                        name="comment"
-                        id="comment"
-                        cols="25"
-                        rows="5"
-                        onChange={handleChange}
-                        value={commentState.comment}
-                    >
-                    </textarea>
-                    <br />
-                    <br />
-                    <button className="button" type="submit">add comment</button>
-                </form>
-            </wrapper>
+                <br />
+                <button className="button" type="submit">add comment</button>
+            </form>
         </div>
     )
 }

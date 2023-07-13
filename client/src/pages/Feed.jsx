@@ -47,9 +47,11 @@ const Feed = ({ user }) => {
                             <span className='fireText'>genre: </span>
                             {!!endeavor.genres && endeavor.genres}
                         </p>
-                        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                        <br />
-                        <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        <div className="socialCard">
+                            <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                            <br />
+                            <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        </div>
                     </div>
                 ))}
             </div>
