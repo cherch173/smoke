@@ -71,7 +71,7 @@ label {
 }
 
 .card {
-  padding: 1.5vmin;
+  padding: 3vmin;
   background-color: rgb(62, 62, 62);
   border: 2px solid blanchedalmond;
   margin: 4.2vmin;
@@ -113,7 +113,7 @@ h6 {
 .headerText {
   color: blanchedalmond;
   text-shadow: -.5px .5px black;
-  margin: .5vmin;
+  font-size: 3vmin;
 }
 
 .subHeaderText {
@@ -125,6 +125,7 @@ h6 {
 
 p {
   max-width: 400px;
+  text-align: center;
 }
 
 .textGeneral {

@@ -32,7 +32,7 @@ const Feed = ({ user }) => {
                 {endeavors.map((endeavor, idx) => (
                     <div className="card" key={idx}>
                         <Link to={`${endeavor._id}`}>
-                            <h4>{endeavor.name}</h4>
+                            <h4 className="headerText">{endeavor.name}</h4>
                             <img src={endeavor.image} alt="endeavorImg" className="endeavorImage" />
                         </Link>
                         <p>
@@ -48,7 +48,6 @@ const Feed = ({ user }) => {
                             {!!endeavor.genres && endeavor.genres}
                         </p>
                         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                        {/* <span className='fireText'>comments: </span> */}
                         <br />
                         <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                     </div>
