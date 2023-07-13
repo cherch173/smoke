@@ -6,7 +6,7 @@ import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 import { Link } from 'react-router-dom'
 
-const Feed = ({user}) => {
+const Feed = ({ user }) => {
     let navigate = useNavigate()
     const [endeavors, setEndeavors] = useState([])
 
@@ -26,7 +26,7 @@ const Feed = ({user}) => {
                 <div className="card" key={idx}>
                     <Link to={`${endeavor._id}`}>
                         <h4>{endeavor.name}</h4>
-                    <img src={endeavor.image} alt="endeavorImg" className="endeavorImage" />
+                        <img src={endeavor.image} alt="endeavorImg" className="endeavorImage" />
                     </Link>
                     <p>
                         <span className='fireText'>description: </span>
@@ -40,21 +40,17 @@ const Feed = ({user}) => {
                         <span className='fireText'>genre: </span>
                         {!!endeavor.genres && endeavor.genres}
                     </p>
-                    <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors}/>
-                        <span className='fireText'>comments: </span>
-                    
-                    <Comment />
-                    {/* <p>
-                        {!!endeavor.comments && endeavor.comments.comment}
-                    </p> */}
+                    <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                    <span className='fireText'>comments: </span>
+                    <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                 </div>
             ))}
         </div>
     ) : (
         <div className="protected">
-      <h5>Sorry, in order to view this page you must be signed in.</h5>
-      <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
-    </div>
+            <h5>Sorry, in order to view this page you must be signed in.</h5>
+            <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+        </div>
     )
 }
 

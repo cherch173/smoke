@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { GetEndeavor } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
+import Comment from '../components/Comment'
 
 const EndeavorDetails = ({user}) => {
   let { id } = useParams()
@@ -29,7 +30,7 @@ const EndeavorDetails = ({user}) => {
           <span className='fireText'>
             genre:
           </span>
-          {!!endeavor.genres && endeavor.genres.genre}
+          {!!endeavor.genres && endeavor.genres}
         </p>
         <p>
           <span className='fireText'>
@@ -47,7 +48,7 @@ const EndeavorDetails = ({user}) => {
           <span className='fireText'>
             comments:
           </span>
-          {!!endeavor.comments && endeavor.comments.comment}
+          <Comment />
         </p>
         <br />
         <br />

@@ -7,10 +7,13 @@ const Nav = ({ user, handleLogOut }) => {
     if (user) {
         userOptions = (
             <nav>
-                <h6>welcome
+                <h6>
                     <span className='fireText'>
                     {user.name}
-                    </span> 
+                    </span> is currently
+                        logged in.
+                    <span className="fireText">
+                    </span>
                 </h6>
                 <Link to="/endeavors">MAIN FEED</Link>
                 <Link to="/new">ADD NEW</Link>

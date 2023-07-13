@@ -19,7 +19,6 @@ const getEndeavorById = async (req, res) => {
 }
 
 const CreateEndeavor = async (req, res) => {
-    // console.log(req.body)
     try {
         const endeavor = await Endeavor.create(req.body)
         console.log(endeavor)
@@ -45,15 +44,13 @@ const DeleteEndeavor = async (req, res) => {
     } catch (error) {
         throw error
     }
-
 }
 
 const addLike = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.endeavor_id)
-
         endeavor.fireButton.push(req.params.user_id)
-        console.log(endeavor)
+        // console.log(endeavor)
         await endeavor.save()
         res.status(201).send({ msg: 'you liked this endeavor', status: 'liked', endeavor })
     } catch (error) {

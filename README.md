@@ -190,17 +190,21 @@ This model will have full CRUD capabilities.
     - [X] Route Comment.jsx into FEED (Endeavor)
     - [X] Refactor GENRES into Endeavor Schema
     - [X] Ensure that LIKE COUNT SAVES
-    - [] Make sure a USER can only LIKE a POST ONCE
-    - [] Build ADD NEW COMMENT
-    - [] Get COMMENT Data to link with ENDEAVOR DATA in FEED
+    - [X] Make sure a USER can only LIKE a POST ONCE
+    - [X] Get COMMENT Data to link with ENDEAVOR DATA in FEED
 - **THURSDAY 07.13.2023**
+    - [] Build ADD COMMENT Backend Functionality
+    - [] Construct the ADD COMMENT FORM inside the COMMENT TABLE
+    - [] Confirm STATE updates of NEW COMMENT
+    - [] Confirm COMMENT Data being sent to MongoDB
+    - [] Connect ADD COMMENT Backend to Frontend
+    - [] Finish COMMENT Frontend Design
     - [] UPDATE / DELETE for ENDEAVOR 
     - [] UPDATE / DELETE for USER (M V C)
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] MVP
     - [] ADD CSS Styling
     - [] Debug
-    - []
 - **FRIDAY 07.14.2023**
     - []
     - []

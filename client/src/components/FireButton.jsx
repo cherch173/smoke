@@ -18,8 +18,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
             handleEndeavors()
             navigate('/endeavors')
         }
-        // setTotalLikes(totalLikes + 1);
-
     }
     const disLikes = async (e) => {
         e.preventDefault()
@@ -31,7 +29,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
             navigate('/endeavors')
         }
     }
-
 
     return (
         <div>
