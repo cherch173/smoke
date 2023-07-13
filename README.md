@@ -194,8 +194,8 @@ This model will have full CRUD capabilities.
 - **THURSDAY 07.13.2023**
     - [X] Construct the ADD COMMENT FORM inside the COMMENT TABLE
     - [X] Confirm STATE updates of NEW COMMENT
-    - [] Build ADD COMMENT Backend Functionality
-    - [] Confirm COMMENT Data being sent to MongoDB
+    - [X] Build ADD COMMENT Backend Functionality
+    - [X] Confirm COMMENT Data being sent to MongoDB
     - [] Connect ADD COMMENT Backend to Frontend
     - [] Finish COMMENT Frontend Design
     - [] Add destaurated buttons for FireButton CoolButton 

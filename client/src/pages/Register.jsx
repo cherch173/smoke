@@ -88,7 +88,7 @@ const Register = () => {
                                 formValues.confirmPassword === formValues.password)
                         }
                     >
-                        REGISTER
+                        register
                     </button>
                 </form>
             </div>

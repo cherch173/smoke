@@ -6,7 +6,7 @@ import { GetEndeavor } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 
-const EndeavorDetails = ({ user }) => {
+const EndeavorDetails = ({ user, handleEndeavors }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -45,7 +45,7 @@ const EndeavorDetails = ({ user }) => {
         </p>
         <FireButton endeavor={endeavor} user={user} />
         <br />
-        <Comment />
+        <Comment user={user} endeavor={endeavor}/>
         <br />
         <br />
       </div>

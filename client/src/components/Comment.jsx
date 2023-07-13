@@ -1,10 +1,9 @@
 import { useState } from "react";
 import Client from "../services/api";
-import { Link } from "react-router-dom";
 
-const Comment = () => {
+const Comment = ({ handleEndeavors, endeavor, user }) => {
     const initialState = {
-        newComment: 'add a comment here'
+        comment: 'add a comment here'
     }
     const [commnentState, setCommentState] = useState(initialState)
 
@@ -12,6 +11,8 @@ const Comment = () => {
         e.preventDefault()
         await Client.post('/comments', commnentState)
         setCommentState(initialState)
+        handleEndeavors()
+
     }
 
     const handleChange = (e) => {
@@ -20,41 +21,41 @@ const Comment = () => {
 
     return (
         <div>
-            {/* <wrapper> */}
-            <table className="commentTable">
-                <thead className="commentHeader">
-                    <tr>
-                        <th>DATE</th>
-                        <th>USER</th>
-                        <th>COMMENT</th>
-                    </tr>
-                </thead>
+            <wrapper>
+                <table className="commentTable">
+                    <thead className="commentHeader">
+                        <tr>
+                            <th>DATE</th>
+                            <th>USER</th>
+                            <th>COMMENT</th>
+                        </tr>
+                    </thead>
 
-                <tbody className="commentBody">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br />
-            <form onSubmit={handleSubmit}>
-                <textarea
-                    className="newComment"
-                    name="newComment"
-                    id="newComment"
-                    cols="25"
-                    rows="5"
-                    onChange={handleChange}
-                    value={commnentState.newComment}
-                >
-                </textarea>
+                    <tbody className="commentBody">
+                        <tr>
+                            <td>{endeavor.comments && endeavor.comments.date}</td>
+                            <td>{endeavor.comments && endeavor.comments.user}</td>
+                            <td>{endeavor.comments && endeavor.comments.comment}</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <br />
-                <br />
-                <button className="button" type="submit">add comment</button>
-            </form>
-            {/* </wrapper> */}
+                <form onSubmit={handleSubmit}>
+                    <textarea
+                        className="newComment"
+                        name="comment"
+                        id="comment"
+                        cols="25"
+                        rows="5"
+                        onChange={handleChange}
+                        value={commnentState.comment}
+                    >
+                    </textarea>
+                    <br />
+                    <br />
+                    <button className="button" type="submit">add comment</button>
+                </form>
+            </wrapper>
         </div>
     )
 }

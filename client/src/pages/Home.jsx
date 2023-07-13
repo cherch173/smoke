@@ -10,13 +10,13 @@ const Home = () => {
       <br />
       <section className="welcome-signin">
         <button className="button" onClick={() => navigate('/signin')}>
-          Log In
+          log in
         </button>
       </section>
       <p>or</p>
       <section className="welcome-register">
         <button className="button" onClick={() => navigate('/register')}>
-          Register
+          register
         </button>
       </section>
     </div>
