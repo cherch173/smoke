@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import Client from "../services/api";
 import { GetComments } from "../services/EndeavorServices";
+import { GetEndeavors } from "../services/EndeavorServices";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Comment = ({ handleEndeavors, endeavors, user }) => {
+const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
     const initialState = {
-        comment: 'add a comment here'
+        comment: ''
     }
     const [commentState, setCommentState] = useState(initialState)
 
@@ -16,10 +17,11 @@ const Comment = ({ handleEndeavors, endeavors, user }) => {
         e.preventDefault()
         let updatedState = {
             ...commentState,
-            user: user.id
+            user: user.id,
+            comment: endeavor.comment
         }
         await Client.post('/comments', updatedState)
-        setCommentState(initialState)
+        setCommentState(updatedState)
         GetComments()
         handleEndeavors()
         navigate('/endeavors')
@@ -31,43 +33,29 @@ const Comment = ({ handleEndeavors, endeavors, user }) => {
 
     return (
         <div className="grid col=3">
-            {/* {endeavors.map(() => { */}
-
-                <table className="commentTable">
-                <thead className="commentHeader">
-                    <tr>
-                        <th>DATE</th>
-                        <th>USER</th>
-                        <th>COMMENT</th>
-                    </tr>
-                </thead>
-
-                <tbody className="commentBody">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            {/* })} */}
+            {endeavor.map(comment => (
+                <div key={comment.id}>{comment.text}
+                </div>
+        ))}
             <br />
             <form onSubmit={handleSubmit}>
                 <textarea
                     className="newComment"
                     name="comment"
                     id="comment"
+                    placeholder=" add a new comment here"
                     cols="25"
                     rows="5"
                     onChange={handleChange}
                     value={commentState.comment}
-                >
+                    >
                 </textarea>
                 <br />
                 <br />
                 <button className="button" type="submit">add comment</button>
             </form>
-        </div>
+        </div >
+                    // </div>
     )
 }
 

@@ -48,9 +48,9 @@ const Feed = ({ user }) => {
                             {!!endeavor.genres && endeavor.genres}
                         </p>
                         <div className="socialCard">
-                            <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                            <br />
-                            <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        <br />
+                        <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         </div>
                     </div>
                 ))}
