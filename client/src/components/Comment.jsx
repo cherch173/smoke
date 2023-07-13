@@ -3,6 +3,13 @@ import Client from "../services/api";
 import { Link } from "react-router-dom";
 
 const Comment = () => {
+    const inisitalState = {
+        comment: 'add a comment here'
+    }
+    const [commnentState, setCommentState] = useState(inisitalState)
+
+
+
     return (
         <div>
             {/* <wrapper> */}
@@ -23,6 +30,22 @@ const Comment = () => {
                         </tr>
                     </tbody>
                 </table>
+                <br />
+                <form onSubmit="">
+                    {/* <label htmlFor="addComment" className="fireText">add comment: </label> */}
+                    <textarea 
+                        name="addComment"
+                        id="addComment" 
+                        cols="20" 
+                        rows="6"
+                        onChange=""
+                        value=""
+                        >
+                    </textarea>
+                    <br />
+                    <br />
+                    <button className="button" type="submit">add comment</button>
+                </form>
             {/* </wrapper> */}
         </div>
     )
