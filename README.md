@@ -192,13 +192,13 @@ This model will have full CRUD capabilities.
     - [X] Make sure a USER can only LIKE a POST ONCE
     - [X] Get COMMENT Data to link with ENDEAVOR DATA in FEED
 - **THURSDAY 07.13.2023**
-    - [] Add destaurated buttons for FireButton CoolButton 
+    - [X] Construct the ADD COMMENT FORM inside the COMMENT TABLE
+    - [X] Confirm STATE updates of NEW COMMENT
     - [] Build ADD COMMENT Backend Functionality
-    - [] Construct the ADD COMMENT FORM inside the COMMENT TABLE
-    - [] Confirm STATE updates of NEW COMMENT
     - [] Confirm COMMENT Data being sent to MongoDB
     - [] Connect ADD COMMENT Backend to Frontend
     - [] Finish COMMENT Frontend Design
+    - [] Add destaurated buttons for FireButton CoolButton 
     - [] UPDATE / DELETE for ENDEAVOR 
     - [] UPDATE / DELETE for USER (M V C)
     - [] Test USER UPDATE / DELETE with Insomnia
