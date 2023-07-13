@@ -27,12 +27,6 @@ const EndeavorDetails = ({ user }) => {
       <div className='card'>
         <p>
           <span className='fireText'>
-            genre:
-          </span>
-          {!!endeavor.genres && endeavor.genres}
-        </p>
-        <p>
-          <span className='fireText'>
             description:
           </span>
           {!!endeavor.description && endeavor.description}
@@ -42,6 +36,12 @@ const EndeavorDetails = ({ user }) => {
             website:
           </span>
           <a target="_blank" href={endeavor.website}>{endeavor.website}</a>
+        </p>
+        <p>
+          <span className='fireText'>
+            genre:
+          </span>
+          {!!endeavor.genres && endeavor.genres}
         </p>
         <FireButton endeavor={endeavor} user={user} />
         <br />

@@ -76,10 +76,11 @@ label {
   border: 2px solid blanchedalmond;
   margin: 4.2vmin;
   border-radius: 5px;
-  box-shadow: -.25px .25px whitesmoke, -.5px .5px black;
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 0 -.5px .5px whitesmoke, 0 0 -1px 1px black;
+  text-overflow: wrap;
 }
 
 .card:hover {
@@ -166,6 +167,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 0 0 -.25px .25px whitesmoke, 0 0 -.5px .5px black;
 }
 
 .commentTable {
