@@ -185,6 +185,7 @@ p {
 
 .endeavorImage {
   max-width: 300px;
+  max-height: 300px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;

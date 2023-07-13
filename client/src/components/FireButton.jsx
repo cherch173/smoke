@@ -1,11 +1,9 @@
-import { useState } from "react";
 import Client from "../services/api";
 import { useNavigate } from "react-router-dom";
 
 
 function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
-    const [fireState, setFireState] = useState()
-    const [totalLikes, setTotalLikes] = useState(0);
+
 
     let navigate = useNavigate()
 

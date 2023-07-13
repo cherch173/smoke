@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Client from "../services/api";
+import { GetComments } from "../services/EndeavorServices";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Comment = ({ handleEndeavors, endeavor, user, endeavorId, userId }) => {
+const Comment = ({ handleEndeavors, endeavors, user }) => {
     const initialState = {
         comment: 'add a comment here'
     }
     const [commentState, setCommentState] = useState(initialState)
+
+    let navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -15,8 +20,9 @@ const Comment = ({ handleEndeavors, endeavor, user, endeavorId, userId }) => {
         }
         await Client.post('/comments', updatedState)
         setCommentState(initialState)
+        GetComments()
         handleEndeavors()
-
+        navigate('/endeavors')
     }
 
     const handleChange = (e) => {
@@ -24,8 +30,10 @@ const Comment = ({ handleEndeavors, endeavor, user, endeavorId, userId }) => {
     }
 
     return (
-        <div>
-            <table className="commentTable">
+        <div className="grid col=3">
+            {/* {endeavors.map(() => { */}
+
+                <table className="commentTable">
                 <thead className="commentHeader">
                     <tr>
                         <th>DATE</th>
@@ -36,12 +44,13 @@ const Comment = ({ handleEndeavors, endeavor, user, endeavorId, userId }) => {
 
                 <tbody className="commentBody">
                     <tr>
-                        <td>{endeavor.comments && endeavor.comments.date}</td>
-                        <td>{endeavor.comments}</td>
-                        <td>{endeavor.comments}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
+            {/* })} */}
             <br />
             <form onSubmit={handleSubmit}>
                 <textarea
