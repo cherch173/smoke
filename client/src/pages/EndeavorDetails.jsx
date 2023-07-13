@@ -22,9 +22,9 @@ const EndeavorDetails = ({ user }) => {
 
   return user ? (
     <div className='detail'>
-      <div className='detail-header'>
-        <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
-        <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
+      <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
+      <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
+      <div className='card'>
         <FireButton endeavor={endeavor} user={user} />
         <p>
           <span className='fireText'>
