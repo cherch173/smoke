@@ -5,18 +5,22 @@ const Comment = ({ handleEndeavors, endeavor, user }) => {
     const initialState = {
         comment: 'add a comment here'
     }
-    const [commnentState, setCommentState] = useState(initialState)
+    const [commentState, setCommentState] = useState(initialState)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Client.post('/comments', commnentState)
+        let updatedState = {
+            ...commentState,
+            user: user.id
+        }
+        await Client.post('/comments', updatedState)
         setCommentState(initialState)
         handleEndeavors()
 
     }
 
     const handleChange = (e) => {
-        setCommentState({ ...commnentState, [e.target.id]: e.target.value })
+        setCommentState({ ...commentState, [e.target.id]: e.target.value })
     }
 
     return (
@@ -48,7 +52,7 @@ const Comment = ({ handleEndeavors, endeavor, user }) => {
                         cols="25"
                         rows="5"
                         onChange={handleChange}
-                        value={commnentState.comment}
+                        value={commentState.comment}
                     >
                     </textarea>
                     <br />
