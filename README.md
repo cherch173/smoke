@@ -53,23 +53,22 @@ REGISTRATION (Sign Up), LOGGING IN and OUT will be handled using React FORMS usi
 ### _**Getting Started**_
 As per **Cherch Games**' ethos, simplicity is key to a smooth user experience.
 
-We'll have FOUR MODELS, all which interact with eachother.
+We'll have THREE MODELS, all which interact with eachother.
 
 **ENDEAVORS**
-- **name:** TextField
-- **featuredImage:** ImageField
-- **genre:** linked by ID [build as array, max 3]
-- **website:** URLField (max 1 to prevent clutter)
-- **likeButton:** BooleanValue (branded as **FIRE**)
-- **comments:** linked by ID
-- **detailsButton:**
+- **name:** String
+- **featuredImage:** String
+- **genres:**
+    - **type:** String [_Art, Animation, App, Blog, Book, Chemistry, Experiment, Film, Gaming, Invention, Intellectual Property, Music, Musical Theater, Play, Poetry, Program, Physics, Science, Short, Stand-Up, Thesis, Theory, Video Game, Website, or Other_]
+- **website:** String (max 1 to prevent clutter)
+- **fireButton:** Array of Objects measured with length() method 
+    - (LIKES branded as **SPARKS**)
+- **comments:** String linked by ID
+- **detailsCard:** Endeavor Card Name & Image will be href capable to a detail view by ID
 
 This model will have full CRUD capabilities.
 
-**GENRES (Many to Many)**
-- **type:** TextField [_Art, Animation, App, Blog, Book, Chemistry, Experiment, Film, Gaming, Invention, Intellectual Property, Music, Musical Theater, Play, Poetry, Program, Physics, Science, Short, Stand-Up, Thesis, Theory, Video Game, Website, or Other_]
-
-**USERS (aka SPARKS)**
+**USERS **
 - username = textField
 - email = textField
 - password = textField
