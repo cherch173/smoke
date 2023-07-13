@@ -41,7 +41,8 @@ const Feed = ({ user }) => {
                         {!!endeavor.genres && endeavor.genres}
                     </p>
                     <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                    <span className='fireText'>comments: </span>
+                    {/* <span className='fireText'>comments: </span> */}
+                    <br />
                     <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                 </div>
             ))}

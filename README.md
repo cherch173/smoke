@@ -193,6 +193,7 @@ This model will have full CRUD capabilities.
     - [X] Make sure a USER can only LIKE a POST ONCE
     - [X] Get COMMENT Data to link with ENDEAVOR DATA in FEED
 - **THURSDAY 07.13.2023**
+    - [] Add destaurated buttons for FireButton CoolButton 
     - [] Build ADD COMMENT Backend Functionality
     - [] Construct the ADD COMMENT FORM inside the COMMENT TABLE
     - [] Confirm STATE updates of NEW COMMENT
