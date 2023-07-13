@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Client from "../services/api";
 import { GetComments } from "../services/EndeavorServices";
-import { GetEndeavors } from "../services/EndeavorServices";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,7 @@ const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
         comment: ''
     }
     const [commentState, setCommentState] = useState(initialState)
-
+    console.log(endeavor)
     let navigate = useNavigate()
 
     const handleSubmit = async (e) => {
@@ -33,10 +32,10 @@ const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
 
     return (
         <div className="grid col=3">
-            {endeavor.map(comment => (
+            {/* {endeavor.comments.map(comment => (
                 <div key={comment.id}>{comment.text}
                 </div>
-        ))}
+        ))} */}
             <br />
             <form onSubmit={handleSubmit}>
                 <textarea

@@ -1,5 +1,5 @@
 const { Comment } = require('../models')
-
+const { Endeavor } = require('../models')
 const getComments = async (req, res) => {
     try {
         const comments = await Comment.find({})
@@ -12,6 +12,9 @@ const getComments = async (req, res) => {
 const CreateComment = async (req, res) => {
     try {
         const comment = await Comment.create(req.body)
+        // go to database and find endeavor to assosciate comment with
+        const endeavor = await Endeavor.findById(req.params.endeavor_id)
+        // then, push the ID into the comment array you retrieved
         res.send(comment)
     } catch (error) {
         throw error
