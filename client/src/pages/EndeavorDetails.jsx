@@ -1,15 +1,17 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { GetEndeavor } from '../services/EndeavorServices'
+import { GetEndeavor, GetEndeavors } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 
-const EndeavorDetails = ({ user, handleEndeavors }) => {
+const EndeavorDetails = ({ user, handleEndeavor }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
+  let navigate = useNavigate()
 
   useEffect(() => {
     const handleEndeavor = async () => {
@@ -43,7 +45,7 @@ const EndeavorDetails = ({ user, handleEndeavors }) => {
           </span>
           {!!endeavor.genres && endeavor.genres}
         </p>
-        <FireButton endeavor={endeavor} user={user} />
+        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavor={handleEndeavor} />
         <br />
         <Comment user={user} endeavor={endeavor}/>
         <br />
