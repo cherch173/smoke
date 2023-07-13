@@ -48,7 +48,15 @@ const Feed = ({ user }) => {
         </div>
     ) : (
         <div className="protected">
-            <h5>Sorry, in order to view this page you must be signed in.</h5>
+            <h6>
+                <span className="fireText">
+                    Sorry...
+                </span>
+                in order to view this page you must be
+                <span className="fireText">
+                    signed in
+                </span>
+                .</h6>
             <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
         </div>
     )

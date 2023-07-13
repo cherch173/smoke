@@ -6,7 +6,7 @@ import { GetEndeavor } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 
-const EndeavorDetails = ({user}) => {
+const EndeavorDetails = ({ user }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -20,12 +20,12 @@ const EndeavorDetails = ({user}) => {
 
   }, [])
 
-  return (
+  return user ? (
     <div className='detail'>
       <div className='detail-header'>
         <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
         <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
-        <FireButton endeavor={endeavor} user={user}/>
+        <FireButton endeavor={endeavor} user={user} />
         <p>
           <span className='fireText'>
             genre:
@@ -55,6 +55,19 @@ const EndeavorDetails = ({user}) => {
       </div>
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
 
+    </div>
+  ) : (
+    <div className="protected">
+      <h6>
+        <span className="fireText">
+          Sorry...
+        </span>
+        in order to view this page you must be
+        <span className="fireText">
+          signed in
+        </span>
+        .</h6>
+      <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
     </div>
   )
 }

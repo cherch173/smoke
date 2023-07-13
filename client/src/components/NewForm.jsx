@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Client from '../services/api'
 import { useNavigate } from 'react-router-dom'
 
-const NewForm = ({ getEndeavors }) => {
+const NewForm = ({ getEndeavors, user }) => {
 
   const initialState = {
     name: '',
@@ -30,7 +30,7 @@ const NewForm = ({ getEndeavors }) => {
   }
 
 
-  return (
+  return user ? (
     <div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="newEndeavor">Add a new Endeavor to <span className="fireText">SMOKE</span></label>
@@ -95,6 +95,19 @@ const NewForm = ({ getEndeavors }) => {
         <br />
         <button className="button" type="submit">SUBMIT</button>
       </form>
+    </div>
+  ) : (
+    <div className="protected">
+      <h6>
+        <span className="fireText">
+          Sorry...
+        </span>
+        in order to view this page you must be
+        <span className="fireText">
+          signed in
+        </span>
+        .</h6>
+      <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
     </div>
   )
 }
