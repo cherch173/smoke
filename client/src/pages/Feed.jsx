@@ -4,6 +4,7 @@ import { GetEndeavors } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
+import CommentRender from '../components/CommentRender'
 import { Link } from 'react-router-dom'
 
 const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
@@ -29,7 +30,8 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                 </i>
             </h6>
             <div className="grid col=4">
-                {endeavors.map((endeavor, idx) => (
+                { !!endeavors &&
+                endeavors.map((endeavor, idx) => (
                     <div className="card" key={idx}>
                         <Link to={`${endeavor._id}`}>
                             <h4 className="headerText">{endeavor.name}</h4>
@@ -48,11 +50,13 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                             {!!endeavor.genres && endeavor.genres}
                         </p>
                         <div className="socialCard">
-                        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                        <br />
-                        {endeavor.comments.map((comment) => (
-                            <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} comment={comment} />
-                        ))}
+                            <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                            <br />
+                            {endeavor.comments.map((comment) => (
+                                <CommentRender comment={comment} />
+                            ))}
+                            <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+
                         </div>
                     </div>
                 ))}

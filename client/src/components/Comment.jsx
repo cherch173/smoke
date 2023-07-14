@@ -9,8 +9,6 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         comment: ''
     }
     const [commentState, setCommentState] = useState(initialState)
-    // console.log(endeavor)
-    // let navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -23,7 +21,6 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         setCommentState(initialState)
         GetComments()
         handleEndeavors()
-        // navigate('/endeavors')
     }
 
     const handleChange = (e) => {
@@ -31,21 +28,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
     }
 
     return (
-        <div className="grid col=3">
-            <div className="commentTable">
-                    <div className="tR">
-                        <div className="tH">date</div>
-                        <div className="tH">user</div>
-                        <div className="tH">comment</div>
-                </div>
-                <br />
-                <br />
-                    <div className="tR">
-                        <div className="tD">2023-07-13</div>
-                        <div className="tD">{!!user.name && user.name}</div>
-                        <div className="tD">{!!comment.comment && comment.comment}</div>
-                </div>
-            </div>
+        <div>
             <form onSubmit={handleSubmit}>
                 <textarea
                     className="newComment"
