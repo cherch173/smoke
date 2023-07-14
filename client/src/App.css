@@ -86,7 +86,6 @@ label {
 
 .card:hover {
   background-color: rgb(73, 73, 73);
-  /* transform: scale(100.17%); */
   transition: ease-in 142ms;
 }
 .socialCard {
@@ -98,16 +97,11 @@ label {
   text-align: center;
   text-overflow: wrap;
   text-shadow: -.25px .25px black;
-
 }
 
 .socialCard:hover {
   color: rgb(255, 215, 165);
 }
-
-/* .socialCard:hover {
-  transition: ease-in 142ms;
-} */
 
 .fireText {
   color: orange;
