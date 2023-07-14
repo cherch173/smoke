@@ -195,31 +195,21 @@ This model will have full CRUD capabilities.
     - [X] Construct the ADD COMMENT FORM inside the COMMENT TABLE
     - [X] Confirm STATE updates of NEW COMMENT
     - [X] Build ADD COMMENT Backend Functionality
+    - [X] Connect ADD COMMENT Backend to Frontend
+- **FRIDAY 07.14.2023**
     - [X] Confirm COMMENT Data being sent to MongoDB
-    - [] Connect ADD COMMENT Backend to Frontend
-    - [] Finish COMMENT Frontend Design
-    - [] Add destaurated buttons for FireButton CoolButton 
-    - [] UPDATE / DELETE for ENDEAVOR 
-    - [] UPDATE / DELETE for USER (M V C)
-    - [] Test USER UPDATE / DELETE with Insomnia
-    - [] MVP
+    - [X] Finish COMMENT Frontend Design
     - [] ADD CSS Styling
     - [] Debug
-- **FRIDAY 07.14.2023**
-    - []
-    - []
-    - []
-    - []
-    - []
+    - [X] MVP
 - **SATURDAY 07.15.2023**
-    - []
-    - []
-    - []
-    - []
+    - [] Add destaurated buttons for FireButton CoolButton 
+    - [] UPDATE / DELETE for USER (M V C)
+    - [] UPDATE / DELETE for ENDEAVOR 
+    - [] Test USER UPDATE / DELETE with Insomnia
+    - [] Debug
     - []
 - **SUNDAY 07.16.2023**
-    - []
-    - []
     - []
     - []
     - []
@@ -227,11 +217,7 @@ This model will have full CRUD capabilities.
     - []
     - []
     - []
-    - []
-    - []
 - **TUESDAY 07.18.2023**
-    - []
-    - []
     - []
     - []
     - []

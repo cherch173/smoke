@@ -4,26 +4,26 @@ import { GetComments } from "../services/EndeavorServices";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Comment = ({ handleEndeavors, endeavorId, endeavor, user }) => {
+const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
     const initialState = {
         comment: ''
     }
     const [commentState, setCommentState] = useState(initialState)
-    console.log(endeavor)
-    let navigate = useNavigate()
+    // console.log(endeavor)
+    // let navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         let updatedState = {
             ...commentState,
             user: user.id,
-            comment: endeavor.comment
+            // comment: endeavor.comment
         }
         await Client.post(`/comments/${endeavorId}`, updatedState)
-        setCommentState(updatedState)
+        setCommentState(initialState)
         GetComments()
         handleEndeavors()
-        navigate('/endeavors')
+        // navigate('/endeavors')
     }
 
     const handleChange = (e) => {
@@ -36,7 +36,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user }) => {
                 <div key={comment.id}>{comment.text}
                 </div>
         ))} */}
-            <table className="commentTable">
+            <div className="commentTable">
                 <thead>
                     <tr>
                         <th>date</th>
@@ -46,14 +46,13 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user }) => {
                 </thead>
                 <br />
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <div className="tr">
+                        <div className="tableBottom"></div>
+                        <div className="tableBottom">{!!user.name && user.name}</div>
+                        <div className="tableBottom">{!!comment.comment && comment.comment}</div>
+                    </div>
                 </tbody>
-            </table>
-            <br />
+            </div>
             <form onSubmit={handleSubmit}>
                 <textarea
                     className="newComment"

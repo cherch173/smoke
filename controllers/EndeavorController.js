@@ -2,7 +2,7 @@ const { Endeavor } = require('../models')
 
 const getEndeavors = async (req, res) => {
     try {
-        const endeavors = await Endeavor.find({}).populate('genres')
+        const endeavors = await Endeavor.find({}).populate('comments')
         res.send(endeavors)
     } catch (error) {
         throw error
@@ -11,7 +11,7 @@ const getEndeavors = async (req, res) => {
 
 const getEndeavorById = async (req, res) => {
     try {
-        const endeavor = await Endeavor.findById(req.params.id).populate('genres', 'comments')
+        const endeavor = await Endeavor.findById(req.params.id).populate('comments')
         res.send(endeavor)
     } catch (error) {
         throw (error)

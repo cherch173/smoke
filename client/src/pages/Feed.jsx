@@ -50,7 +50,9 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                         <div className="socialCard">
                         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         <br />
-                        <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        {endeavor.comments.map((comment) => (
+                            <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} comment={comment} />
+                        ))}
                         </div>
                     </div>
                 ))}
