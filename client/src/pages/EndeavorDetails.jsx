@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { GetEndeavor, GetEndeavors } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
+import CommentRender from '../components/CommentRender'
 
 const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors }) => {
   let { id } = useParams()
@@ -47,11 +48,10 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors }) => 
         </p>
         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
         <br />
-        {endeavor.comments.map((comment) => (
-          <div>
-            <Comment user={user} endeavor={endeavor} comment={comment} />
-          </div>
-        ))}
+        {/* {endeavor.comments.map((comment) => (
+          <CommentRender />
+        ))} */}
+        <Comment user={user} endeavor={endeavor} comment={comment} />
         <br />
         <br />
       </div>
