@@ -1,11 +1,6 @@
 import Client from "../services/api";
-import { useNavigate } from "react-router-dom";
-
 
 function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
-
-
-    let navigate = useNavigate()
 
     const addLikes = async (e) => {
         e.preventDefault()
@@ -14,7 +9,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
         if (!stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}`)
             handleEndeavors()
-            // navigate('/endeavors')
         }
     }
     const disLikes = async (e) => {
@@ -24,7 +18,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
         if (stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}/dislike`)
             handleEndeavors()
-            // navigate('/endeavors')
         }
     }
 
