@@ -4,11 +4,12 @@ const middleware = require('../middleware')
 
 router.get('/', controller.getComments)
 router.post(
-    '/',
+    '/:endeavor_id',
     middleware.stripToken,
     middleware.verifyToken, 
     controller.CreateComment
 )
+
 router.put(
     '/:comment_id',
     middleware.stripToken,

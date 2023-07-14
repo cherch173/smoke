@@ -4,7 +4,7 @@ import { GetComments } from "../services/EndeavorServices";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
+const Comment = ({ handleEndeavors, endeavorId, endeavor, user }) => {
     const initialState = {
         comment: ''
     }
@@ -19,7 +19,7 @@ const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
             user: user.id,
             comment: endeavor.comment
         }
-        await Client.post('/comments', updatedState)
+        await Client.post(`/comments/${endeavorId}`, updatedState)
         setCommentState(updatedState)
         GetComments()
         handleEndeavors()
