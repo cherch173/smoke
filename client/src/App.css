@@ -71,7 +71,6 @@ label {
   margin: 1vmin;
 }
 
-
 .card {
   padding: 3vmin;
   background-color: rgb(62, 62, 62);
@@ -187,10 +186,11 @@ h6 {
 
 .commentTable {
   text-align: center;
-  display: grid;
   justify-content: center;
+  display: flex;
   grid-template-columns: repeat(3, 10vmin);
-  position: relative;
+  text-align: center;
+  align-items: center;
 }
 
 tr {
@@ -199,7 +199,6 @@ tr {
 }
 
 th {
-  width: fit-content;
   color: orange;
   text-shadow: -.5px .5px black;
   margin: .5vmin;
@@ -208,7 +207,6 @@ th {
 
 td {
   border: 1px solid blanchedalmond;
-  width: fit-content;
   margin: .5vmin;
   border-radius: 5px;
 }

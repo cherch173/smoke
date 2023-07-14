@@ -36,6 +36,23 @@ const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
                 <div key={comment.id}>{comment.text}
                 </div>
         ))} */}
+            <table className="commentTable">
+                <thead>
+                    <tr>
+                        <th>date</th>
+                        <th>user</th>
+                        <th>comment</th>
+                    </tr>
+                </thead>
+                <br />
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
             <br />
             <form onSubmit={handleSubmit}>
                 <textarea
@@ -47,14 +64,14 @@ const Comment = ({ handleEndeavors, endeavors, endeavor, user }) => {
                     rows="5"
                     onChange={handleChange}
                     value={commentState.comment}
-                    >
+                >
                 </textarea>
                 <br />
                 <br />
                 <button className="button" type="submit">add comment</button>
             </form>
         </div >
-                    // </div>
+        // </div>
     )
 }
 
