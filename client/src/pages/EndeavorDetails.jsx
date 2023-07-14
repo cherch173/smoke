@@ -8,7 +8,7 @@ import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 import CommentRender from '../components/CommentRender'
 
-const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors }) => {
+const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comment, comments }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
