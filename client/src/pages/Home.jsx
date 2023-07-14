@@ -13,7 +13,7 @@ const Home = () => {
           log in
         </button>
       </section>
-      <p>or</p>
+      <br />
       <section className="welcome-register">
         <button className="button" onClick={() => navigate('/register')}>
           register
