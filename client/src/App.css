@@ -138,14 +138,9 @@ h6 {
   margin-top: -1px;
 }
 
-p {
-  max-width: 400px;
-  text-align: center;
-}
-
 .textGeneral {
   font-size: 2.5vmin;
-}
+} 
 
 .flameImg {
   max-width: 6min;
@@ -248,4 +243,4 @@ td {
 
 .footerLink {
   font-size: 2vmin;
-}
+} 
