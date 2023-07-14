@@ -7,7 +7,7 @@ import { GetEndeavor, GetEndeavors } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 
-const EndeavorDetails = ({ user, handleEndeavor }) => {
+const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -20,7 +20,7 @@ const EndeavorDetails = ({ user, handleEndeavor }) => {
     }
     handleEndeavor()
 
-  }, [])
+  }, [endeavors])
 
   return user ? (
     <div className='detail'>
@@ -45,7 +45,7 @@ const EndeavorDetails = ({ user, handleEndeavor }) => {
           </span>
           {!!endeavor.genres && endeavor.genres}
         </p>
-        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavor={handleEndeavor} />
+        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
         <br />
         <Comment user={user} endeavor={endeavor}/>
         <br />

@@ -11,12 +11,18 @@ import Register from './pages/Register'
 import SignIn from './pages/SignIn'
 import './App.css'
 import { CheckSession } from './services/Auth'
+import { GetEndeavors } from './services/EndeavorServices'
 
 function App() {
   const [user, setUser] = useState(null)
+  const [endeavors, setEndeavors] = useState({})
   const checkToken = async () => {
     const user = await CheckSession()
     setUser(user)
+  }
+  const handleEndeavors = async () => {
+    const data = await GetEndeavors()
+    setEndeavors(data)
   }
 
   useEffect(() => {
@@ -24,6 +30,7 @@ function App() {
     if (token) {
       checkToken()
     }
+    handleEndeavors()
   }, [])
 
   const handleLogOut = () => {
@@ -31,9 +38,9 @@ function App() {
     setUser(null)
   }
 
-  const getYear =() => {
+  const getYear = () => {
     return new Date().getFullYear()
-}
+  }
 
   return (
     <div>
@@ -49,11 +56,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn setUser={setUser} />} />
           <Route path="/register" element={<Register user={user} />} />
-          <Route path='/endeavors' element={<Feed user={user} />} />
-          <Route path='/endeavors/:id' element={<Details user={user} />} />
+          <Route path='/endeavors' element={
+            <Feed
+              user={user}
+              endeavors={endeavors}
+              setEndeavors={setEndeavors}
+              handleEndeavors={handleEndeavors} />}
+          />
+          <Route path='/endeavors/:id' element={<Details user={user} endeavors={endeavors} handleEndeavors={handleEndeavors} />} />
           <Route path='new' element={<NewForm user={user} />} />
           <Route path="/about" element={<About />} />
-        </Routes> 
+        </Routes>
         <br />
         <footer className="footer">
           © {getYear()} Cherch, all rights reserved

@@ -50,7 +50,6 @@ const addLike = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.endeavor_id)
         endeavor.fireButton.push(req.params.user_id)
-        // console.log(endeavor)
         await endeavor.save()
         res.status(201).send({ msg: 'you liked this endeavor', status: 'liked', endeavor })
     } catch (error) {

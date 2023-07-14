@@ -6,18 +6,18 @@ import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 import { Link } from 'react-router-dom'
 
-const Feed = ({ user }) => {
+const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
     let navigate = useNavigate()
-    const [endeavors, setEndeavors] = useState([])
+    // const [endeavors, setEndeavors] = useState([])
 
-    useEffect(() => {
-        handleEndeavors()
-    }, [])
+    // useEffect(() => {
+    //     handleEndeavors()
+    // }, [])
 
-    const handleEndeavors = async () => {
-        const data = await GetEndeavors()
-        setEndeavors(data)
-    }
+    // const handleEndeavors = async () => {
+    //     const data = await GetEndeavors()
+    //     setEndeavors(data)
+    // }
 
     return user ? (
 

@@ -14,7 +14,7 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
         if (!stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}`)
             handleEndeavors()
-            navigate('/endeavors')
+            // navigate('/endeavors')
         }
     }
     const disLikes = async (e) => {
@@ -24,7 +24,7 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
         if (stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}/dislike`)
             handleEndeavors()
-            navigate('/endeavors')
+            // navigate('/endeavors')
         }
     }
 
