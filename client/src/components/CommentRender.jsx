@@ -14,8 +14,9 @@ const CommentRender = ({ comment }) => {
                 <br />
                 <div className="tR">
                     <div className="tD">2023-07-13</div>
-                    <div className="tD">cherch</div>
+                    <div className="tD">{comment.name}</div>
                     <div className="tD">{!!comment.comment && comment.comment}</div>
+                    <br />
                 </div>
             </div>
         </div>

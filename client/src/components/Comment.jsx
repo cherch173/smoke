@@ -29,6 +29,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
 
     return (
         <div>
+            <br />
             <form onSubmit={handleSubmit}>
                 <textarea
                     className="newComment"
