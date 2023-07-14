@@ -199,16 +199,15 @@ This model will have full CRUD capabilities.
 - **FRIDAY 07.14.2023**
     - [X] Confirm COMMENT Data being sent to MongoDB
     - [X] Finish COMMENT Frontend Design
+    - [X] MVP
     - [] ADD CSS Styling
     - [] Debug
-    - [X] MVP
 - **SATURDAY 07.15.2023**
     - [] Add destaurated buttons for FireButton CoolButton 
     - [] UPDATE / DELETE for USER (M V C)
     - [] UPDATE / DELETE for ENDEAVOR 
     - [] Test USER UPDATE / DELETE with Insomnia
     - [] Debug
-    - []
 - **SUNDAY 07.16.2023**
     - []
     - []
