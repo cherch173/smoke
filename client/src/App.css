@@ -198,17 +198,23 @@ tr {
   margin: 1vmin;
 }
 
-th {
+.tH {
   color: orange;
   text-shadow: -.5px .5px black;
   margin: .5vmin;
   border-radius: 5px;
+  display: inline;
+  padding: 1vmin;
+  margin: .5vmin;
 }
 
-td {
+.tD {
   border: 1px solid blanchedalmond;
   margin: .5vmin;
   border-radius: 5px;
+  display: inline;
+  margin: .5vmin;
+  padding: 1vmin;
 }
 
 .newComment {

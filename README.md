@@ -201,7 +201,8 @@ This model will have full CRUD capabilities.
     - [X] Finish COMMENT Frontend Design
     - [X] MVP
     - [] ADD CSS Styling
-    - [] Debug
+    - [] Debug why COMMENTS don't show up on ALL ENDEAVOR CARDS
+    - [] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER not the AUTHOR of the POST
 - **SATURDAY 07.15.2023**
     - [] Add destaurated buttons for FireButton CoolButton 
     - [] UPDATE / DELETE for USER (M V C)

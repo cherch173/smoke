@@ -32,26 +32,19 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
 
     return (
         <div className="grid col=3">
-            {/* {endeavor.comments.map(comment => (
-                <div key={comment.id}>{comment.text}
-                </div>
-        ))} */}
             <div className="commentTable">
-                <thead>
-                    <tr>
-                        <th>date</th>
-                        <th>user</th>
-                        <th>comment</th>
-                    </tr>
-                </thead>
+                    <div className="tR">
+                        <div className="tH">date</div>
+                        <div className="tH">user</div>
+                        <div className="tH">comment</div>
+                </div>
                 <br />
-                <tbody>
-                    <div className="tr">
-                        <div className="tableBottom"></div>
-                        <div className="tableBottom">{!!user.name && user.name}</div>
-                        <div className="tableBottom">{!!comment.comment && comment.comment}</div>
-                    </div>
-                </tbody>
+                <br />
+                    <div className="tR">
+                        <div className="tD">2023-07-13</div>
+                        <div className="tD">{!!user.name && user.name}</div>
+                        <div className="tD">{!!comment.comment && comment.comment}</div>
+                </div>
             </div>
             <form onSubmit={handleSubmit}>
                 <textarea

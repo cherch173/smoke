@@ -48,7 +48,9 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors }) => 
         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
         <br />
         {endeavor.comments.map((comment) => (
-          <Comment user={user} endeavor={endeavor} comment={comment} />
+          <div>
+            <Comment user={user} endeavor={endeavor} comment={comment} />
+          </div>
         ))}
         <br />
         <br />
