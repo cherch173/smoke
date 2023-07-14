@@ -91,8 +91,6 @@ label {
 }
 .socialCard {
   padding: 3vmin;
-  /* background-color: rgb(62, 62, 62); */
-  /* border: 1px solid orange; */
   margin: 2.5vmin;
   border-radius: 5px;
   justify-content: center;
@@ -193,7 +191,6 @@ p {
 }
 
 .fireButtonContainer {
-  /* background-color: rgb(46, 46, 46); */
   border-radius: 5px;
   padding: .25vmin;
 }
@@ -220,7 +217,7 @@ th {
 }
 
 td {
-  /* border: 1px solid blanchedalmond; */
+  border: 1px solid blanchedalmond;
   width: fit-content;
   margin: .5vmin;
   border-radius: 5px;
@@ -252,7 +249,6 @@ td {
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
   bottom: 0;
 }
 
