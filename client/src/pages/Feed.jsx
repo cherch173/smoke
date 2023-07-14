@@ -9,16 +9,6 @@ import { Link } from 'react-router-dom'
 
 const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
     let navigate = useNavigate()
-    // const [endeavors, setEndeavors] = useState([])
-
-    // useEffect(() => {
-    //     handleEndeavors()
-    // }, [])
-
-    // const handleEndeavors = async () => {
-    //     const data = await GetEndeavors()
-    //     setEndeavors(data)
-    // }
 
     return user ? (
 
@@ -52,11 +42,11 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                         <div className="socialCard">
                             <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                             <br />
+                            <br />
                             {endeavor.comments.map((comment) => (
                                 <CommentRender comment={comment} />
                             ))}
                             <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-
                         </div>
                     </div>
                 ))}

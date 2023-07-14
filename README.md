@@ -199,10 +199,10 @@ This model will have full CRUD capabilities.
 - **FRIDAY 07.14.2023**
     - [X] Confirm COMMENT Data being sent to MongoDB
     - [X] Finish COMMENT Frontend Design
-    - [X] MVP
-    - [] ADD CSS Styling
-    - [] Debug why COMMENTS don't show up on ALL ENDEAVOR CARDS
+    - [X] Debug why COMMENTS don't show up on ALL ENDEAVOR CARDS
     - [] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER not the AUTHOR of the POST
+    - [] ADD CSS Styling
+    - [] MVP
 - **SATURDAY 07.15.2023**
     - [] Add destaurated buttons for FireButton CoolButton 
     - [] UPDATE / DELETE for USER (M V C)
