@@ -19,7 +19,7 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                     a home for creatives
                 </i>
             </h6>
-                { !!endeavors &&
+            {!!endeavors &&
                 endeavors.map((endeavor, idx) => (
                     <div className="card" key={idx}>
                         <Link to={`${endeavor._id}`}>
@@ -38,18 +38,21 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                             <span className='fireText'>genre: </span>
                             {!!endeavor.genres && endeavor.genres}
                         </p>
-                            <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
-                            <br />
-                            <br />
+                        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+                        <br />
+                        <br />
                         <div className="commentCard">
+                            <div className="tH">date</div>
+                            <div className="tH">user</div>
+                            <div className="tH">comment</div>
                             {endeavor.comments.map((comment) => (
-                                <CommentRender comment={comment}  />
+                                <CommentRender comment={comment} />
                             ))}
                             <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         </div>
                     </div>
                 ))}
-            </div>
+        </div>
     ) : (
         <div className="protected">
             <h6>
