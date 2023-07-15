@@ -186,12 +186,8 @@ h6 {
 }
 
 .commentTable {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  grid-template-columns: repeat(3, 10vmin);
-  text-align: center;
-  align-items: center;
+border: 1px solid orange;
+border-radius: 5px;
 }
 
 tr {
@@ -202,20 +198,21 @@ tr {
 .tH {
   color: orange;
   text-shadow: -.5px .5px black;
-  margin: .5vmin;
+  margin: 1vmin;
   border-radius: 5px;
   display: inline;
-  padding: 1vmin;
-  margin: .5vmin;
+  padding: .5vmin;
 }
 
 .tD {
-  border: 1px solid blanchedalmond;
-  margin: .5vmin;
+  border: 1px solid orange;
+  background-color: blanchedalmond;
+  color: rgb(46, 46, 46);
+  margin: 1vmin;
   border-radius: 5px;
   display: inline;
-  margin: .5vmin;
-  padding: 1vmin;
+  padding: .73vmin;
+
 }
 
 .newComment {
