@@ -46,17 +46,20 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comme
           </span>
           {!!endeavor.genres && endeavor.genres}
         </p>
-        <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+      <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
+      </div>
         <br />
+        <div className="commentCard">
         {endeavor.comments.map((comment) => (
           <CommentRender comment={comment}/>
-        ))}
+          ))}
         <Comment user={user} endeavor={endeavor} comment={comment} />
+          </div>
         <br />
         <br />
-      </div>
+          <button className="button">edit</button>
+          <button className="button">delete</button>
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
-
     </div>
   ) : (
     <div className="protected">

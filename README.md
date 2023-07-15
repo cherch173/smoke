@@ -200,20 +200,19 @@ This model will have full CRUD capabilities.
     - [X] Confirm COMMENT Data being sent to MongoDB
     - [X] Finish COMMENT Frontend Design
     - [X] Debug why COMMENTS don't show up on ALL ENDEAVOR CARDS
-    - [] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER not the AUTHOR of the POST
-    - [] ADD CSS Styling
-    - [] MVP
+    - [X] MVP
 - **SATURDAY 07.15.2023**
-    - [] Add destaurated buttons for FireButton CoolButton 
-    - [] UPDATE / DELETE for USER (M V C)
-    - [] UPDATE / DELETE for ENDEAVOR 
+    - [X] ADD CSS Styling for COMMENTS TABLE
+    - [] UPDATE / DELETE for ENDEAVOR (JSX + Route) 
+    - [] UPDATE / DELETE for COMMENT (JSX + Route)
     - [] Test USER UPDATE / DELETE with Insomnia
-    - [] Debug
 - **SUNDAY 07.16.2023**
+    - [] Add destaurated buttons for FireButton CoolButton 
     - []
     - []
     - []
 - **MONDAY 07.17.2023**
+    - [] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER not the AUTHOR of the POST
     - []
     - []
     - []

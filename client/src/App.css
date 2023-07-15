@@ -13,6 +13,7 @@ body {
   color: whitesmoke;
   background-color: rgb(46, 46, 46);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  max-width: 100vmin;
 }
 
 .nav {
@@ -89,7 +90,8 @@ label {
   background-color: rgb(73, 73, 73);
   transition: ease-in 142ms;
 }
-.socialCard {
+
+.commentCard {
   padding: 3vmin;
   margin: 2.5vmin;
   border-radius: 5px;
@@ -98,9 +100,11 @@ label {
   text-align: center;
   text-overflow: wrap;
   text-shadow: -.25px .25px black;
+  border: 1px solid blanchedalmond;
+  background-color: rgba(255, 235, 205, .10);
 }
 
-.socialCard:hover {
+.commentCard:hover {
   color: rgb(255, 215, 165);
 }
 
@@ -141,7 +145,7 @@ h6 {
 
 .textGeneral {
   font-size: 2.5vmin;
-} 
+}
 
 .flameImg {
   max-width: 6min;
@@ -186,12 +190,11 @@ h6 {
 }
 
 .commentTable {
-border: 1px solid orange;
-border-radius: 5px;
+  border: 1px solid orange;
+  border-radius: 5px;
 }
 
 tr {
-  width: fit-content;
   margin: 1vmin;
 }
 
@@ -199,20 +202,24 @@ tr {
   color: orange;
   text-shadow: -.5px .5px black;
   margin: 1vmin;
+  margin-left: 6.66vmin;
+  margin-right: 6.66vmin;
   border-radius: 5px;
-  display: inline;
+  display: inline-table;
   padding: .5vmin;
+  font-size: 2.5vmin;
 }
 
 .tD {
   border: 1px solid orange;
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   color: rgb(46, 46, 46);
   margin: 1vmin;
   border-radius: 5px;
-  display: inline;
+  display: inline-table;
+  min-width: fit-content;
   padding: .73vmin;
-
+  font-size: 2vmin;
 }
 
 .newComment {
@@ -227,6 +234,7 @@ tr {
   color: rgb(143, 93, 0);
   border: 1px solid rgb(165, 107, 0);
   font-size: 2.5vmin;
+  margin: 1vmin;
 }
 
 .button:hover {
@@ -246,4 +254,4 @@ tr {
 
 .footerLink {
   font-size: 2vmin;
-} 
+}

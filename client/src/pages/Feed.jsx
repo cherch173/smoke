@@ -19,7 +19,6 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                     a home for creatives
                 </i>
             </h6>
-            <div className="grid col=4">
                 { !!endeavors &&
                 endeavors.map((endeavor, idx) => (
                     <div className="card" key={idx}>
@@ -39,10 +38,10 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                             <span className='fireText'>genre: </span>
                             {!!endeavor.genres && endeavor.genres}
                         </p>
-                        <div className="socialCard">
                             <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                             <br />
                             <br />
+                        <div className="commentCard">
                             {endeavor.comments.map((comment) => (
                                 <CommentRender comment={comment}  />
                             ))}
@@ -51,7 +50,6 @@ const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
                     </div>
                 ))}
             </div>
-        </div>
     ) : (
         <div className="protected">
             <h6>
