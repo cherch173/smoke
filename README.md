@@ -215,22 +215,22 @@ This model will have full CRUD capabilities.
     - [X] DELETE Endeavor Functionality
     - [X] Add AUTH / USER Options for DELETE Permissions
     - [X] Fix COMMENT DATE to Reformat from its Object ID
-    - [] DELETE for COMMENT (JSX + Route)
+    - [X] DELETE for COMMENT (JSX + Route)
+    - [X] Build Out DELETE COMMENT Functionality
+    - [] Confirm DELETE COMMENT works
+- **MONDAY 07.17.2023**
+    - [] Debug
+    - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
-    - [] UPDATE for COMMENT (JSX + Route)
-- **MONDAY 07.17.2023**
     - [] Add destaurated buttons for FireButton CoolButton 
-    - []
-    - []
 - **TUESDAY 07.18.2023**
-    - []
-    - []
-    - []
-- **WEDNESDAY 07.19.2023**
+    - [] Final CSS Styling for v1.0
     - [] Debug
     - [] Final Tests
     - [] Deploy
+- **WEDNESDAY 07.19.2023**
+    - [] Present
 
 ***
 ***
