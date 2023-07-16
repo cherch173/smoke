@@ -214,9 +214,11 @@ This model will have full CRUD capabilities.
     - [X] Build out DELETE Landing Page
     - [X] DELETE Endeavor Functionality
     - [X] Add AUTH / USER Options for DELETE Permissions
-    - [] UPDATE / DELETE for COMMENT (JSX + Route)
+    - [X] Fix COMMENT DATE to Reformat from its Object ID
+    - [] DELETE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
+    - [] UPDATE for COMMENT (JSX + Route)
 - **MONDAY 07.17.2023**
     - [] Add destaurated buttons for FireButton CoolButton 
     - []
