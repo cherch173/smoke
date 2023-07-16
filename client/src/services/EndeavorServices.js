@@ -18,6 +18,24 @@ export const GetEndeavor = async (id) => {
     }
 }
 
+export const EditEndeavor = async (id) => {
+    try {
+        const res = await Client.put(`/endeavors/${id}`)
+        return res.data
+    } catch (error) {
+        throw error
+    }
+}
+
+export const DeleteEndeavor = async (id) => {
+    try {
+        const res = await Client.delete(`endeavors/${id}`)
+        return res.data
+    } catch (error) {
+        throw error
+    }
+}
+
 export const GetComments = async () => {
     try {
         const res = await Client.get('/comments')

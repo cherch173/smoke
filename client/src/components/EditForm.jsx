@@ -2,43 +2,125 @@ import React from 'react'
 import Client from '../services/api'
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { GetEndeavor } from '../services/EndeavorServices'
+import { EditEndeavor } from '../services/EndeavorServices'
 
-const EditForm = ({ user, handleEndeavors, endeavors, endeavor }) => {
+const EditForm = ({ user, EditEndeavor, endeavors }) => {
     let { id } = useParams()
     let navigate = useNavigate
+    const [endeavor, setEndeavor] = useState({})
+    
+    const initialState = {
+        name: '',
+        image: '',
+        website: '',
+        description: '',
+        genres: '',
+    }
 
-    const [formState, setFormState] = useState({})
+    const [formState, setFormState] = useState(initialState)
 
     useEffect(() => {
         const handleEndeavor = async () => {
-            const data = await GetEndeavor(id)
+            const data = await EditEndeavor(id)
             setFormState(data)
         }
         handleEndeavor
-    }, [])
+    }, [endeavors])
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await Client.put(`/endeavors/${id}`, formState)
+        console.log(formState)
+        setFormState(initialState)
+        navigate(`/endeavors/${id}`)
+    }
+
+    const handleChange = (e) => {
+        setFormState({...formState, [e.target.id]: e.target.value})
+    }
 
 
     return user ? (
         <div>
-            lol
-        </div>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="editEndeavor">EDIT <span className="fireText">{!!endeavor.name && endeavor.name}</span></label>
+          <br />
+          <br />
+          <label htmlFor="name" className="fireText">project name:</label>
+          <input type="text" id="name" placeholder="edit name" onChange={handleChange} value={formState.name} />
+          <br />
+          <label htmlFor="image" className="fireText">image url:</label>
+          <input type="text" id="image" placeholder={endeavor.image} onChange={handleChange} value={formState.image} />
+          <br />
+          <label htmlFor="website" className="fireText">official website:</label>
+          <input type="text" id="website" placeholder={endeavor.website} onChange={handleChange} value={formState.website} />
+          <br />
+          <label htmlFor="description" className="fireText">description:</label>
+          <textarea type="textarea" id="description" placeholder={endeavor.description} className="descriptionText" onChange={handleChange} value={formState.description} />
+          <br />
+          <br />
+          <label htmlFor="genres" className="fireText">genres:</label>
+          <select id="genres" placeholder={endeavors.genre} onChange={handleChange} value={formState.genres}>
+            <option value="Animation">Animation</option>
+            <option value="Art">Art</option>
+            <option value="App">App</option>
+            <option value="Article">Article</option>
+            <option value="Biology">Biology</option>
+            <option value="Blog">Blog</option>
+            <option value="Book">Book</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Experiment">Experiment</option>
+            <option value="Film">Film</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Intellectual Property">Intellectual Property</option>
+            <option value="Invention">Invention</option>
+            <option value="Lyricism">Lyricism</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Microbiology">Microbiology</option>
+            <option value="Music">Music</option>
+            <option value="Musical Theater">Musical Theater</option>
+            <option value="Other">Other</option>
+            <option value="Play">Play</option>
+            <option value="Poetry">Poetry</option>
+            <option value="Programming">Programming</option>
+            <option value="Physics">Physics</option>
+            <option value="Recipe">Recipe</option>
+            <option value="Science">Science</option>
+            <option value="Short">Short</option>
+            <option value="Space">Space</option>
+            <option value="Stand-Up Comedy">Stand-Up Comedy</option>
+            <option value="Science">Science</option>
+            <option value="Theorem">Theorem</option>
+            <option value="Theory">Theory</option>
+            <option value="Thesis">Thesis</option>
+            <option value="Video Game">Video Game</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Website">Website</option>
+          </select>
+          <br />
+          <br />
+          <button className="editButton" type="submit">edit</button>
+        </form>
+      </div>
     ) : (
-        <div className="protected">
-            <h6>
-                <span className="fireText">
-                    Sorry...
-                </span>
-                in order to view this page you must be
-                <span className="fireText">
-                    signed in
-                </span>
-                .</h6>
-            <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
-        </div>
+      <div className="protected">
+        <h6>
+          <span className="fireText">
+            Sorry...
+          </span>
+          in order to view this page you must be
+          <span className="fireText">
+            signed in
+          </span>
+          .</h6>
+        <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+      </div>
     )
-}
+  }
 
 
 export default EditForm

@@ -203,7 +203,8 @@ This model will have full CRUD capabilities.
     - [X] MVP
 - **SATURDAY 07.15.2023**
     - [X] ADD CSS Styling for COMMENTS TABLE
-    - [] UPDATE / DELETE for ENDEAVOR (JSX + Route) 
+    - [X] UPDATE for ENDEAVOR (JSX + Route) 
+    - [X] DELETE for ENDEAVOR (JSX & Route)
     - [] UPDATE / DELETE for COMMENT (JSX + Route)
     - [] Test USER UPDATE / DELETE with Insomnia
 - **SUNDAY 07.16.2023**

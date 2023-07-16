@@ -93,7 +93,7 @@ const NewForm = ({ getEndeavors, user }) => {
         </select>
         <br />
         <br />
-        <button className="button" type="submit">SUBMIT</button>
+        <button className="button" type="submit">submit</button>
       </form>
     </div>
   ) : (
