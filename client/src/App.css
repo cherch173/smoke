@@ -162,6 +162,11 @@ h6 {
   font-size: 2.5vmin;
 }
 
+.descriptionText {
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .flameImg {
   max-width: 6min;
   max-height: 8vmin;
