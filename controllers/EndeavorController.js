@@ -12,6 +12,7 @@ const getEndeavors = async (req, res) => {
 const getEndeavorById = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.id).populate('comments')
+        console.log(endeavor)
         res.send(endeavor)
     } catch (error) {
         throw (error)

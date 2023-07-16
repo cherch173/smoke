@@ -66,7 +66,7 @@ function App() {
           />
           <Route path='/endeavors/:id' element={<Details user={user} endeavors={endeavors} handleEndeavors={handleEndeavors} />} />
           <Route path='new' element={<NewForm user={user} />} />
-          <Route path='/edit' element={<EditForm user={user} endeavors={endeavors} EditEndeavor={EditEndeavor} handleEndeavors={handleEndeavors}/>} />
+          <Route path='/edit/:endeavorId' element={<EditForm user={user} endeavors={endeavors} EditEndeavor={EditEndeavor} handleEndeavors={handleEndeavors}/>} />
           <Route path="/about" element={<About />} />
         </Routes>
         <br />

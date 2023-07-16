@@ -14,7 +14,7 @@ export const GetEndeavor = async (id) => {
         const res = await Client.get(`/endeavors/${id}`)
         return res.data
     } catch (error) {
-        throw error
+        throw error.response.data
     }
 }
 

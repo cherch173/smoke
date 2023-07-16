@@ -46,7 +46,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                             <div className="tH">user</div>
                             <div className="tH">comment</div>
                             {endeavor.comments.map((comment) => (
-                                <CommentRender comment={comment} />
+                                <CommentRender key={comment.id} comment={comment} />
                             ))}
                             <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         </div>

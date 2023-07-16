@@ -6,8 +6,8 @@ const CommentRender = ({ comment }) => {
         <div>
             <div className="comment">
                 <br />
-                <div className="tD">2023-07-13</div>
-                <div className="tD">{comment.user}</div>
+                <div className="tD">{comment.createdAt}</div>
+                <div className="tD">{comment.userName}</div>
                 <div className="tD">{!!comment.comment && comment.comment}</div>
                 <br />
             </div>

@@ -8,7 +8,7 @@ import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 import CommentRender from '../components/CommentRender'
 
-const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comment, comments }) => {
+const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment, comments }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -60,7 +60,7 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comme
       </div>
       <br />
       <br />
-      <Link to={`${"/edit"}`}><button className="editButton">edit</button></Link>
+      <Link to={`/edit/${endeavor._id}`}><button className="editButton">edit</button></Link>
       <button className="delButton">delete</button>
       <br />
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
@@ -76,7 +76,7 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comme
           signed in
         </span>
         .</h6>
-      <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+      <button className="button" onClick={() => navigate('/signin')}>sign in</button>
     </div>
   )
 }

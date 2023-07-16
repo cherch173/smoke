@@ -2,37 +2,28 @@ import React from 'react'
 import Client from '../services/api'
 import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { EditEndeavor } from '../services/EndeavorServices'
+import { GetEndeavor } from '../services/EndeavorServices'
 
-const EditForm = ({ user, EditEndeavor, endeavors }) => {
-    let { id } = useParams()
-    let navigate = useNavigate
+const EditForm = ({ user, endeavors }) => {
+    let { endeavorId } = useParams()
+    let navigate = useNavigate()
     const [endeavor, setEndeavor] = useState({})
-    
-    const initialState = {
-        name: {},
-        image: '',
-        website: '',
-        description: '',
-        genres: '',
-    }
 
-    const [formState, setFormState] = useState(initialState)
 
+    const [formState, setFormState] = useState('')
+    console.log(endeavorId)
     useEffect(() => {
         const handleEndeavor = async () => {
-            const data = await EditEndeavor(id)
+            const data = await GetEndeavor(endeavorId)
             setFormState(data)
-        }
-        handleEndeavor
-    }, [endeavors])
+        } 
+        handleEndeavor()
+    }, [])
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Client.put(`/endeavors/${id}`, formState)
-        console.log(formState)
-        setFormState(initialState)
-        navigate(`/endeavors/${id}`)
+        await Client.put(`/endeavors/${endeavorId}`, formState)
+        navigate(`/endeavors/${endeavorId}`)
     }
 
     const handleChange = (e) => {

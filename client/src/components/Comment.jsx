@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
     const initialState = {
-        comment: ''
+        comment: '',
     }
     const [commentState, setCommentState] = useState(initialState)
 
@@ -15,7 +15,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         let updatedState = {
             ...commentState,
             user: user.id,
-            // comment: endeavor.comment
+            userName: user.name,
         }
         await Client.post(`/comments/${endeavorId}`, updatedState)
         setCommentState(initialState)
