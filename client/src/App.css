@@ -252,7 +252,7 @@ tr {
   background-color: whitesmoke;
   color: rgb(143, 93, 0);
   border: 1px solid rgb(165, 107, 0);
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   margin: 1vmin;
   cursor: pointer;
 }
@@ -270,7 +270,7 @@ tr {
   background-color: dodgerblue;
   color: whitesmoke;
   border: 1px solid navy;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   margin: 1vmin;
   cursor: pointer;
 }
@@ -288,7 +288,7 @@ tr {
   background-color: orange;
   color: whitesmoke;
   border: 1px solid darkorange;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   margin: 1vmin;
   cursor: pointer;
 }
@@ -306,7 +306,7 @@ tr {
   background-color: firebrick;
   color: whitesmoke;
   border: 1px solid rgb(108, 10, 10);
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   margin: 1vmin;
   cursor: pointer;
 }
