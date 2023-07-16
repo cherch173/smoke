@@ -9,7 +9,6 @@ import NewForm from './components/NewForm'
 import EditForm from './components/EditForm'
 import Register from './pages/Register'
 import SignIn from './pages/SignIn'
-import CommentRender from './components/CommentRender'
 import './App.css'
 import { CheckSession } from './services/Auth'
 import { GetEndeavors } from './services/EndeavorServices'
@@ -66,7 +65,7 @@ function App() {
           />
           <Route path='/endeavors/:id' element={<Details user={user} endeavors={endeavors} handleEndeavors={handleEndeavors} />} />
           <Route path='new' element={<NewForm user={user} />} />
-          <Route path='/edit' element={<EditForm user={user} />} />
+          <Route path='/edit' element={<EditForm user={user} endeavors={endeavors} handleEndeavors={handleEndeavors}/>} />
           <Route path="/about" element={<About />} />
         </Routes>
         <br />

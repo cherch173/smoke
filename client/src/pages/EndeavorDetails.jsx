@@ -60,7 +60,7 @@ const EndeavorDetails = ({ user, handleEndeavors, setEndeavors, endeavors, comme
       </div>
       <br />
       <br />
-      <button className="editButton">edit</button>
+      <Link to={`${"/edit"}`}><button className="editButton">edit</button></Link>
       <button className="delButton">delete</button>
       <br />
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>

@@ -7,7 +7,7 @@ import Comment from '../components/Comment'
 import CommentRender from '../components/CommentRender'
 import { Link } from 'react-router-dom'
 
-const Feed = ({ user, endeavors, setEndeavors, handleEndeavors }) => {
+const Feed = ({ user, endeavors, handleEndeavors }) => {
     let navigate = useNavigate()
 
     return user ? (
