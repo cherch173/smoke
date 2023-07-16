@@ -234,11 +234,12 @@ tr {
   border: 1px solid orange;
   background-color: whitesmoke;
   color: rgb(46, 46, 46);
-  margin: .5vmin;
+  margin-left: 1vmin;
+  margin-right: 1vmin;
   border-radius: 5px;
   display: inline-table;
   padding: .73vmin;
-  font-size: 2vmin;
+  font-size: 1.73vmin;
 }
 
 .newComment {
