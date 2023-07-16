@@ -33,24 +33,24 @@ const NewForm = ({ getEndeavors, user }) => {
   return user ? (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="newEndeavor">Add a new Endeavor to <span className="fireText">SMOKE</span></label>
+        <label htmlFor="newEndeavor">ADD a NEW Endeavor to <span className="fireText">SMOKE</span></label>
         <br />
         <br />
-        <label htmlFor="name" className="fireText">project name:</label>
+        <label htmlFor="name" className="fireText">project name: </label>
         <input type="text" id="name" onChange={handleChange} value={formState.name} />
         <br />
-        <label htmlFor="image" className="fireText">image url:</label>
+        <label htmlFor="image" className="fireText">image url: </label>
         <input type="text" id="image" onChange={handleChange} value={formState.image} />
         <br />
-        <label htmlFor="website" className="fireText">official website:</label>
+        <label htmlFor="website" className="fireText">official website: </label>
         <input type="text" id="website" onChange={handleChange} value={formState.website} />
         <br />
-        <label htmlFor="description" className="fireText">description:</label>
+        <label htmlFor="description" className="fireText">description: </label>
         <textarea type="textarea" id="description" className="descriptionText" onChange={handleChange} value={formState.description} />
         <br />
         <br />
-        <label htmlFor="genres" className="fireText">genres:</label>
-        <select id="genres" onChange={handleChange} value={formState.genres}>
+        <label htmlFor="genres" className="fireText">genre: </label>
+        <select className="dropdown" id="genres" onChange={handleChange} value={formState.genres}>
           <option value="Animation">Animation</option>
           <option value="Art">Art</option>
           <option value="App">App</option>

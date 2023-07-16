@@ -7,6 +7,7 @@ import Feed from './pages/Feed'
 import Details from './pages/EndeavorDetails'
 import NewForm from './components/NewForm'
 import EditForm from './components/EditForm'
+import DeleteEndeavor from './components/DeleteEndeavor'
 import Register from './pages/Register'
 import SignIn from './pages/SignIn'
 import './App.css'
@@ -54,7 +55,7 @@ function App() {
       <br />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home user={user}/>} />
           <Route path="/signin" element={<SignIn setUser={setUser} />} />
           <Route path="/register" element={<Register user={user} />} />
           <Route path='/endeavors' element={
@@ -67,6 +68,7 @@ function App() {
           <Route path='/endeavors/:id' element={<Details user={user} endeavors={endeavors} handleEndeavors={handleEndeavors} />} />
           <Route path='new' element={<NewForm user={user} />} />
           <Route path='/edit/:endeavorId' element={<EditForm user={user} endeavors={endeavors} EditEndeavor={EditEndeavor} handleEndeavors={handleEndeavors}/>} />
+          <Route path='/delete/:endeavorId' element={<DeleteEndeavor user={user} endeavors={endeavors} DeleteEndeavor={DeleteEndeavor} />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <br />

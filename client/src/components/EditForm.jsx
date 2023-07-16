@@ -37,21 +37,21 @@ const EditForm = ({ user, endeavors }) => {
           <label htmlFor="editEndeavor">EDIT <span className="fireText">{!!endeavor.name && endeavor.name}</span></label>
           <br />
           <br />
-          <label htmlFor="name" className="fireText">project name:</label>
+          <label htmlFor="name" className="fireText">project name: </label>
           <input type="text" id="name" placeholder="edit name" onChange={handleChange} value={formState.name} />
           <br />
-          <label htmlFor="image" className="fireText">image url:</label>
+          <label htmlFor="image" className="fireText">image url: </label>
           <input type="text" id="image" placeholder={endeavor.image} onChange={handleChange} value={formState.image} />
           <br />
-          <label htmlFor="website" className="fireText">official website:</label>
+          <label htmlFor="website" className="fireText">official website: </label>
           <input type="text" id="website" placeholder={endeavor.website} onChange={handleChange} value={formState.website} />
           <br />
-          <label htmlFor="description" className="fireText">description:</label>
-          <textarea type="textarea" id="description" placeholder={endeavor.description} className="descriptionText" onChange={handleChange} value={formState.description} />
+          <label htmlFor="description" className="fireText">description:  </label>
+          <textarea type="textarea" id="description" className="descriptionText" placeholder={endeavor.description} onChange={handleChange} value={formState.description} />
           <br />
           <br />
-          <label htmlFor="genres" className="fireText">genres:</label>
-          <select id="genres" placeholder={endeavors.genre} onChange={handleChange} value={formState.genres}>
+          <label htmlFor="genres" className="fireText">genre: </label>
+          <select id="genres" className="dropdown" placeholder={endeavors.genre} onChange={handleChange} value={formState.genres}>
             <option value="Animation">Animation</option>
             <option value="Art">Art</option>
             <option value="App">App</option>

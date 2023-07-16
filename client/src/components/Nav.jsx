@@ -15,6 +15,7 @@ const Nav = ({ user, handleLogOut }) => {
                     <span className="fireText">
                     </span>
                 </h6>
+                <Link to='/'>HOME</Link>
                 <Link to="/endeavors">MAIN FEED</Link>
                 <Link to="/new">ADD NEW</Link>
                 <Link to="/about">ABOUT</Link>

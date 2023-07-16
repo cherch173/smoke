@@ -61,7 +61,9 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment, comments }
       <br />
       <br />
       <Link to={`/edit/${endeavor._id}`}><button className="editButton">edit</button></Link>
-      <button className="delButton">delete</button>
+      <Link to={`/delete/${endeavor._id}`}>
+        <button className="delButton">delete</button>
+      </Link>
       <br />
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
     </div>

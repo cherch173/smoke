@@ -205,15 +205,18 @@ This model will have full CRUD capabilities.
     - [X] ADD CSS Styling for COMMENTS TABLE
     - [X] UPDATE for ENDEAVOR (JSX + Route) 
     - [X] Confirm that EDIT ENDEAVOR responds in STATE
-    - [X] DELETE for ENDEAVOR (JSX & Route)
 - **SUNDAY 07.16.2023**
-    - [] Add destaurated buttons for FireButton CoolButton 
+    - [X] Debug Routing for EDIT & why the props aren't passing the data down
+    - [X] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER / OBJECT ID and not the AUTHOR of the POST
+    - [X] Add AUTH / USER Options for HOME
+    - [X] Add AUTH / USER Options for EDIT Permissions
+    - [X] DELETE for ENDEAVOR (JSX & Route)
+    - [] Add AUTH / USER Options for DELETE Permissions
     - [] UPDATE / DELETE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
 - **MONDAY 07.17.2023**
-    - [] Debug why USER in COMMENTS shows the CURRENTLY LOGGED IN USER / OBJECT ID and not the AUTHOR of the POST
-    - [] Debug Routing for EDIT & why the props aren't passing the data down
+    - [] Add destaurated buttons for FireButton CoolButton 
     - []
     - []
 - **TUESDAY 07.18.2023**

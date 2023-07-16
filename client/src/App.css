@@ -66,10 +66,20 @@ a:active {
 
 input {
   margin: 1vmin;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:max-content;
+}
+
+.dropdown {
+  margin: 1vmin;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:max-content;
 }
 
 label {
-  margin: 1vmin;
+  margin: 1.5vmin;
 }
 
 .card {
@@ -112,6 +122,12 @@ label {
   color: orange;
   text-shadow: -.5px .5px black;
   margin: .42vmin;
+}
+
+.deleteText {
+  color: firebrick;
+  text-shadow: -.5px .5px black;
+  margin: .5vmin;
 }
 
 h4 {
@@ -240,15 +256,16 @@ tr {
 .button:hover {
   transform: scale(102%);
   transition: ease-in 142ms;
-  background-color: blanchedalmond;
-  color: black;
+  background-color: orange;
+  color: whitesmoke;
 }
+
 .editButton {
   border-radius: 5px;
   width: fit-content;
-  background-color: orange;
+  background-color: dodgerblue;
   color: whitesmoke;
-  border: 1px solid rgb(145, 94, 0);
+  border: 1px solid navy;
   font-size: 2.5vmin;
   margin: 1vmin;
   cursor: pointer;
@@ -258,14 +275,15 @@ tr {
   transform: scale(102%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
-  color: orange;
+  color: dodgerblue;
 }
+
 .delButton {
   border-radius: 5px;
   width: fit-content;
   background-color: firebrick;
   color: whitesmoke;
-  border: 1px solid firebrick;
+  border: 1px solid rgb(108, 10, 10);
   font-size: 2.5vmin;
   margin: 1vmin;
   cursor: pointer;

@@ -2,6 +2,11 @@ import React from 'react'
 
 
 const CommentRender = ({ comment }) => {
+    
+    const getDate = () => {
+        return new Date().toLocaleDateString()
+      }
+
     return (
         <div>
             <div className="comment">
