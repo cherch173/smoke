@@ -8,8 +8,6 @@ const DeleteEndeavor = ({ user, endeavors }) => {
     let { endeavorId } = useParams()
     let navigate = useNavigate()
 
-    const [endeavor, setEndeavor] = useState({})
-
     const handleSubmit = async (e) => {
         e.preventDefault()
         await Client.delete(`/endeavors/${endeavorId}`)

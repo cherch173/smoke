@@ -12,9 +12,7 @@ const getComments = async (req, res) => {
 const CreateComment = async (req, res) => {
     try {
         const comment = await Comment.create(req.body)
-        // go to database and find endeavor to assosciate comment with
         const endeavor = await Endeavor.findById(req.params.endeavor_id)
-        // then, push the ID into the comment array you retrieved
         endeavor.comments.push(comment._id)
         await endeavor.save()
         res.status(201).send({ msg: 'you added a comment :-)', status: 'commented', endeavor, comment })

@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { GetEndeavor, GetEndeavors } from '../services/EndeavorServices'
+import { GetEndeavor, DeleteComment } from '../services/EndeavorServices'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
 import CommentRender from '../components/CommentRender'
 
-const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment, comments }) => {
+const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
   let { id } = useParams()
   const [endeavor, setEndeavor] = useState({})
 
@@ -54,7 +54,7 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment, comments }
         <div className="tH">user</div>
         <div className="tH">comment</div>
         {endeavor.comments.map((comment) => (
-          <CommentRender comment={comment} />
+          <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} />
         ))}
         <Comment user={user} endeavor={endeavor} comment={comment} />
       </div>

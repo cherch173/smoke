@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { GetEndeavors } from '../services/EndeavorServices'
+import { DeleteComment, GetEndeavors } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
 import Comment from '../components/Comment'
@@ -46,7 +46,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                             <div className="tH">user</div>
                             <div className="tH">comment</div>
                             {endeavor.comments.map((comment) => (
-                                <CommentRender key={comment.id} comment={comment} />
+                                <CommentRender commentId={comment.id} comment={comment} DeleteComment={DeleteComment}/>
                             ))}
                             <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         </div>
@@ -64,7 +64,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                     signed in
                 </span>
                 .</h6>
-            <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+            <button className="button" onClick={() => navigate('/signin')}>log in</button>
         </div>
     )
 }
