@@ -108,7 +108,7 @@ const EditForm = ({ user, endeavors }) => {
             signed in
           </span>
           .</h6>
-        <button className="button" onClick={() => navigate('/signin')}>Sign In</button>
+        <button className="button" onClick={() => navigate('/signin')}>log in</button>
       </div>
     )
   }

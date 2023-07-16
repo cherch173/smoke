@@ -10,7 +10,7 @@ const Home = ({ user }) => {
       <p><i>...where there's smoke, there's <span className="fireText">fire</span>.</i></p>
       <br />
       <Link to={'/endeavors'}>
-        <button className="button">ENTER</button>
+        <button className="button">enter</button>
       </Link>
     </div>
   ) : (

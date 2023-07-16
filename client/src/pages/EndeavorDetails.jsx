@@ -78,7 +78,7 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment, comments }
           signed in
         </span>
         .</h6>
-      <button className="button" onClick={() => navigate('/signin')}>sign in</button>
+      <button className="button" onClick={() => navigate('/signin')}>log in</button>
     </div>
   )
 }

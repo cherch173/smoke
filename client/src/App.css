@@ -6,7 +6,6 @@
 }
 
 body {
-  max-width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -125,7 +124,7 @@ label {
 }
 
 .deleteText {
-  color: firebrick;
+  color: crimson;
   text-shadow: -.5px .5px black;
   margin: .5vmin;
 }
@@ -276,6 +275,24 @@ tr {
   transition: ease-in 142ms;
   background-color: whitesmoke;
   color: dodgerblue;
+}
+
+.bailButton {
+  border-radius: 5px;
+  width: fit-content;
+  background-color: orange;
+  color: whitesmoke;
+  border: 1px solid darkorange;
+  font-size: 2.5vmin;
+  margin: 1vmin;
+  cursor: pointer;
+}
+
+.bailButton:hover {
+  transform: scale(102%);
+  transition: ease-in 142ms;
+  background-color: whitesmoke;
+  color: orange;
 }
 
 .delButton {
