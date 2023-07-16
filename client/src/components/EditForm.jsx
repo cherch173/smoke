@@ -10,7 +10,7 @@ const EditForm = ({ user, EditEndeavor, endeavors }) => {
     const [endeavor, setEndeavor] = useState({})
     
     const initialState = {
-        name: '',
+        name: {},
         image: '',
         website: '',
         description: '',
