@@ -10,19 +10,20 @@ import CommentRender from '../components/CommentRender'
 
 const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
   let { id } = useParams()
-  const [endeavor, setEndeavor] = useState({})
-
+  const [endeavor, setEndeavor] = useState([])
+  
   let navigate = useNavigate()
-
+  
   useEffect(() => {
     const handleEndeavor = async () => {
       const data = await GetEndeavor(id)
       setEndeavor(data)
     }
     handleEndeavor()
-
+    
   }, [endeavors])
-
+  console.log(endeavor)
+  
   return user ? (
     <div className='detail'>
       <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
@@ -54,7 +55,9 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
         <div className="tH">user</div>
         <div className="tH">comment</div>
         {endeavor.comments.map((comment) => (
-          <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} />
+          <div key={comment._id}>
+            <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} />
+          </div>
         ))}
         <Comment user={user} endeavor={endeavor} comment={comment} />
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Client from '../services/api'
 import { useState, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { GetEndeavor } from '../services/EndeavorServices'
 
 const EditForm = ({ user, endeavors }) => {
@@ -102,6 +102,7 @@ const EditForm = ({ user, endeavors }) => {
         <br />
         <button className="editButton" type="submit">edit</button>
       </form>
+      <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
     </div>
   ) : (
     <div className="protected">

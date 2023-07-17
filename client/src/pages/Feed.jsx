@@ -10,6 +10,10 @@ import { Link } from 'react-router-dom'
 const Feed = ({ user, endeavors, handleEndeavors }) => {
     let navigate = useNavigate()
 
+    useEffect(() => {
+        handleEndeavors()
+    })
+
     return user ? (
 
         <div>
@@ -46,7 +50,9 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                             <div className="tH">user</div>
                             <div className="tH">comment</div>
                             {endeavor.comments.map((comment) => (
-                                <CommentRender commentId={comment.id} comment={comment} DeleteComment={DeleteComment}/>
+                                <div key={comment.id}>
+                                    <CommentRender commentId={comment.id} comment={comment} DeleteComment={DeleteComment} />
+                                </div>
                             ))}
                             <Comment endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         </div>

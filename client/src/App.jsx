@@ -17,7 +17,7 @@ import { EditEndeavor } from './services/EndeavorServices'
 
 function App() {
   const [user, setUser] = useState(null)
-  const [endeavors, setEndeavors] = useState({})
+  const [endeavors, setEndeavors] = useState([])
   const checkToken = async () => {
     const user = await CheckSession()
     setUser(user)
@@ -26,6 +26,7 @@ function App() {
     const data = await GetEndeavors()
     setEndeavors(data)
   }
+
 
   useEffect(() => {
     const token = localStorage.getItem('token')
@@ -63,7 +64,8 @@ function App() {
               user={user}
               endeavors={endeavors}
               setEndeavors={setEndeavors}
-              handleEndeavors={handleEndeavors} />}
+              handleEndeavors={handleEndeavors}
+              GetEndeavors={GetEndeavors} />}
           />
           <Route path='/endeavors/:id' element={<Details user={user} endeavors={endeavors} handleEndeavors={handleEndeavors} />} />
           <Route path='new' element={<NewForm user={user} />} />

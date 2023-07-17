@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Client from '../services/api'
 import { useNavigate } from 'react-router-dom'
+import { GetEndeavors } from '../services/EndeavorServices'
 
 const NewForm = ({ getEndeavors, user }) => {
 
