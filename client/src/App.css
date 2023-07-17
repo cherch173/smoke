@@ -250,8 +250,8 @@ tr {
 .button {
   border-radius: 5px;
   width: fit-content;
-  background-color: whitesmoke;
-  color: rgb(143, 93, 0);
+  background-color: orange;
+  color: whitesmoke;
   border: 1px solid rgb(165, 107, 0);
   font-size: 2vmin;
   margin: 1vmin;
@@ -261,8 +261,8 @@ tr {
 .button:hover {
   transform: scale(102%);
   transition: ease-in 142ms;
-  background-color: orange;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: orange;
 }
 
 .editButton {

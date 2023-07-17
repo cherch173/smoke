@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Client from "../services/api";
 import { GetComments } from "../services/EndeavorServices";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
@@ -9,7 +8,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         comment: '',
     }
     const [commentState, setCommentState] = useState(initialState)
-
+    // console.log(endeavorId, 'endeavorId')
     const handleSubmit = async (e) => {
         e.preventDefault()
         let updatedState = {
@@ -19,8 +18,8 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         }
         await Client.post(`/comments/${endeavorId}`, updatedState)
         setCommentState(initialState)
+        console.log('handleEndeavors')
         GetComments()
-        handleEndeavors()
     }
 
     const handleChange = (e) => {
@@ -44,10 +43,9 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
                 </textarea>
                 <br />
                 <br />
-                <button className="button" type="submit">add comment</button>
+                <button className="button" type="submit" onClick={handleEndeavors}>add comment</button>
             </form>
         </div >
-        // </div>
     )
 }
 

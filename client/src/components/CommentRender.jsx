@@ -1,11 +1,10 @@
-import { get } from 'mongoose'
 import React from 'react'
 import Client from '../services/api'
 import { useParams, useNavigate } from 'react-router-dom'
 
 
-const CommentRender = ({ comment, handleEndeavors }) => {
-    let { commentId } = useParams()
+const CommentRender = ({ comment, handleEndeavors, commentId }) => {
+    // let { comment_id } = useParams()
     let navigate = useNavigate()
 
     const getDate = () => {
@@ -15,9 +14,9 @@ const CommentRender = ({ comment, handleEndeavors }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Client.delete(`/comments/${commentId}`)
+        await Client.delete(`/comments/${comment._id}`)
         handleEndeavors()
-        navigate('/endeavors')
+        // navigate('/endeavors')
     }
 
     return (
@@ -26,9 +25,9 @@ const CommentRender = ({ comment, handleEndeavors }) => {
                 <br />
                 <form onSubmit={handleSubmit}>
                     <div className="tD">{getDate()}</div>
-                    <div className="tD">{comment.userName}</div>
+                    <div className="tD">{!!comment.userName && comment.userName}</div>
                     <div className="tD">{!!comment.comment && comment.comment}</div>
-                    <button className="delButton" type="submit">X</button>
+                    <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
                 </form>
                 <br />
             </div>

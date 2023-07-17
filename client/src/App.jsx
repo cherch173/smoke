@@ -27,7 +27,6 @@ function App() {
     setEndeavors(data)
   }
 
-
   useEffect(() => {
     const token = localStorage.getItem('token')
     if (token) {

@@ -22,7 +22,7 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
     handleEndeavor()
     
   }, [endeavors])
-  console.log(endeavor)
+
   
   return user ? (
     <div className='detail'>
@@ -54,12 +54,12 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
         <div className="tH">date</div>
         <div className="tH">user</div>
         <div className="tH">comment</div>
-        {endeavor.comments.map((comment) => (
+        {!!endeavor.comments && endeavor.comments.map((comment) => (
           <div key={comment._id}>
-            <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} />
+            <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} handleEndeavors={handleEndeavors} />
           </div>
         ))}
-        <Comment user={user} endeavor={endeavor} comment={comment} />
+        <Comment user={user} endeavor={endeavor} comment={comment} endeavorId={endeavor._id} handleEndeavors={handleEndeavors} />
       </div>
       <br />
       <br />
@@ -68,7 +68,7 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
         <button className="delButton">delete</button>
       </Link>
       <br />
-      <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
+      <Link to={`${"/endeavors/"}`}><button className="button">back</button></Link>
     </div>
   ) : (
     <div className="protected">

@@ -217,9 +217,9 @@ This model will have full CRUD capabilities.
     - [X] Fix COMMENT DATE to Reformat from its Object ID
     - [X] DELETE for COMMENT (JSX + Route)
     - [X] Build Out DELETE COMMENT Functionality
-    - [] Confirm DELETE COMMENT works
 - **MONDAY 07.17.2023**
     - [] Debug
+    - [] Confirm DELETE COMMENT works
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
