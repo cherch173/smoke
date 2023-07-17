@@ -218,8 +218,8 @@ This model will have full CRUD capabilities.
     - [X] DELETE for COMMENT (JSX + Route)
     - [X] Build Out DELETE COMMENT Functionality
 - **MONDAY 07.17.2023**
-    - [] Debug
-    - [] Confirm DELETE COMMENT works
+    - [X] Debug
+    - [X] Confirm DELETE COMMENT works
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo

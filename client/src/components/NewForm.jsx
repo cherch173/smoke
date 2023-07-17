@@ -34,7 +34,7 @@ const NewForm = ({ getEndeavors, user }) => {
   return user ? (
     <div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="newEndeavor">ADD a NEW Endeavor to <span className="fireText">SMOKE</span></label>
+        <label htmlFor="newEndeavor">ADD A NEW <span className="fireText">ENDEAVOR</span></label>
         <br />
         <br />
         <label htmlFor="name" className="fireText">project name: </label>
