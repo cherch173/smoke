@@ -122,11 +122,18 @@ label {
   text-shadow: -.5px .5px black;
   margin: .42vmin;
 }
+.coolText {
+  color: dodgerblue;
+  text-shadow: -.5px .5px black;
+  margin: .42vmin;
+}
 
 .deleteText {
   color: crimson;
   text-shadow: -.5px .5px black;
   margin: .5vmin;
+  margin-left: 1vmin;
+  margin-right: 1vmin;
 }
 
 h4 {
@@ -268,7 +275,7 @@ tr {
 .editButton {
   border-radius: 5px;
   width: fit-content;
-  background-color: lightskyblue;
+  background-color: dodgerblue;
   color: whitesmoke;
   border: 1px solid navy;
   font-size: 2vmin;
@@ -277,28 +284,28 @@ tr {
 }
 
 .editButton:hover {
-  transform: scale(103%);
+  transform: scale(105%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
-  color: lightskyblue;
+  color: dodgerblue;
 }
 
 .bailButton {
   border-radius: 5px;
   width: fit-content;
   background-color: whitesmoke;
-  color: darkorange;
-  border: 1px solid darkorange;
+  color: black;
+  border: 1px solid black;
   font-size: 2vmin;
   margin: 1vmin;
   cursor: pointer;
 }
 
 .bailButton:hover {
-  transform: scale(103%);
+  transform: scale(105%);
   transition: ease-in 142ms;
-  background-color: darkorange;
-  color: whitesmoke;
+  color: darkorange;
+
 }
 
 .delButton {
@@ -313,7 +320,7 @@ tr {
 }
 
 .delButton:hover {
-  transform: scale(103%);
+  transform: scale(105%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
   color: crimson;

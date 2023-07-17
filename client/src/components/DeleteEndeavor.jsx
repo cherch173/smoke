@@ -16,10 +16,15 @@ const DeleteEndeavor = ({ user, endeavors }) => {
 
     return user ? (
         <div>
-            <h5 className="fireText">DELETE ENDEAVOR</h5>
+            <h5>
+                <span className="deleteText">
+                    DELETE 
+                </span>
+                 ENDEAVOR
+            </h5>
             <p>are you sure you want to
                 <span className="deleteText">
-                    DELETE
+                DELETE
                 </span>
                 this Endeavor?
             </p>

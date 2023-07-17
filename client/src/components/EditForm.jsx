@@ -33,7 +33,7 @@ const EditForm = ({ user, endeavors }) => {
 
   return user ? (
     <div>
-      <h5 htmlFor="editEndeavor"><span className="fireText">EDIT </span>{formState.name.toUpperCase()}</h5>
+      <h5 htmlFor="editEndeavor"><span className="coolText">EDIT </span>{formState.name}</h5>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name" className="fireText">project name: </label>
         <input type="text" id="name" placeholder="edit name" onChange={handleChange} value={formState.name} />
