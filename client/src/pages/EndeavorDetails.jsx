@@ -55,9 +55,9 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
       </div>
       <br />
       <div className="commentCard">
-        <div className="tH">date</div>
-        <div className="tH">user</div>
-        <div className="tH">comment</div>
+        <label className="commentTh">comments</label>
+        <br />
+        <br />
         {!!endeavor.comments && endeavor.comments.map((comment) => (
           <div key={comment._id}>
             <CommentRender user={user} comment={comment} commentId={comment.id} DeleteComment={DeleteComment} handleEndeavors={handleEndeavors} />

@@ -229,11 +229,20 @@ tr {
 .tH {
   color: orange;
   text-shadow: -.5px .5px black;
-  margin: 1vmin;
-  margin-left: 6.66vmin;
-  margin-right: 6.66vmin;
   border-radius: 5px;
-  display: inline-flex;
+  margin-right: 6vmin;
+  margin-left: 3vmin;
+  display: inline;
+  padding: .5vmin;
+  font-size: 2.5vmin;
+}
+
+.commentTh {
+  color: orange;
+  text-shadow: -.5px .5px black;
+  border-radius: 5px;
+  /* margin: 5vmin; */
+  display: inline;
   padding: .5vmin;
   font-size: 2.5vmin;
 }
@@ -242,11 +251,19 @@ tr {
   border: 1px solid orange;
   background-color: whitesmoke;
   color: rgb(46, 46, 46);
-  margin: 1vmin;
   border-radius: 5px;
   padding: .73vmin;
   font-size: 1.5vmin;
-  text-align: center;
+  width: 25%;
+}
+.commentTd {
+  border: 1px solid orange;
+  background-color: whitesmoke;
+  color: rgb(46, 46, 46);
+  border-radius: 5px;
+  padding: .73vmin;
+  font-size: 1.5vmin;
+  width: 55%;
 }
 
 .newComment {

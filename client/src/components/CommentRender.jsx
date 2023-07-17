@@ -1,7 +1,7 @@
 import React from 'react'
 import Client from '../services/api'
 
-const CommentRender = ({ comment, handleEndeavors }) => {
+const CommentRender = ({ comment, handleEndeavors, }) => {
 
     const getDate = () => {
         const formattedDate = new Date(comment.createdAt).toDateString()
@@ -25,7 +25,7 @@ const CommentRender = ({ comment, handleEndeavors }) => {
                     <tr className="tR">
                         <td className="tD">{getDate()}</td>
                         <td className="tD">{!!comment.userName && comment.userName}</td>
-                        <td className="tD">{!!comment.comment && comment.comment}</td>
+                        <td className="commentTd">{!!comment.comment && comment.comment}</td>
                         <td className="delTD">
                             <form onSubmit={handleSubmit}>
                                 <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>

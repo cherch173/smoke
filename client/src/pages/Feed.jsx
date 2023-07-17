@@ -45,11 +45,12 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                         </p>
                         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         <br />
-                        <br />
                         <div className="commentCard">
-                            <div className="tH">date</div>
-                            <div className="tH">user</div>
-                            <div className="tH">comment</div>
+                            {/* <div className="tH">date</div>
+                            <div className="tH">user</div> */}
+                            <label className="commentTh">comments</label>
+                            <br />
+                            <br />
                             {endeavor.comments.map((comment) => (
                                 <div key={comment._id}>
                                     <CommentRender commentId={comment._id} comment={comment} DeleteComment={DeleteComment} handleEndeavors={handleEndeavors} />
