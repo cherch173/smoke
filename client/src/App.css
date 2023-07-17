@@ -126,6 +126,7 @@ label {
   color: dodgerblue;
   text-shadow: -.5px .5px black;
   margin: .42vmin;
+  margin-right: 1vmin;
 }
 
 .deleteText {

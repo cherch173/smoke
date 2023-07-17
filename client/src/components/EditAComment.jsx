@@ -33,7 +33,7 @@ const EditComment = ({ user, handleEndeavors, endeavors }) => {
                 <span className="coolText">
                     EDIT
                 </span>
-                {comment.comment}
+                Comment
             </label>
             <br />
             <br />
