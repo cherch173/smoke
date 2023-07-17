@@ -259,7 +259,7 @@ tr {
 }
 
 .button:hover {
-  transform: scale(102%);
+  transform: scale(103%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
   color: orange;
@@ -268,7 +268,7 @@ tr {
 .editButton {
   border-radius: 5px;
   width: fit-content;
-  background-color: dodgerblue;
+  background-color: lightskyblue;
   color: whitesmoke;
   border: 1px solid navy;
   font-size: 2vmin;
@@ -277,17 +277,17 @@ tr {
 }
 
 .editButton:hover {
-  transform: scale(102%);
+  transform: scale(103%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
-  color: dodgerblue;
+  color: lightskyblue;
 }
 
 .bailButton {
   border-radius: 5px;
   width: fit-content;
-  background-color: orange;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: darkorange;
   border: 1px solid darkorange;
   font-size: 2vmin;
   margin: 1vmin;
@@ -295,10 +295,10 @@ tr {
 }
 
 .bailButton:hover {
-  transform: scale(102%);
+  transform: scale(103%);
   transition: ease-in 142ms;
-  background-color: whitesmoke;
-  color: orange;
+  background-color: darkorange;
+  color: whitesmoke;
 }
 
 .delButton {
@@ -313,7 +313,7 @@ tr {
 }
 
 .delButton:hover {
-  transform: scale(102%);
+  transform: scale(103%);
   transition: ease-in 142ms;
   background-color: whitesmoke;
   color: crimson;

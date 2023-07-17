@@ -28,6 +28,10 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
     <div className='detail'>
       <img src={endeavor.image} alt='endeavorImage' className="endeavorImage" />
       <h4 className="headerText">{!!endeavor.name && endeavor.name}</h4>
+      <Link to={`/edit/${endeavor._id}`}><button className="editButton">edit</button></Link>
+      <Link to={`/delete/${endeavor._id}`}>
+        <button className="delButton">delete</button>
+      </Link>
       <div className='card'>
         <p>
           <span className='fireText'>
@@ -63,12 +67,9 @@ const EndeavorDetails = ({ user, handleEndeavors, endeavors, comment }) => {
       </div>
       <br />
       <br />
-      <Link to={`/edit/${endeavor._id}`}><button className="editButton">edit</button></Link>
-      <Link to={`/delete/${endeavor._id}`}>
-        <button className="delButton">delete</button>
-      </Link>
+
       <br />
-      <Link to={`${"/endeavors/"}`}><button className="button">back</button></Link>
+      <Link to={`${"/endeavors/"}`}><button className="bailButton">back</button></Link>
     </div>
   ) : (
     <div className="protected">
