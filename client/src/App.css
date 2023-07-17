@@ -254,7 +254,7 @@ tr {
   border-radius: 5px;
   padding: .73vmin;
   font-size: 1.5vmin;
-  width: 25%;
+  width: 20%;
 }
 .commentTd {
   border: 1px solid orange;
@@ -263,7 +263,7 @@ tr {
   border-radius: 5px;
   padding: .73vmin;
   font-size: 1.5vmin;
-  width: 55%;
+  width: 60%;
 }
 
 .newComment {

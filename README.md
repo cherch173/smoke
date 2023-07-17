@@ -221,11 +221,10 @@ This model will have full CRUD capabilities.
     - [X] Debug
     - [X] Confirm DELETE COMMENT removes targeted data from Backend & MongoDB
     - [X] Implement useEffect and the HANDLER to all pages to make all DATA LIVE
-    - [] Redesign COMMENT TABLE
+    - [X] Redesign COMMENT TABLE
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
-    - [] Add destaurated buttons for FireButton CoolButton 
 - **TUESDAY 07.18.2023**
     - [] Final CSS Styling for v1.0
     - [] Debug
