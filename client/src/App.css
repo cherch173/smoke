@@ -271,6 +271,11 @@ tr {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+div.scrollDiv {
+  height: auto;
+  overflow: auto;
+}
+
 .button {
   border-radius: 5px;
   width: fit-content;
@@ -321,6 +326,7 @@ tr {
 .bailButton:hover {
   transform: scale(105%);
   transition: ease-in 142ms;
+  background-color:cornsilk;
   color: darkorange;
 
 }

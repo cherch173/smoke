@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { DeleteComment, GetEndeavors, GetComments } from '../services/EndeavorServices'
 import { useNavigate } from 'react-router-dom'
 import FireButton from '../components/FireButton'
@@ -10,15 +10,24 @@ import { Link } from 'react-router-dom'
 const Feed = ({ user, endeavors, handleEndeavors }) => {
     let navigate = useNavigate()
 
+    const scrollRef = useRef()
+    const feedRef = useRef(null)
+
     useEffect(() => {
         handleEndeavors()
         GetComments
+        // scrollRef.current++
     }, [])
+
+    const scrollUp = () => {
+        console.log(scrollRef)
+        scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
 
     return user ? (
 
-        <div>
-            <h4 className='fireText'>SMOKE</h4>
+        <div className="scrollDiv">
+            <h4 ref={scrollRef} className='fireText'>SMOKE</h4>
             <h6 className="subHeaderText">
                 <i>
                     a home for creatives
@@ -60,6 +69,11 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                         </div>
                     </div>
                 ))}
+            <section>
+                <button className="editButton" onClick={scrollUp}>
+                    scroll to top
+                </button>
+            </section>
         </div>
     ) : (
         <div className="protected">
