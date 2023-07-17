@@ -1,11 +1,7 @@
 import React from 'react'
 import Client from '../services/api'
-import { useParams, useNavigate } from 'react-router-dom'
 
-
-const CommentRender = ({ comment, handleEndeavors, commentId }) => {
-    // let { comment_id } = useParams()
-    let navigate = useNavigate()
+const CommentRender = ({ comment, handleEndeavors }) => {
 
     const getDate = () => {
         const formattedDate = new Date(comment.createdAt).toDateString()
@@ -16,7 +12,6 @@ const CommentRender = ({ comment, handleEndeavors, commentId }) => {
         e.preventDefault()
         await Client.delete(`/comments/${comment._id}`)
         handleEndeavors()
-        // navigate('/endeavors')
     }
 
     return (
