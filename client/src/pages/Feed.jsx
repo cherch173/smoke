@@ -13,7 +13,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
     useEffect(() => {
         handleEndeavors()
         GetComments
-    }, [endeavors])
+    }, [])
 
     return user ? (
 

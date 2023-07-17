@@ -9,6 +9,11 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
     }
     const [commentState, setCommentState] = useState(initialState)
     // console.log(endeavorId, 'endeavorId')
+
+    useEffect(() => {
+    //   GetComments()  
+    })
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         let updatedState = {
@@ -18,8 +23,9 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
         }
         await Client.post(`/comments/${endeavorId}`, updatedState)
         setCommentState(initialState)
-        console.log('handleEndeavors')
+        // console.log('handleEndeavors')
         GetComments()
+        handleEndeavors()
     }
 
     const handleChange = (e) => {

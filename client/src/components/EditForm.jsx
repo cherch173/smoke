@@ -100,7 +100,7 @@ const EditForm = ({ user, endeavors }) => {
         </select>
         <br />
         <br />
-        <button className="editButton" type="submit">edit</button>
+        <button className="editButton" type="submit">submit changes</button>
       </form>
       <Link to={`${"/endeavors"}`}><button className="button">back</button></Link>
     </div>
