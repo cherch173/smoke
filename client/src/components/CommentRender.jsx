@@ -14,6 +14,7 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
         handleEndeavors()
     }
 
+
     return (
         <div>
             <table className="comment">
@@ -26,6 +27,9 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                         <td className="tD">{getDate()}</td>
                         <td className="tD">{!!comment.userName && comment.userName}</td>
                         <td className="commentTd">{!!comment.comment && comment.comment}</td>
+                        <td>
+                            <button className="editButton">edit</button>
+                        </td>
                         <td className="delTD">
                             <form onSubmit={handleSubmit}>
                                 <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>

@@ -222,6 +222,7 @@ This model will have full CRUD capabilities.
     - [X] Confirm DELETE COMMENT removes targeted data from Backend & MongoDB
     - [X] Implement useEffect and the HANDLER to all pages to make all DATA LIVE
     - [X] Redesign COMMENT TABLE
+    - [X] Implement useRef in FEED to scroll to Top and scroll to Bottom
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo

@@ -10,29 +10,36 @@ import { Link } from 'react-router-dom'
 const Feed = ({ user, endeavors, handleEndeavors }) => {
     let navigate = useNavigate()
 
-    const scrollRef = useRef()
-    const feedRef = useRef(null)
+    const scrollDownRef = useRef()
+    const scrollUpRef = useRef()
 
     useEffect(() => {
         handleEndeavors()
         GetComments
-        // scrollRef.current++
     }, [])
 
     const scrollUp = () => {
-        console.log(scrollRef)
-        scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+        scrollDownRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollDown = () => {
+        scrollUpRef.current.scrollIntoView({ behavior: 'smooth' })
     }
 
     return user ? (
 
         <div className="scrollDiv">
-            <h4 ref={scrollRef} className='fireText'>SMOKE</h4>
+            <h4 ref={scrollDownRef} className='fireText'>SMOKE</h4>
             <h6 className="subHeaderText">
                 <i>
                     a home for creatives
                 </i>
             </h6>
+            <section>
+                <button className="bailButton" onClick={scrollDown}>
+                    scroll to end
+                </button>
+            </section>
             {!!endeavors &&
                 endeavors.map((endeavor, idx) => (
                     <div className="card" key={idx}>
@@ -70,7 +77,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                     </div>
                 ))}
             <section>
-                <button className="editButton" onClick={scrollUp}>
+                <button ref={scrollUpRef} className="bailButton" onClick={scrollUp}>
                     scroll to top
                 </button>
             </section>

@@ -326,9 +326,8 @@ div.scrollDiv {
 .bailButton:hover {
   transform: scale(105%);
   transition: ease-in 142ms;
-  background-color:cornsilk;
-  color: darkorange;
-
+  background-color: blanchedalmond;
+  color: rgb(73, 73, 73);
 }
 
 .delButton {
