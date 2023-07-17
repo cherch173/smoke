@@ -216,10 +216,12 @@ This model will have full CRUD capabilities.
     - [X] Add AUTH / USER Options for DELETE Permissions
     - [X] Fix COMMENT DATE to Reformat from its Object ID
     - [X] DELETE for COMMENT (JSX + Route)
-    - [X] Build Out DELETE COMMENT Functionality
+    - [X] Build Out DELETE COMMENT  Functionality
 - **MONDAY 07.17.2023**
     - [X] Debug
-    - [X] Confirm DELETE COMMENT works
+    - [X] Confirm DELETE COMMENT removes targeted data from Backend & MongoDB
+    - [X] Implement useEffect and the HANDLER to all pages to make all DATA LIVE
+    - [] Redesign COMMENT TABLE
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
