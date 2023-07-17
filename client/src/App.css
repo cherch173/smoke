@@ -203,6 +203,7 @@ h6 {
 }
 
 .endeavorImage {
+  cursor: pointer;
   max-width: 300px;
   max-height: 300px;
   justify-content: center;
@@ -241,13 +242,14 @@ tr {
   border: 1px solid orange;
   background-color: whitesmoke;
   color: rgb(46, 46, 46);
-  margin-left: 1vmin;
-  margin-right: 1vmin;
+  margin: 1vmin;
   border-radius: 5px;
-  display: inline-table;
   padding: .73vmin;
-  font-size: 1.73vmin;
+  font-size: 1.5vmin;
+  text-align: center;
 }
+
+
 
 .newComment {
   border-radius: 5px;

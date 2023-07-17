@@ -16,16 +16,25 @@ const CommentRender = ({ comment, handleEndeavors }) => {
 
     return (
         <div>
-            <div className="comment">
-                <br />
-                <form onSubmit={handleSubmit}>
-                    <div className="tD">{getDate()}</div>
-                    <div className="tD">{!!comment.userName && comment.userName}</div>
-                    <div className="tD">{!!comment.comment && comment.comment}</div>
-                    <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
-                </form>
-                <br />
-            </div>
+            <table className="comment">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className="tR">
+                        <td className="tD">{getDate()}</td>
+                        <td className="tD">{!!comment.userName && comment.userName}</td>
+                        <td className="tD">{!!comment.comment && comment.comment}</td>
+                        <td>
+                            <form onSubmit={handleSubmit}>
+                                <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
         </div>
     )
 }
