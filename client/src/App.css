@@ -233,7 +233,7 @@ tr {
   margin-left: 6.66vmin;
   margin-right: 6.66vmin;
   border-radius: 5px;
-  display: inline-table;
+  display: inline-flex;
   padding: .5vmin;
   font-size: 2.5vmin;
 }
