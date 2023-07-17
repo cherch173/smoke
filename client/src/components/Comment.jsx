@@ -10,10 +10,6 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
     const [commentState, setCommentState] = useState(initialState)
     // console.log(endeavorId, 'endeavorId')
 
-    useEffect(() => {
-    //   GetComments()  
-    })
-
     const handleSubmit = async (e) => {
         e.preventDefault()
         let updatedState = {
