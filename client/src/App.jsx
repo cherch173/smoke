@@ -8,12 +8,14 @@ import Details from './pages/EndeavorDetails'
 import NewForm from './components/NewForm'
 import EditForm from './components/EditForm'
 import DeleteEndeavor from './components/DeleteEndeavor'
+import EditAComment from './components/EditAComment'
 import Register from './pages/Register'
 import SignIn from './pages/SignIn'
 import './App.css'
 import { CheckSession } from './services/Auth'
 import { GetEndeavors } from './services/EndeavorServices'
 import { EditEndeavor } from './services/EndeavorServices'
+import { EditComment } from './services/EndeavorServices'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -70,6 +72,7 @@ function App() {
           <Route path='new' element={<NewForm user={user} />} />
           <Route path='/edit/:endeavorId' element={<EditForm user={user} endeavors={endeavors} EditEndeavor={EditEndeavor} handleEndeavors={handleEndeavors}/>} />
           <Route path='/delete/:endeavorId' element={<DeleteEndeavor user={user} endeavors={endeavors} DeleteEndeavor={DeleteEndeavor} handleEndeavors={handleEndeavors} />} />
+          <Route path='/endeavors/comments/:commentId' element={<EditAComment user={user} endeavors={endeavors} EditComment={EditComment} handleEndeavors={handleEndeavors}/>} />
           <Route path="/about" element={<About />} />
         </Routes>
         <br />

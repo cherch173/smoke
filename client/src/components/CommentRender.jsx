@@ -1,5 +1,7 @@
 import React from 'react'
 import Client from '../services/api'
+import { Link } from 'react-router-dom'
+
 
 const CommentRender = ({ comment, handleEndeavors, }) => {
 
@@ -28,7 +30,9 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                         <td className="tD">{!!comment.userName && comment.userName}</td>
                         <td className="commentTd">{!!comment.comment && comment.comment}</td>
                         <td>
-                            <button className="editButton">edit</button>
+                            <Link to={`comments/${comment._id}`} >
+                                <button className="editButton">edit</button>
+                            </Link>
                         </td>
                         <td className="delTD">
                             <form onSubmit={handleSubmit}>
