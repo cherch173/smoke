@@ -225,11 +225,11 @@ This model will have full CRUD capabilities.
     - [X] Implement useRef in FEED to scroll to Top and scroll to Bottom
 - **TUESDAY 07.18.2023**
     - [X] Debug Edit Comment and all tiny errors
-    - [] UPDATE for COMMENT (JSX + Route)
-    - [] Confirm EDIT COMMENT is updating in STATE
-    - [] Confirm EDIT COMMENT is sending to DB in Mongo
-    - [] Final CSS Styling for v1.0
-    - [] Final Tests
+    - [X] UPDATE for COMMENT (JSX + Route)
+    - [X] Confirm EDIT COMMENT is updating in STATE
+    - [X] Confirm EDIT COMMENT is sending to DB in Mongo
+    - [X] Final CSS Styling for v1.0
+    - [X] Final Tests
     - [] Deploy
 - **WEDNESDAY 07.19.2023**
     - [] Present

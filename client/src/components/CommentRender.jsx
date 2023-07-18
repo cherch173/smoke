@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 const CommentRender = ({ comment, handleEndeavors, }) => {
-
     const getDate = () => {
         const formattedDate = new Date(comment.createdAt).toDateString()
         return formattedDate
@@ -30,7 +29,7 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                         <td className="tD">{!!comment.userName && comment.userName}</td>
                         <td className="commentTd">{!!comment.comment && comment.comment}</td>
                         <td>
-                            <Link to={`comments/${comment._id}`} >
+                            <Link to={`/endeavors/comments/${comment._id}`} >
                                 <button className="editButton">edit</button>
                             </Link>
                         </td>

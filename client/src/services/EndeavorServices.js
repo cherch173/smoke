@@ -47,7 +47,7 @@ export const GetComments = async () => {
 
 export const GetComment = async (id) => {
     try {
-        const res = await Client.get(`endeavors/comments/${id}`)
+        const res = await Client.get(`/comments/${id}`)
         return res.data
     } catch (error) {
         throw error

@@ -9,9 +9,13 @@ const EditForm = ({ user, endeavors }) => {
   let navigate = useNavigate()
   const [endeavor, setEndeavor] = useState({})
 
-
-  const [formState, setFormState] = useState('')
-  console.log(endeavorId)
+  const [formState, setFormState] = useState({
+    name: '',
+    image: '',
+    website: '',
+    description: '',
+    genre: ''
+  })
   useEffect(() => {
     const handleEndeavor = async () => {
       const data = await GetEndeavor(endeavorId)

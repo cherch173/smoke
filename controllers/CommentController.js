@@ -1,9 +1,20 @@
 const { Comment } = require('../models')
 const { Endeavor } = require('../models')
+
+
 const getComments = async (req, res) => {
     try {
         const comments = await Comment.find({})
         res.send(comments)
+    } catch (error) {
+        throw error
+    }
+}
+
+const getComment = async (req, res) => {
+    try {
+        const comment = await Comment.findById(req.params.comment_id)
+        res.send(comment)
     } catch (error) {
         throw error
     }
@@ -43,5 +54,6 @@ module.exports = {
     getComments,
     CreateComment,
     UpdateComment,
-    DeleteComment
+    DeleteComment,
+    getComment
 }

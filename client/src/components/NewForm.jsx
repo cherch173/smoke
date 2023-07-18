@@ -21,7 +21,6 @@ const NewForm = ({ getEndeavors, user }) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await Client.post('/endeavors', formState)
-    console.log(formState)
     setFormState(initialState)
     navigate('/endeavors')
   }

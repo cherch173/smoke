@@ -5,7 +5,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
     const addLikes = async (e) => {
         e.preventDefault()
         const stringified = endeavor.fireButton.map(id => id.toString())
-        console.log(stringified.includes(user.id.toString()))
         if (!stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}`)
             handleEndeavors()
@@ -14,7 +13,6 @@ function FireButton({ endeavorId, user, endeavor, handleEndeavors }) {
     const disLikes = async (e) => {
         e.preventDefault()
         const stringified = endeavor.fireButton.map(id => id.toString())
-        console.log(stringified.includes(user.id.toString()))
         if (stringified.includes(user.id.toString())) {
             await Client.put(`/endeavors/${endeavorId}/${user.id}/dislike`)
             handleEndeavors()
