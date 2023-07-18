@@ -223,12 +223,12 @@ This model will have full CRUD capabilities.
     - [X] Implement useEffect and the HANDLER to all pages to make all DATA LIVE
     - [X] Redesign COMMENT TABLE
     - [X] Implement useRef in FEED to scroll to Top and scroll to Bottom
+- **TUESDAY 07.18.2023**
+    - [X] Debug Edit Comment and all tiny errors
     - [] UPDATE for COMMENT (JSX + Route)
     - [] Confirm EDIT COMMENT is updating in STATE
     - [] Confirm EDIT COMMENT is sending to DB in Mongo
-- **TUESDAY 07.18.2023**
     - [] Final CSS Styling for v1.0
-    - [] Debug
     - [] Final Tests
     - [] Deploy
 - **WEDNESDAY 07.19.2023**
