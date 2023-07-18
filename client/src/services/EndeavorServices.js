@@ -29,7 +29,7 @@ export const EditEndeavor = async (id) => {
 
 export const DeleteEndeavor = async (id) => {
     try {
-        const res = await Client.delete(`endeavors/${id}`)
+        const res = await Client.delete(`/endeavors/${id}`)
         return res.data
     } catch (error) {
         throw error
@@ -65,7 +65,7 @@ export const EditComment = async (id) => {
 
 export const DeleteComment = async (id) => {
     try {
-        const res = await Client.delete(`comments/${id}`)
+        const res = await Client.delete(`/comments/${id}`)
         return res.data
     } catch (error) {
         throw error
