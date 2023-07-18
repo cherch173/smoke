@@ -4,7 +4,6 @@ const middleware = require('../middleware')
 const Register = async (req, res) => {
     try {
         const { email, password, name } = req.body
-        console.log(password, process.env.SALT_ROUNDS)
         let passwordDigest = await middleware.hashPassword(password, process.env.SALT_ROUNDS)
         let existingUser = await User.findOne({ email })
         if (existingUser) {
@@ -40,7 +39,6 @@ const Login = async (req, res) => {
         }
         res.status(401).send({ status: 'Error', msg: 'Unauthorized'})
     } catch (error) {
-        console.log(error)
         res.status(401).send({ status: 'Error', msg: 'An error has occurred'})
     }
 }
@@ -65,7 +63,6 @@ const UpdatePassword = async (req, res) => {
       }
       res.status(401).send({ status: 'Error', msg: 'Old Password did not match!' })
     } catch (error) {
-      console.log(error)
       res.status(401).send({ status: 'Error', msg: 'An error has occurred updating password!' })
     }
   }

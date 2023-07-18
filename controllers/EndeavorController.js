@@ -12,7 +12,6 @@ const getEndeavors = async (req, res) => {
 const getEndeavorById = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.id).populate('comments')
-        // console.log(endeavor)
         res.send(endeavor)
     } catch (error) {
         throw (error)
@@ -61,7 +60,6 @@ const disLike = async (req, res) => {
     try {
         const endeavor = await Endeavor.findById(req.params.endeavor_id)
         endeavor.fireButton.splice(endeavor.fireButton.indexOf(req.params.user_id), 1)
-        console.log(endeavor)
         await endeavor.save()
         res.status(201).send({ msg: 'you downvoted this endeavor', status: 'disliked', endeavor })
     } catch (error) {

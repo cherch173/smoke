@@ -12,7 +12,6 @@ const getGenres = async (req, res) => {
 const CreateGenre = async (req, res) => {
     try {
         const genre = await Genre.create(req.body)
-        console.log(genre)
         res.send(genre)
     } catch (error) {
         throw error

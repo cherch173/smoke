@@ -56,7 +56,7 @@ export const GetComment = async (id) => {
 
 export const EditComment = async (id) => {
     try {
-        const res = await Client.put(`endeavors/comments/${id}`)
+        const res = await Client.put(`/endeavors/comments/${id}`)
         return res.data
     } catch (error) {
         throw error

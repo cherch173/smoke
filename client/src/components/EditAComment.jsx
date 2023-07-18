@@ -19,7 +19,7 @@ const EditComment = ({ user, handleEndeavors, endeavors }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await Client.put(`/endeavors/comments/${commentId}`, commentState)
+        await Client.put(`/comments/${commentId}`, commentState)
         navigate(`/endeavors`)
     }
 
