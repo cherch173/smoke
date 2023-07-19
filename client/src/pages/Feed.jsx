@@ -15,7 +15,7 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
 
     useEffect(() => {
         handleEndeavors()
-        GetComments
+        GetComments()
     }, [])
 
     const scrollUp = () => {
