@@ -88,10 +88,6 @@ This model will have full CRUD capabilities.
 ![Image](public/images/smoke.png)
 ***
 ***
-## _**COMPONENT HEIRARCHY DIAGRAM**_
-![Image]()
-***
-***
 ## _**PROJECT FLOW**_
 - **THURSDAY 07.06.2023**
     - [X] Project Conceptualization
