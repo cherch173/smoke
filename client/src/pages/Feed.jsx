@@ -62,8 +62,6 @@ const Feed = ({ user, endeavors, handleEndeavors }) => {
                         <FireButton endeavor={endeavor} endeavorId={endeavor._id} user={user} handleEndeavors={handleEndeavors} />
                         <br />
                         <div className="commentCard">
-                            {/* <div className="tH">date</div>
-                            <div className="tH">user</div> */}
                             <label className="commentTh">comments</label>
                             <br />
                             <br />
