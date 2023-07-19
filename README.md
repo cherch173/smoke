@@ -64,20 +64,23 @@ We'll have THREE MODELS, all which interact with eachother.
 - **fireButton:** Array of Objects measured with length() method 
     - (LIKES branded as **SPARKS**)
 - **comments:** String linked by ID
-- **detailsCard:** Endeavor Card Name & Image will be href capable to a detail view by ID
 
-This model will have full CRUD capabilities.
+- **Detail View:** Endeavor Card Name & Image will be href capable to a detail view by ID
+
+This model has full CRUD capabilities.
 
 **USERS **
-- username = textField
-- email = textField
-- password = textField
-- confirmPassword = textField
+- username = string
+- email = string
+- password = string
+- confirmPassword = string
 
 **COMMENTS**
-- date = dateField
-- username = textField
-- comment = textField
+- date = created_at -> converted to string getDate()
+- username = string
+- comment = string (textArea)
+
+This model also has full CRUD capabilities
 ***
 ***
 ## _**WIREFRAME**_
