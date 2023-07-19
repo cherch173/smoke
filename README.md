@@ -229,7 +229,7 @@ This model also has full CRUD capabilities
     - [X] Confirm EDIT COMMENT is sending to DB in Mongo
     - [X] Final CSS Styling for v1.0
     - [X] Final Tests
-    - [] Deploy
+    - [X] Deploy
 - **WEDNESDAY 07.19.2023**
     - [] Present
 
