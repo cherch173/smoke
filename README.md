@@ -231,7 +231,7 @@ This model also has full CRUD capabilities
     - [X] Final Tests
     - [X] Deploy
 - **WEDNESDAY 07.19.2023**
-    - [] Present
+    - [X] Present
 
 ***
 ***
