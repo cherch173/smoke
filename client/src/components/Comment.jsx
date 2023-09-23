@@ -38,7 +38,7 @@ const Comment = ({ handleEndeavors, endeavorId, endeavor, user, comment }) => {
                     cols="25"
                     rows="5"
                     onChange={handleChange}
-                    value={commentState.comment}
+                    value={commentState.user.comment}
                 >
                 </textarea>
                 <br />
