@@ -33,11 +33,11 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                                 <button className="editButton">edit</button>
                             </Link>
                         </td>
-                        <td className="delTD">
+                        {/* <td className="delTD">
                             <form onSubmit={handleSubmit}>
                                 <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
                             </form>
-                        </td>
+                        </td> */}
                     </tr>
                 </tbody>
 
