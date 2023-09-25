@@ -9,11 +9,11 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
         return formattedDate
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        await Client.delete(`/comments/${comment._id}`)
-        handleEndeavors()
-    }
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault()
+    //     await Client.delete(`/comments/${comment._id}`)
+    //     handleEndeavors()
+    // }
 
 
     return (
@@ -33,14 +33,13 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                                 <button className="editButton">edit</button>
                             </Link>
                         </td>
-                        {/* <td className="delTD">
-                            <form onSubmit={handleSubmit}>
+                        <td className="delTD">
+                            {/* <form onSubmit={handleSubmit}>
                                 <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
-                            </form>
-                        </td> */}
+                            </form> */}
+                        </td>
                     </tr>
                 </tbody>
-
             </table>
         </div>
     )
