@@ -9,11 +9,11 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
         return formattedDate
     }
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault()
-    //     await Client.delete(`/comments/${comment._id}`)
-    //     handleEndeavors()
-    // }
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        await Client.delete(`/comments/${comment._id}`)
+        handleEndeavors()
+    }
 
 
     return (
