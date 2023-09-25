@@ -34,9 +34,9 @@ const CommentRender = ({ comment, handleEndeavors, }) => {
                             </Link>
                         </td>
                         <td className="delTD">
-                            {/* <form onSubmit={handleSubmit}>
+                            <form onSubmit={handleSubmit}>
                                 <button className="delButton" type="submit" onClick={handleEndeavors}>X</button>
-                            </form> */}
+                            </form>
                         </td>
                     </tr>
                 </tbody>
